@@ -1,0 +1,949 @@
+### Mukden Incident China
+country_event = {
+	id = 20250
+	title = EVTNAME20250
+	desc = EVTDESC20250
+	picture = "trainwreck"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We cannot afford a conflict with Japan."
+		prestige = -20
+		any_pop = { militancy = 2 }
+		release = MCK
+		set_global_flag = japanese_manchuria
+
+		ai_chance = {
+			factor = 5
+		}
+	}
+
+	option = {
+		name = "We will not bow to the vile Japanese!"
+		JAP = {
+			relation = { who = THIS value = -200 }
+			country_event = 20252
+		}
+
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0.5
+				num_of_revolts = 1
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0.2
+				war_policy = pacifism
+			}
+		}
+	}
+}
+
+### Japanese Manchuria
+country_event = {
+	id = 20251
+	title = EVTNAME20251
+	desc = EVTDESC20251
+	picture = "nationalists"
+
+	trigger = {
+		tag = MCK
+		has_global_flag = japanese_manchuria
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	option = {
+		name = "Long live Manchukuo!"
+		JAP = {
+		create_vassal = THIS
+		create_alliance = THIS
+		relation = { who = THIS value = 400 }
+		diplomatic_influence = { who = THIS value = 400 }
+		}
+		clr_country_flag = existing_country
+		set_country_flag = civilize_after_release
+		clr_global_flag = japanese_manchuria
+	}
+}
+
+### Mukden Incident Japan
+country_event = {
+	id = 20252
+	title = EVTNAME20252
+	desc = EVTDESC20252
+	picture = "parade"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We'll just have to do it the hard way. (10 infamy)"
+		casus_belli = {
+				target = QNG
+				type = demand_concession_casus_belli
+				months = 120
+		}
+		war = {
+			target = QNG
+			attacker_goal = {
+				casus_belli = free_manchuria
+				country = MCK
+			}
+			attacker_goal = {
+				casus_belli = demand_concession_casus_belli
+				state_province_id = 1565
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "Perhaps we should reconsider our plans..."
+		prestige = -20
+		any_pop = {
+			scaled_militancy = {
+				issue = jingoism
+				factor = 2
+			}
+		}
+		clr_country_flag = mukden_war
+		set_country_flag = mukden_defeat
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+### Greater East Asia Co-Prosperity Sphere
+country_event = {
+	id = 20253
+	title = EVTNAME20253
+	desc = EVTDESC20253
+	picture = "asian_administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We must accept."
+		JAP = { create_vassal = THIS }
+		JAP = {
+			relation = { who = THIS value = 200 }
+			diplomatic_influence = { who = THIS value = 200 }
+		}
+		ENG = {
+			relation = { who = THIS value = -200 }
+			diplomatic_influence = { who = THIS value = -200 }
+		}
+		FRA = {
+			relation = { who = THIS value = -200 }
+			diplomatic_influence = { who = THIS value = -200 }
+		}
+
+		ai_chance = {
+			factor = 25
+		}
+	}
+
+	option = {
+		name = "We do not need Japanese protection."
+		JAP = {
+			relation = { who = THIS value = -200 }
+			diplomatic_influence = { who = THIS value = -200 }
+			country_event = 20254
+		}
+
+		ai_chance = {
+			factor = 35
+		}
+	}
+
+	option = {
+		name = "I'd prefer to be a European vassal..."
+		JAP = {
+			relation = { who = THIS value = -400 }
+			diplomatic_influence = { who = THIS value = -200 }
+			country_event = 20254
+		}
+		FRA = {
+			relation = { who = THIS value = 400 }
+			diplomatic_influence = { who = THIS value = 150 }
+		}
+		ENG = {
+			relation = { who = THIS value = 400 }
+			diplomatic_influence = { who = THIS value = 150 }
+		}
+
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+### Siam Rejects
+country_event = {
+	id = 20254
+	title = EVTNAME20254
+	desc = EVTDESC20254
+	picture = "deliberation"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "I won't take no for an answer."
+		badboy = 5
+		SIA = {
+			add_casus_belli = {
+			target = THIS
+			type = make_puppet
+			months = 60
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "We won't press the issue further."
+		relation = {
+			who = SIA
+			value = 100
+		}
+		prestige = -10
+		any_pop = {
+			scaled_militancy = {
+				issue = jingoism
+				factor = 2
+			}
+		}
+		clr_country_flag = geacps
+		set_country_flag = geacps_rejected
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+### Japan Claims Philippines
+country_event = {
+	id = 20255
+	title = EVTNAME20255
+	desc = EVTDESC20255
+	picture = "deliberation"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We cannot afford a conflict with Japan."
+		prestige = -20
+		any_pop = {
+			scaled_militancy = {
+				issue = jingoism
+				factor = 2
+			}
+		}
+		release = PHL
+		release_vassal = PHL
+		release_vassal = PHL
+		set_global_flag = japanese_philippines
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = "Who do they think they are?"
+		JAP = {
+			relation = { who = THIS value = -200 }
+			country_event = 20257
+		}
+
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0.5
+				num_of_revolts = 1
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = anti_military
+			}
+			modifier = {
+				factor = 0.2
+				war_policy = pacifism
+			}
+		}
+	}
+}
+
+### Japanese Philippines
+country_event = {
+	id = 20256
+	title = EVTNAME20256
+	desc = EVTDESC20256
+	picture = "nationalists"
+
+	trigger = {
+		tag = PHL
+		has_global_flag = japanese_philippines
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	option = {
+		name = "Long live the Philippines!"
+		JAP = { 
+		create_vassal = THIS
+		create_alliance = THIS
+		relation = { who = THIS value = 400 }
+		diplomatic_influence = { who = THIS value = 400 }
+		}
+		clr_global_flag = japanese_philippines
+	}
+}
+
+### Philippines Rejected
+country_event = {
+	id = 20257
+	title = EVTNAME20257
+	desc = EVTDESC20257
+	picture = "asian_administration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We must take it by force."
+		random_country = {
+				limit = {
+					owns = 1456
+					NOT = { is_vassal = yes	}
+				}
+				country_event = { id = 20261 days = 1 }
+			}
+		random_country = {
+			limit = {
+				owns = 1456
+				is_vassal = yes
+			}
+			overlord = {
+				country_event = { id = 20261 days = 1 }
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	option = {
+		name = "Perhaps we should reconsider our plans..."
+		prestige = -20
+		any_pop = {
+			scaled_militancy = {
+				issue = jingoism
+				factor = 2
+			}
+		}
+		clr_country_flag = geacps
+		set_country_flag = geacps_rejected
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = 20261
+	title = "Japan Refuses to Back Down!"
+	desc = "Japan refuses to back down from their claims. It seems like only war will teach them who are the rightful owners of the Philippines."
+	picture = "deliberation"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "They take us for weaklings!"
+		1456 = {
+			owner = {
+			random_owned = {
+			owner = {
+				casus_belli = {
+					type = cut_down_to_size
+					target = JAP
+					months = 60
+				}
+			}
+			JAP = {
+				war = {
+					target = THIS
+					attacker_goal = {
+						casus_belli = place_in_the_sun
+						state_province_id = 1456
+					}
+					attacker_goal = {
+						casus_belli = place_in_the_sun
+						state_province_id = 1460
+					}
+					attacker_goal = {
+						casus_belli = place_in_the_sun
+						state_province_id = 1463
+					}
+					attacker_goal = {
+						casus_belli = acquire_state
+						state_province_id = 1456
+					}
+					attacker_goal = {
+						casus_belli = acquire_state
+						state_province_id = 1460
+					}
+					attacker_goal = {
+						casus_belli = acquire_state
+						state_province_id = 1463
+					}
+					attacker_goal = {
+						casus_belli = take_puppet
+						country = PHL
+					}
+					call_ally = yes
+				}
+			}
+			}
+			}
+		}
+	}
+}
+### Chinese Defeat
+country_event = {
+	id = 20260
+	title = EVTNAME20260
+	desc = EVTDESC20260
+	picture = "war_ended"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = QNG
+		has_country_flag = manchuria_lost
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	option = {
+		name = "We have no choice..."
+		release = MCK
+		set_global_flag = japanese_manchuria
+	}
+}
+
+### Japanese Pacific States Migration
+country_event = {
+	id = 20258
+	title = EVTNAME20258
+	desc = EVTDESC20258
+	picture = "emigration"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = JPS
+		JPS = { vassal_of = JAP }
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	option = {
+		name = "We welcome them with open arms!"
+		add_country_modifier = {
+			name = pearl_of_the_east
+			duration = -1
+		}
+		add_country_modifier = {
+			name = small_immigration_boom
+			duration = 3650
+		}
+		political_reform = no_slavery
+		political_reform = appointed
+		political_reform = universal_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = state_controlled
+		political_reform = first_past_the_post
+		political_reform = non_secret_ballots
+		social_reform = acceptable_minimum_wage
+		social_reform = ten_hours
+		social_reform = low_schools
+		social_reform = culture_voting_only
+	}
+}
+
+### Japanese Pacific States Independent
+country_event = {
+	id = 20259
+	title = EVTNAME20259
+	desc = EVTDESC20259
+	picture = "meiji_parliament"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = JPS
+		is_vassal = no
+		has_country_modifier = pearl_of_the_east
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	option = {
+		name = "Damn them!"
+		remove_country_modifer = pearl_of_the_east
+		JAP = {
+			relation = { who = THIS value = -400 }
+			diplomatic_influence = { who = THIS value = -200 }
+		}
+	}
+}
+
+#The Death of Emperor Meiji
+country_event = {
+	id = 20270
+	title = "EVTNAME20270"
+	desc = "EVTDESC20270"
+
+	trigger = {
+		OR = {
+			tag = JAP
+		}
+		year = 1912
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			government = fascist_dictatorship
+		}
+		NOT = { has_global_flag = death_of_meiji }
+	}
+	
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = "Tennoheika Banzai!"
+		any_pop = {	
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = -2
+			consciousness = -1
+		}
+		set_global_flag = death_of_meiji
+	}
+}
+
+#Interservice Rivalry
+country_event = {
+	id = 20271
+	title = EVTNAME20271
+	desc = EVTDESC20271
+	picture = "factory_workers"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Support the Army"
+		tech_school = army_tech_school
+		define_general = {
+			name = "Senjuro Hayashi"
+	       		personality = politician
+	        	background = defence_4.4-0
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+				type = soldiers
+			}
+			militancy = -1
+			consciousness = 1
+		}
+		set_country_flag = army_supported
+
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "Support the Navy"
+		tech_school = naval_tech_school
+		define_admiral = {
+			name = "Togo Heihachiro"
+	       		personality = natural_born_leader
+	        	background = defence_4.4-0
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+				type = officers
+			}
+			militancy = -1
+			consciousness = 1
+		}
+		set_country_flag = navy_supported
+
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#Hirohito Becomes Emperor
+country_event = {
+	id = 20272
+	title = EVTNAME20272
+	desc = EVTDESC20272
+
+
+	trigger = {
+		OR = {
+			tag = JAP
+		}
+		year = 1925
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+			government = fascist_dictatorship
+		}
+		NOT = { has_global_flag = emperor_showa }
+	}
+
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = { months = 12 }
+
+	option = {
+		name = "Tennoheika Banzai!"
+		any_pop = {	
+			limit = {
+				is_primary_culture = yes
+			}
+		militancy = -2
+		consciousness = -1
+		}
+		any_pop = {
+			limit = {
+				is_primary_culture = yes
+			}
+			ideology = {
+				value = reactionary
+				factor = 0.05
+			}
+			ideology = {
+				value = fascist
+				factor = 0.05
+			}
+		}
+		define_general = {
+			name = "Prince Chichibu"
+	       		personality = aristocrat
+	        	background = defence_3.4-0
+		}
+		set_global_flag = emperor_showa
+	}
+}
+
+#Showa Restoration Pt. 1
+country_event = {
+	id = 20273
+	title = "The $YEAR$ Incident"
+	desc = EVTDESC20273
+	picture = "righteous_army"
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = JAP
+		}
+		OR = {
+			government = prussian_constitutionalism
+			government = hms_government
+			government = fascist_dictatorship
+		}
+		OR = {
+			average_militancy = 5
+			average_consciousness = 5
+			liberal = 20
+		}
+
+		civilized = yes
+		war = no
+		is_vassal = no
+
+		has_global_flag = emperor_showa
+		NOT = { has_country_flag = showa_restoration_fails }
+		NOT = { has_country_flag = showa_restoration_succeeds }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 2
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { average_militancy = 6 }
+			NOT = { revolt_percentage = .10 }
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 7
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 8
+		}
+		modifier = {
+			factor = 0.9
+			average_militancy = 9
+		}
+		modifier = {
+			factor = 0.8
+			revolt_percentage = .20
+		}
+		modifier = {
+			factor = 0.7
+			revolt_percentage = .30
+		}
+		modifier = {
+			factor = 0.6
+			revolt_percentage = .40
+		}
+	}
+
+	option = {
+		name = "Crush these rebels immediately!"
+		set_country_flag = showa_restoration_fails
+
+		capital_scope = { any_pop = { ideology = { factor = -0.1 value = reactionary } } }
+		capital_scope = { any_pop = { reduce_pop = 0.99 } }
+
+		any_pop = {	
+			limit = { is_primary_culture = yes }
+			militancy = -4
+			consciousness = -4
+		}
+
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 8
+			}
+		}
+
+		ai_will_do = { factor = 60 }
+	}
+
+	option = {
+		name = "The Righteous Army has the Emperor's support."
+		country_event = 20274
+		set_country_flag = showa_restoration_succeeds
+
+		define_general = {
+			name = "Sadao Araki"
+	       		personality = politician
+	        	background = defence_4.4-0
+		}
+
+		define_general = {
+			name = "Shigeru Honjo"
+	       		personality = nationalist
+	        	background = defence_4.4-0
+		}
+
+		ai_will_do = { factor = 40 }
+	}
+}
+
+#Showa Restoration Pt. 2
+country_event = {
+	id = 20274
+	title = "Showa Restoration"
+	desc = EVTDESC20274
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "Banzai!"
+
+		government = absolute_monarchy
+		ruling_party_ideology = reactionary
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		clr_country_flag = tory_election_win
+		clr_country_flag = socialist_election_win
+		clr_country_flag = liberal_election_win
+		clr_country_flag = communist_election_win
+		clr_country_flag = fascist_election_win
+		clr_country_flag = reactionary_election_win
+		clr_country_flag = anarcho_liberal_election_win
+		remove_country_modifier = expert_diplomat
+		remove_country_modifier = successful_industrialist
+		remove_country_modifier = ivory_tower_intellectual
+		remove_country_modifier = man_of_the_people
+		remove_country_modifier = landed_gentleman
+		remove_country_modifier = military_man
+		remove_country_modifier = lord_admiral
+		remove_country_modifier = raving_loon
+		remove_country_modifier = luddite
+		remove_country_modifier = great_statesman
+		remove_country_modifier = backroom_boy
+		remove_country_modifier = great_reformer
+		remove_country_modifier = gauche_buffoon
+		remove_country_modifier = administrative_genius
+		remove_country_modifier = visionary_thinker
+		remove_country_modifier = competent_placeholder
+		remove_country_modifier = imperious_autocrat
+		remove_country_modifier = prince_of_terror
+		remove_country_modifier = efficient_sociopath
+		remove_country_modifier = pig_headed_isolationist
+		remove_country_modifier = ambitious_union_boss
+		remove_country_modifier = dour_economist
+
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}
+
+		add_country_modifier = {
+			name = emperor_showa
+			duration = -1
+		}
+
+		plurality = -50
+
+		any_pop = {
+			limit = { pop_majority_ideology = reactionary }
+			limit = { is_primary_culture = yes }
+			ideology = { factor = 0.1 value = reactionary }
+		}
+		capital_scope = { any_pop = { ideology = { factor = 0.1 value = reactionary } } }
+		capital_scope = { any_pop = { ideology = { factor = -0.1 value = liberal } } }
+		any_pop = {
+			limit = { is_primary_culture = yes }
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -8
+			}
+			scaled_militancy = {
+				ideology = fascist
+				factor = -6
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+			scaled_militancy = {
+				ideology = liberal
+				factor = 2
+			}
+			scaled_militancy = {
+				ideology = anarcho_liberal
+				factor = 4
+			}
+			scaled_militancy = {
+				ideology = socialist
+				factor = 6
+			}
+			scaled_militancy = {
+				ideology = communist
+				factor = 8
+			}
+		}
+		any_owned = {
+			remove_province_modifier = labor_union
+			remove_province_modifier = militant_trade_union
+			remove_province_modifier = worker_union
+			remove_province_modifier = strike_solution
+			remove_province_modifier = province_strike
+			remove_province_modifier = may_day
+		}
+
+		RUS = {
+			relation = { who = THIS value = -150 }
+		}
+	}
+}
+
+#Loss of Showa Modifier
+country_event = {
+	id = 20275
+	title = "Showa's Power Degraded"
+	desc = "With the Emperor's rule no longer absolute, the nation is less stable"
+	picture = "asian_administration"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = JAP
+		OR = {
+			government = prussian_constitutionalism
+			government = hms_government
+			government = democracy
+			government = presidential_dictatorship
+			government = bourgeois_dictatorship
+			government = fascist_dictatorship
+		}
+		has_country_modifier = emperor_showa
+	}
+
+	mean_time_to_happen = {
+		months = 0
+	}
+
+	option = {
+		name = "Shameful display..."
+		remove_country_modifer = emperor_showa
+		any_pop = {	
+			limit = {
+				is_primary_culture = yes
+			}
+			militancy = 1
+		}
+	}
+}

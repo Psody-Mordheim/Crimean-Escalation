@@ -1,0 +1,1574 @@
+#################################################################
+#																#
+#                  		USA Events								#
+#																#
+#################################################################
+
+country_event = {
+	
+	id = 993343
+	title = "Westward Migration"
+	desc = "It appears that we have recently prepared some land for homesteading! Immigrants are already pouring in"
+	picture = "texas"
+	
+	trigger = {
+		OR = {
+		tag = CSA
+		tag = USA
+		}
+		has_country_modifier = the_homestead_act
+		OR = {
+				any_owned_province = {
+					OR = {
+						province_id = 78
+						province_id = 79
+						province_id = 80
+						province_id = 81
+						province_id = 82
+						province_id = 83
+						province_id = 84
+						province_id = 85
+						province_id = 86
+						province_id = 87
+						province_id = 88
+						province_id = 89
+						province_id = 90
+						province_id = 91
+						province_id = 92
+						province_id = 93
+						province_id = 94
+						province_id = 95
+						province_id = 96
+						province_id = 97
+						province_id = 98
+						province_id = 99
+						province_id = 100
+						province_id = 101
+						province_id = 102
+						province_id = 103
+						province_id = 104
+						province_id = 105
+						province_id = 106
+						province_id = 107
+						province_id = 108
+						province_id = 109
+						province_id = 110
+						province_id = 111
+						province_id = 112
+						province_id = 113
+						province_id = 114
+						province_id = 115
+						province_id = 116
+						province_id = 117
+						province_id = 118
+						province_id = 119
+						province_id = 120
+						province_id = 121
+						province_id = 122
+						province_id = 123
+						province_id = 124
+						province_id = 125
+						province_id = 126
+						province_id = 127
+						province_id = 128
+						province_id = 129
+						province_id = 130
+						province_id = 131
+						province_id = 132
+						province_id = 133
+						province_id = 134
+						province_id = 135
+						province_id = 136
+						province_id = 137
+						province_id = 138
+						province_id = 143
+						province_id = 144
+						province_id = 145
+						province_id = 151
+						province_id = 152
+						province_id = 153
+						province_id = 154
+						province_id = 155
+						province_id = 156
+						province_id = 157
+						province_id = 158
+						province_id = 173
+						province_id = 174
+						province_id = 175
+						province_id = 176
+						province_id = 146
+						province_id = 147
+						province_id = 148
+						province_id = 149
+						province_id = 150
+						province_id = 177
+						province_id = 198
+						province_id = 199
+						province_id = 200
+						province_id = 159
+						province_id = 160
+						province_id = 161
+						province_id = 162
+						province_id = 163
+						province_id = 164
+						province_id = 166
+						province_id = 165
+						province_id = 167
+						province_id = 168
+					}
+				NOT = { has_province_modifier = homestead }
+				}
+				any_owned_province = {
+					OR = {
+						province_id = 139
+						province_id = 140
+						province_id = 141
+						province_id = 142
+						province_id = 169
+						province_id = 170
+						province_id = 171
+						province_id = 172
+						province_id = 178
+						province_id = 179
+						province_id = 180
+						province_id = 181
+						province_id = 182
+						province_id = 183
+						province_id = 184
+						province_id = 185
+						province_id = 186
+						province_id = 187
+						province_id = 188
+						province_id = 189
+						province_id = 190
+						province_id = 191
+						province_id = 192
+						province_id = 193
+						province_id = 194
+						province_id = 195
+						province_id = 196
+						province_id = 197
+						province_id = 201
+						province_id = 202
+						province_id = 204
+						province_id = 205
+						province_id = 206
+						province_id = 2555
+						province_id = 2556
+						province_id = 207
+						province_id = 208
+						province_id = 209
+						province_id = 210
+						province_id = 211
+						province_id = 212
+						province_id = 213
+						province_id = 214
+						province_id = 215
+						province_id = 216
+						province_id = 217
+						province_id = 218
+						province_id = 219
+						province_id = 220
+						province_id = 221
+						province_id = 222
+						province_id = 223
+						province_id = 224
+						province_id = 225
+						province_id = 226
+						province_id = 227
+						province_id = 228
+						province_id = 229
+						province_id = 230
+						province_id = 231
+						province_id = 232
+						province_id = 233
+						province_id = 234
+						province_id = 235
+						province_id = 236
+						province_id = 237
+						province_id = 238
+						province_id = 239
+						province_id = 240
+						province_id = 241
+						province_id = 242
+						province_id = 243
+						province_id = 244
+						province_id = 245
+						province_id = 246
+						province_id = 247
+						province_id = 248
+						province_id = 249
+						province_id = 250
+					}
+				NOT = { has_province_modifier = westward_migration }
+				}
+			}
+		}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = "Onwards West!"
+		any_owned = {
+					limit = {
+					OR = {
+						province_id = 78
+						province_id = 79
+						province_id = 80
+						province_id = 81
+						province_id = 82
+						province_id = 83
+						province_id = 84
+						province_id = 85
+						province_id = 86
+						province_id = 87
+						province_id = 88
+						province_id = 89
+						province_id = 90
+						province_id = 91
+						province_id = 92
+						province_id = 93
+						province_id = 94
+						province_id = 95
+						province_id = 96
+						province_id = 97
+						province_id = 98
+						province_id = 99
+						province_id = 100
+						province_id = 101
+						province_id = 102
+						province_id = 103
+						province_id = 104
+						province_id = 105
+						province_id = 106
+						province_id = 107
+						province_id = 108
+						province_id = 109
+						province_id = 110
+						province_id = 111
+						province_id = 112
+						province_id = 113
+						province_id = 114
+						province_id = 115
+						province_id = 116
+						province_id = 117
+						province_id = 118
+						province_id = 119
+						province_id = 120
+						province_id = 121
+						province_id = 122
+						province_id = 123
+						province_id = 124
+						province_id = 125
+						province_id = 126
+						province_id = 127
+						province_id = 128
+						province_id = 129
+						province_id = 130
+						province_id = 131
+						province_id = 132
+						province_id = 133
+						province_id = 134
+						province_id = 135
+						province_id = 136
+						province_id = 137
+						province_id = 138
+						province_id = 143
+						province_id = 144
+						province_id = 145
+						province_id = 151
+						province_id = 152
+						province_id = 153
+						province_id = 154
+						province_id = 155
+						province_id = 156
+						province_id = 157
+						province_id = 158
+						province_id = 173
+						province_id = 174
+						province_id = 175
+						province_id = 176
+						province_id = 177
+						province_id = 198
+						province_id = 199
+						province_id = 200
+						province_id = 159
+						province_id = 160
+						province_id = 161
+						province_id = 162
+						province_id = 163
+						province_id = 164
+						province_id = 166
+						province_id = 165
+						province_id = 167
+						province_id = 168
+						province_id = 146
+						province_id = 147
+						province_id = 148
+						province_id = 149
+						province_id = 150
+					}
+				}
+				add_province_modifier = { name = homestead duration = -1 }
+			}
+				any_owned = {
+					limit = {
+					OR = {
+						province_id = 139
+						province_id = 140
+						province_id = 141
+						province_id = 142
+						province_id = 169
+						province_id = 170
+						province_id = 171
+						province_id = 172
+						province_id = 178
+						province_id = 179
+						province_id = 180
+						province_id = 181
+						province_id = 182
+						province_id = 183
+						province_id = 184
+						province_id = 185
+						province_id = 186
+						province_id = 187
+						province_id = 188
+						province_id = 189
+						province_id = 190
+						province_id = 191
+						province_id = 192
+						province_id = 193
+						province_id = 194
+						province_id = 195
+						province_id = 196
+						province_id = 197
+						province_id = 201
+						province_id = 202
+						province_id = 204
+						province_id = 205
+						province_id = 206
+						province_id = 2555
+						province_id = 2556
+						province_id = 207
+						province_id = 208
+						province_id = 209
+						province_id = 210
+						province_id = 211
+						province_id = 212
+						province_id = 213
+						province_id = 214
+						province_id = 215
+						province_id = 216
+						province_id = 217
+						province_id = 218
+						province_id = 219
+						province_id = 220
+						province_id = 221
+						province_id = 222
+						province_id = 223
+						province_id = 224
+						province_id = 225
+						province_id = 226
+						province_id = 227
+						province_id = 228
+						province_id = 229
+						province_id = 230
+						province_id = 231
+						province_id = 232
+						province_id = 233
+						province_id = 234
+						province_id = 235
+						province_id = 236
+						province_id = 237
+						province_id = 238
+						province_id = 239
+						province_id = 240
+						province_id = 241
+						province_id = 242
+						province_id = 243
+						province_id = 244
+						province_id = 245
+						province_id = 246
+						province_id = 247
+						province_id = 248
+						province_id = 249
+						province_id = 250
+					}
+				}
+				add_province_modifier = { name = westward_migration duration = -1 }
+			}
+		}
+	}
+country_event = {
+	
+	id = 993886
+	title = "Setting the Borders of Texas"
+	desc = "Now that we have integrated Texas, we need to set some official borders for the state."
+	picture = "texas"
+	
+	trigger = {
+		tag = USA
+		war = no
+		NOT = {	has_global_flag = texanborders }
+		TEX = {
+			all_core = { owned_by = THIS }
+		}
+		NOT = { exists = TEX }
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	option = {
+		name = "Lets set a more reasonable border."
+		103 = {
+			remove_core = TEX
+		}
+		105 = {
+			remove_core = TEX
+		}
+		107 = {
+			remove_core = TEX
+		}
+		109 = {
+			remove_core = TEX
+		}
+		128 = {
+			remove_core = TEX
+		}
+		129 = {
+			remove_core = TEX
+		}
+		set_global_flag = texanborders
+		ai_chance = {
+			factor = 85
+		}
+	}
+
+	option = {
+		name = "Let them have their claims."
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+
+#Mexican states gain increased militancy
+country_event = {
+	
+	id = 993887
+	title = "Mexican Resistance Forming"
+	desc = "A great many are angered by our annexation of Mexico."
+	picture = "mexico_soldiers"
+	
+	trigger = {
+		tag = USA
+		has_country_flag = mexico_annexation
+		MEX = { exists = no }
+		NOT = { has_country_flag = mexico_resistance }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = "Too Bad."
+		set_country_flag = mexico_resistance
+		set_country_flag = treaty_of_guadalupe_hidalgo
+		MEX_85 = { remove_core = MEX } #California
+		TEX_132 = { remove_core = MEX } #Texas
+		MEX_103 = { remove_core = MEX } #New Mexico
+		MEX_94 = { remove_core = MEX } #Nevada
+		MEX_97 = { remove_core = MEX } #Utah
+		MEX_100 = { remove_core = MEX } #Arizona
+		USA_129 = { remove_core = MEX } #Oklahoma
+		USA_106 = { remove_core = MEX } #Colorado
+		USA_78 = { remove_core = MEX } #Washington
+		USA_81 = { remove_core = MEX } #Portland
+		USA_91 = { remove_core = MEX } #Idaho
+		USA_111 = { remove_core = MEX } #Wyoming
+		USA_126 = { remove_core = MEX } #Kansas
+		any_pop = {
+			limit = {
+				location = { is_core = MEX }
+			}
+			militancy = 5
+			consciousness = 5
+		}
+		MEX = {
+			set_country_flag = treaty_of_guadalupe_hidalgo
+			all_core = {
+				add_province_modifier = {
+					name = nationalist_agitation
+					duration = 7300
+				}
+			}
+		}
+		ai_chance = {
+			factor = 85
+		}
+	}
+	option = {
+		name = "Grant them limited autonomy."
+		badboy = -15
+		set_country_flag = mexico_resistance
+		set_country_flag = treaty_of_guadalupe_hidalgo
+		MEX_85 = { remove_core = MEX } #California
+		TEX_132 = { remove_core = MEX } #Texas
+		MEX_103 = { remove_core = MEX } #New Mexico
+		MEX_94 = { remove_core = MEX } #Nevada
+		MEX_97 = { remove_core = MEX } #Utah
+		MEX_100 = { remove_core = MEX } #Arizona
+		USA_129 = { remove_core = MEX } #Oklahoma
+		USA_106 = { remove_core = MEX } #Colorado
+		USA_78 = { remove_core = MEX } #Washington
+		USA_81 = { remove_core = MEX } #Portland
+		USA_91 = { remove_core = MEX } #Idaho
+		USA_111 = { remove_core = MEX } #Wyoming
+		USA_126 = { remove_core = MEX } #Kansas
+		release_vassal = MEX
+		diplomatic_influence = { who = MEX value = 200 }
+		MEX = {
+			set_country_flag = treaty_of_guadalupe_hidalgo
+		}
+		ai_chance = {
+			factor = 15
+		}
+	}
+}
+#Mexico revolts along with CSA if not released as a vassal.
+country_event = {
+	
+	id = 993888
+	title = "Mexican Freedom"
+	desc = "Our intelligence reports that, with the civil turmoil that looms over our nation, Mexican nationalists are considering whether to secede as well. We may be able to avoid their ambitions by granting a certain amount of autonomy to the Mexican provinces."
+	picture = "mexico_soldiers"
+	
+	trigger = {
+		tag = USA
+		exists = CSA
+		has_global_flag = american_civil_war_happening
+		has_country_flag = mexico_annexation
+		NOT = { has_country_flag = mexico_independence }
+		NOT = { exists = MEX }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "This nation will not be divided."
+		set_country_flag = mexico_independence
+		any_owned = { 
+			limit = {
+				is_core = MEX #Remove cores so USA can't just cheesily peace out nations and gobble them up later individually
+			}
+			remove_core = USA
+		}
+		release_vassal = MEX
+		diplomatic_influence = { who = MEX value = 200 }
+		MEX = {
+			leadership = 200
+			small_arms = 750
+			canned_food = 1500
+			artillery = 750
+			luxury_clothes = 250
+			wine = 500
+			liquor = 500
+			add_country_modifier = { name = neutrality duration = 180 }
+		}
+		country_event = { id = 993889 days = 180 }
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "Agreed."
+		prestige = -15
+		release_vassal = MEX
+		diplomatic_influence = { who = MEX value = 200 }
+		MEX = {
+			leadership = 100
+			small_arms = 750
+			canned_food = 1500
+			artillery = 750
+			luxury_clothes = 250
+			wine = 500
+			liquor = 500
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+country_event = {
+	
+	id = 993890
+	title = "Mexican Freedom"
+	desc = "Our intelligence reports that, with the civil turmoil that looms over our nation, Mexican nationalists are considering whether to secede as well. We may be able to avoid their ambitions by granting a certain amount of autonomy to the Mexican provinces."
+	picture = "mexico_soldiers"
+	
+	trigger = {
+		tag = USA
+		war_with = FSA
+		has_global_flag = alt_american_civil_war_has_happened
+		has_country_flag = mexico_annexation
+		NOT = { has_country_flag = mexico_independence }
+		NOT = { exists = MEX }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "This nation will not be divided."
+		set_country_flag = mexico_independence
+		any_owned = { 
+			limit = {
+				is_core = MEX #Remove cores so USA can't just cheesily peace out nations and gobble them up later individually
+			}
+			remove_core = USA
+		}
+		release_vassal = MEX
+		diplomatic_influence = { who = MEX value = 200 }
+		MEX = {
+			leadership = 100
+			small_arms = 750
+			canned_food = 1500
+			artillery = 750
+			luxury_clothes = 250
+			wine = 500
+			liquor = 500
+		}
+		country_event = 993889
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "Agreed."
+		prestige = -15
+		release_vassal = MEX
+		diplomatic_influence = { who = MEX value = 200 }
+		MEX = {
+			leadership = 100
+			small_arms = 750
+			canned_food = 1500
+			artillery = 750
+			luxury_clothes = 250
+			wine = 500
+			liquor = 500
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Actual war declaration of MEX on USA
+country_event = {
+	id = 993889
+	title = "Battle of Mexico City"
+	desc = "With the rising tide of nationalism in Mexico, our fort in Mexico City has been attacked."
+	picture = "mexico_soldiers"
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = "There is no choice but to declare war now."
+		release_vassal = MEX
+		diplomatic_influence = { who = MEX value = -200 }
+		relation = { who = MEX value = -200 }
+		USA = {
+			war = {
+				target = MEX
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+			}
+		}
+	}
+}
+
+#Since the USA has been a bad boy annexing beyond historical amounts, the UK gets the option to dismantle the American upstarts.
+country_event = {
+	id = 993891
+	title = "Intervention in America?"
+	desc = "The Civil War in the USA presents us the opportunity to cut the Americans down to size. Should we add our support to those fighting for their freedom?"
+	picture = "confederation"
+
+	trigger = {
+		tag = ENG
+		has_global_flag = american_civil_war_has_happened
+		has_global_flag = trent_affair_resolved
+		USA = {
+				OR = {
+					war_with = CSA
+					war_with = FSA
+					}
+				}
+			}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "Yes, immediately!"
+		ENG = {
+			war = {
+				target = USA
+				attacker_goal = {
+					casus_belli = cut_down_to_size
+				}
+				defender_goal = {
+					casus_belli = status_quo
+				}
+				call_ally = yes
+			}
+		}
+		prestige = 15
+		badboy = 5
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = "Not right now."
+		prestige = -5
+		casus_belli = {
+			target = USA
+			type = cut_down_to_size
+			months = 24
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+}
+
+#USA control of Mexico confirmed
+country_event = {
+	id = 993895
+	title = "Civil War in Mexico Has Ended"
+	desc = "With our victory in the Civil War our control of Mexico is now uncontested."
+	picture = "mexico_soldiers"
+	
+	trigger = {
+		tag = USA
+		war = no
+		has_country_flag = mexico_independence
+		has_global_flag = american_civil_war_has_happened
+		NOT = { exists = MEX }
+		NOT = { has_country_flag = mexico_cores }
+		NOT = { has_country_flag = no_mexico_cores }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = "Excellent!"
+		prestige = 15
+		set_country_flag = mexico_cores
+	}
+}
+
+country_event = {
+	id = 993892
+	title = "Civil War in Mexico Has Ended"
+	desc = "With our loss in the Civil War our control of Mexico is now over."
+	picture = "mexico_soldiers"
+	
+	trigger = {
+		tag = USA
+		war = no
+		has_country_flag = mexico_independence
+		has_global_flag = american_civil_war_has_happened
+		exists = MEX
+		truce_with = MEX
+		NOT = { has_country_flag = mexico_cores }
+		NOT = { has_country_flag = no_mexico_cores }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = "Damn."
+		set_country_flag = no_mexico_cores
+		prestige = -20
+		MEX = { 
+			all_core = {
+				remove_core = USA
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 993897
+	title = "Out of Africa"
+	desc = "Holy shit what are you doing AI USA?"
+	
+	trigger = {
+		capital_scope = {
+			continent = africa
+		}
+		NOT = {
+			tag = LIB
+		}
+		ai = yes
+		civilized = no
+		USA = {
+			ai = yes
+			OR = {
+				diplomatic_influence = {
+					who = THIS
+					value = 40
+				}
+				is_sphere_leader_of = THIS
+			}
+		}
+	}
+		
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "Get out of Africa!"
+		USA = {
+			diplomatic_influence = {
+				who = THIS
+				value = -20
+			}
+			relation = {
+				who = THIS
+				value = -100
+			}
+		}
+	}
+}
+
+#Resettle blacks in Liberia
+country_event = {
+	id = 99400
+	title = "EVTNAME99400"
+	desc = "EVTDESC99400"
+	picture = "slaves"
+	major = yes
+	
+	trigger = {
+		OR = {
+		is_culture_group = south_american_cultures
+		is_culture_group = central_american_cultures
+		is_culture_group = american_cultures
+		}
+		slavery = no_slavery
+		war = no
+		NOT = { citizenship_policy = full_citizenship }
+		NOT = { has_country_flag = resettle_in_liberia }
+		OR = {
+			has_global_flag = american_civil_war_has_happened
+			has_global_flag = alt_american_civil_war_has_happened
+		}
+		any_owned_province = {
+			any_pop = { is_culture_group = african_diaspora_cultures }
+		}
+		NOT = {
+			primary_culture = afro_american
+			accepted_culture = afro_american
+		}
+		LIB = {
+			exists = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		set_country_flag = resettle_in_liberia
+	}
+
+	option = {
+		name = "Support the program."
+		treasury = -10000
+		any_owned = {
+			limit = {
+				any_pop = {
+					is_culture_group = african_diaspora_cultures
+				}
+			}
+			add_province_modifier = {
+				name = blacks_to_liberia
+				duration = 9125
+			}
+		}
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			consciousness = 4
+			militancy = 3
+		}		
+		any_country = {
+			relation = { who = THIS value = -20 }
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0.5
+				NOT = {
+				tag = CSA
+				tag = USA
+				}
+			}
+			modifier = {
+				factor = 10
+				LIB = {
+					ai = no
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "I believe their service is more valuable here."
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			consciousness = 1
+			militancy = -1
+		}
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				tag = CSA
+			}
+		modifier = {
+			factor = 0
+			LIB = {
+			ai = no
+			}
+			tag = USA
+		}
+		}
+	}
+}
+
+#Blacks to Liberia emigration events
+province_event = {
+	id = 99402
+	title = "EVTNAME99402"
+	desc = "EVTDESC99402"
+
+	trigger = {
+		has_province_modifier = blacks_to_liberia
+		LIB = {
+			exists = yes
+			war = no
+			owns = 1887
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 190
+		modifier = {
+			factor = 0.8
+			owner = { citizenship_policy = residency }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { citizenship_policy = full_citizenship }
+		}
+	}
+
+	option = {
+		name = "Whoever wishes to go may leave."
+		remove_province_modifier = blacks_to_liberia
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			random = {
+				chance = 66
+				money = 5
+				move_pop = 1887
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "Give them incentives to stay."
+		remove_province_modifier = blacks_to_liberia
+		owner = { treasury = -500 }
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			money = 50
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+				tag = CSA
+				owner = {
+					NOT = { money = 1000 }
+				}
+			}
+		}
+	}
+}
+
+	option = {
+		name = "Force them out."
+		remove_province_modifier = blacks_to_liberia
+		owner = {
+			treasury = -3000
+			prestige = -1
+			plurality = -0.1
+			badboy = 0.1
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			money = 5
+			move_pop = 1887
+		}
+		owner = {
+			any_pop = {
+				limit = { is_culture_group = african_diaspora_cultures }
+				consciousness = 0.5
+				militancy = 0.5
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				tag = CSA
+				}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 4000 }
+				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { badboy = 0.9 }
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 99403
+	title = "EVTNAME99402"
+	desc = "EVTDESC99402"
+
+	trigger = {
+		has_province_modifier = blacks_to_liberia
+		LIB = {
+			exists = yes
+			war = no
+			owns = 1888
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 190
+		modifier = {
+			factor = 0.8
+			owner = { citizenship_policy = residency }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { citizenship_policy = full_citizenship }
+		}
+	}
+
+	option = {
+		name = "Whoever wishes to go may leave."
+		remove_province_modifier = blacks_to_liberia
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			random = {
+				chance = 66
+				money = 5
+				move_pop = 1888
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "Give them incentives to stay."
+		remove_province_modifier = blacks_to_liberia
+		owner = { treasury = -500 }
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			money = 50
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+				tag = CSA
+				owner = {
+					NOT = { money = 1000 }
+				}
+			}
+		}
+	}
+}
+
+	option = {
+		name = "Force them out."
+		remove_province_modifier = blacks_to_liberia
+		owner = {
+			treasury = -5000
+			prestige = -1
+			plurality = -0.2
+			badboy = 0.2
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			money = 5
+			move_pop = 1888
+		}
+		owner = {
+			any_pop = {
+				limit = { is_culture_group = african_diaspora_cultures }
+				consciousness = 0.5
+				militancy = 0.5
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				tag = CSA
+				}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 10000 }
+				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { badboy = 0.9 }
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 99404
+	title = "EVTNAME99402"
+	desc = "EVTDESC99402"
+
+	trigger = {
+		has_province_modifier = blacks_to_liberia
+		LIB = {
+			exists = yes
+			war = no
+			owns = 1889
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 190
+		modifier = {
+			factor = 0.8
+			owner = { citizenship_policy = residency }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { citizenship_policy = full_citizenship }
+		}
+	}
+
+	option = {
+		name = "Whoever wishes to go may leave."
+		remove_province_modifier = blacks_to_liberia
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			random = {
+				chance = 66
+				money = 5
+				move_pop = 1889
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "Give them incentives to stay."
+		remove_province_modifier = blacks_to_liberia
+		owner = { treasury = -500 }
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			money = 50
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+				tag = CSA
+				owner = {
+					NOT = { money = 1000 }
+				}
+			}
+		}
+	}
+}
+
+	option = {
+		name = "Force them out."
+		remove_province_modifier = blacks_to_liberia
+		owner = {
+			treasury = -5000
+			prestige = -1
+			plurality = -0.2
+			badboy = 0.2
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			money = 5
+			move_pop = 1889
+		}
+		owner = {
+			any_pop = {
+				limit = { is_culture_group = african_diaspora_cultures }
+				consciousness = 0.5
+				militancy = 0.5
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				tag = CSA
+				}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 10000 }
+				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { badboy = 0.9 }
+				}
+			}
+		}
+	}
+}
+province_event = {
+	id = 99405
+	title = "EVTNAME99402"
+	desc = "EVTDESC99402"
+
+	trigger = {
+		has_province_modifier = blacks_to_liberia
+		LIB = {
+			exists = yes
+			war = no
+			owns = 1890
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 190
+		modifier = {
+			factor = 0.8
+			owner = { citizenship_policy = residency }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { citizenship_policy = full_citizenship }
+		}
+	}
+
+	option = {
+		name = "Whoever wishes to go may leave."
+		remove_province_modifier = blacks_to_liberia
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			random = {
+				chance = 66
+				money = 5
+				move_pop = 1890
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "Give them incentives to stay."
+		remove_province_modifier = blacks_to_liberia
+		owner = { treasury = -500 }
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			money = 50
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+				tag = CSA
+				owner = {
+					NOT = { money = 1000 }
+				}
+			}
+		}
+	}
+}
+
+	option = {
+		name = "Force them out."
+		remove_province_modifier = blacks_to_liberia
+		owner = {
+			treasury = -5000
+			prestige = -1
+			plurality = -0.2
+			badboy = 0.2
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			money = 5
+			move_pop = 1890
+		}
+		owner = {
+			any_pop = {
+				limit = { is_culture_group = african_diaspora_cultures }
+				consciousness = 0.5
+				militancy = 0.5
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				tag = CSA
+				}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 10000 }
+				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { badboy = 0.9 }
+				}
+			}
+		}
+	}
+}
+
+province_event = {
+	id = 99406
+	title = "EVTNAME99402"
+	desc = "EVTDESC99402"
+
+	trigger = {
+		has_province_modifier = blacks_to_liberia
+		LIB = {
+			exists = yes
+			war = no
+			owns = 1891
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 190
+		modifier = {
+			factor = 0.8
+			owner = { citizenship_policy = residency }
+		}
+		modifier = {
+			factor = 1.2
+			owner = { citizenship_policy = full_citizenship }
+		}
+	}
+
+	option = {
+		name = "Whoever wishes to go may leave."
+		remove_province_modifier = blacks_to_liberia
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			random = {
+				chance = 66
+				money = 5
+				move_pop = 1891
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {
+		name = "Give them incentives to stay."
+		remove_province_modifier = blacks_to_liberia
+		owner = { treasury = -500 }
+		any_pop = {
+			limit = { is_culture_group = african_diaspora_cultures }
+			money = 50
+			consciousness = -3
+		}
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				OR = {
+				tag = CSA
+				owner = {
+					NOT = { money = 1000 }
+				}
+			}
+		}
+	}
+}
+
+	option = {
+		name = "Force them out."
+		remove_province_modifier = blacks_to_liberia
+		owner = {
+			treasury = -5000
+			prestige = -1
+			plurality = -0.2
+			badboy = 0.2
+		}
+		any_pop = {
+			limit = {
+				is_culture_group = african_diaspora_cultures
+			}
+			money = 5
+			move_pop = 1891
+		}
+		owner = {
+			any_pop = {
+				limit = { is_culture_group = african_diaspora_cultures }
+				consciousness = 0.5
+				militancy = 0.5
+			}
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				tag = CSA
+				}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { money = 10000 }
+				}
+			}
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { badboy = 0.9 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 188244
+	title = "EVTNAME188244"
+	desc = "EVTDESC188244"
+	picture = "statue_of_liberty"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We weep for our loss."
+		prestige = -40
+		war_exhaustion = 10
+		remove_country_modifier = the_statue_of_liberty
+		232 = {
+			remove_province_modifier = gateway_to_america
+		}
+		232 = {
+			add_province_modifier = {
+				name = city_degraded
+				duration = 1825
+			}
+		}
+	}
+}

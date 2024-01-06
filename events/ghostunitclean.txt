@@ -1,0 +1,65 @@
+country_event = {
+    id = 6016819
+    title = "GhostEvent2"
+    desc = "GhostEvent2"
+
+    is_triggered_only = yes
+
+    immediate = {
+        2128 = { secede_province = THIS }
+    }
+
+    option = {
+        name = "EVT6016819OPTA"
+		    any_country = {
+            limit = { war_with = THIS }
+            end_war = THIS
+        }
+		money = 1000
+		country_event = { id = 6016820 days = 10 }
+        add_country_modifier = { name = neutrality_modifier duration = 10 }
+
+    }
+}
+country_event = {
+    id = 6016820
+    title = "GhostEvent3"
+    desc = "GhostEvent3"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "EVT6016819OPTA"
+		clr_global_flag = clean_ghosts
+		remove_country_modifier = neutrality_modifier
+		2128 = { secede_province = D49 }
+            random_country = {
+                limit = {
+                    owns = 1325
+                }
+                inherit = D49
+            }
+    }
+}
+#Ghost Units Cleanup 1/2
+country_event = {
+    id = 6016821
+    title = "GhostEvent1"
+    desc = "GhostEvent1"
+
+    is_triggered_only = yes
+
+
+    option = {
+        name = "EVT6016819OPTA"
+		any_country = {
+            limit = {
+                exists = no
+                is_greater_power = no
+                capital_scope = { NOT = { province_control_days = 120 } }
+                is_mobilised = yes
+            }
+            country_event = 6016819
+        }
+    }
+}

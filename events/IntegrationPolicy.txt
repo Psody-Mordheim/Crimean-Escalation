@@ -1,0 +1,4766 @@
+country_event = {
+
+	id = 1322123
+	title = "The Integration Policy"
+	desc = "EVTDESC1322123"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "I don't like to discriminate"
+			badboy = 9
+			plurality = -25
+			add_country_modifier = {
+				name = kebabbies
+				duration = 3650
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+				NOT = {
+						OR = {
+							pop_type = slaves
+							pop_type = slaves_factory
+						}
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				}
+				reduce_pop = 0
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = -8
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -6
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 4
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 6
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 2
+				}
+			}
+			clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+	option = {
+		name = "It shall only be done to colonials"
+			badboy = 5
+			plurality = -10
+			add_country_modifier = {
+				name = colonial_kebabbies
+				duration = 3650
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+				NOT = {
+						OR = {
+							pop_type = slaves
+							pop_type = slaves_factory
+						}
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes}
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes}
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				}
+				reduce_pop = 0
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = -4
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -1
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 1
+				}
+			}
+			clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+	option = {
+		name = "Our homeland must be the focus. Why should i care about who is living in the colonies?"
+			badboy = 9
+			plurality = -25
+			add_country_modifier = {
+				name = kebabbies
+				duration = 3650
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+				NOT = {
+						OR = {
+							pop_type = slaves
+							pop_type = slaves_factory
+						}
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				}
+				reduce_pop = 0
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = -8
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -6
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 4
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 6
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 2
+				}
+			}
+						clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+	option = {
+		name = "On second thought, i quite like fighting Jacobins"
+					clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+}
+country_event = {
+
+	id = 1322124
+	title = "The JQ"
+	desc = "EVTDESC1322124"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Select European Cultures"
+		country_event = 1322238
+	}
+	option = {
+		name = "Select Asian Cultures"
+		country_event = 1322126
+	}
+	option = {
+		name = "Select Middle-Eastern Cultures"
+		country_event = 1322128
+	}
+	option = {
+		name = "All Africans are at fault"
+		set_country_flag = h8_africans
+		country_event = 1322228
+	}
+	option = {
+		name = "Let us not discriminate. They are all at fault"
+		country_event = 1322123
+	}
+}
+country_event = {
+
+	id = 1322131
+	title = "The Integration Policy"
+	desc = "EVTDESC1322123"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "I don't like to discriminate"
+			badboy = 9
+			plurality = -25
+			add_country_modifier = {
+				name = kebabbies
+				duration = 3650
+			}
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				}
+                location = {
+                    owner = { has_country_flag = h8_anglos }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_anglos }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+                location = {
+                    owner = { has_country_flag = h8_anglos }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+                location = {
+                    owner = { has_country_flag = h8_meds }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+				owner = { has_country_flag = h8_meds }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+                location = {
+                    owner = { has_country_flag = h8_meds }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				reduce_pop = 0
+			}	
+									any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+                location = {
+                    owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+                location = {
+                    owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				reduce_pop = 0
+			}	
+any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = pan_romanian
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = pan_romanian
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = pan_romanian
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = hungarian_culture_group
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = hungarian_culture_group
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = hungarian_culture_group
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				has_pop_culture = greek
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				has_pop_culture = greek
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				has_pop_culture = greek
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = jewish_cultures
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = jewish_cultures
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = jewish_cultures
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+                location = {
+                    owner = { has_country_flag = h8_kurds }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                     owner = { has_country_flag = h8_kurds }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+                location = {
+                    owner = { has_country_flag = h8_kurds }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				reduce_pop = 0
+			}				
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+                location = {
+                    owner = { has_country_flag = h8_sea }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_sea }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+                location = {
+                    owner = { has_country_flag = h8_sea }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				reduce_pop = 0
+			}				
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = -8
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -6
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 4
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 6
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 2
+				}
+			}
+			clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+	option = {
+		name = "It shall only be done to colonials"
+			badboy = 5
+			plurality = -10
+			add_country_modifier = {
+				name = colonial_kebabbies
+				duration = 3650
+			}
+			any_pop = {
+            limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+                location = {
+                    owner = { has_country_flag = h8_anglos }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+                location = {
+                    owner = { has_country_flag = h8_anglos }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+                location = {
+                    owner = { has_country_flag = h8_meds }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+                location = {
+                    owner = { has_country_flag = h8_meds }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				reduce_pop = 0
+			}	
+									any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+                location = {
+                    owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+                location = {
+                    owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				reduce_pop = 0
+			}	
+any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = pan_romanian
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = pan_romanian
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = hungarian_culture_group
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = hungarian_culture_group
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				has_pop_culture = greek
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				has_pop_culture = greek
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = jewish_cultures
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = jewish_cultures
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+                location = {
+                    owner = { has_country_flag = h8_kurds }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+                location = {
+                    owner = { has_country_flag = h8_kurds }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				reduce_pop = 0
+			}				
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+                location = {
+                    owner = { has_country_flag = h8_sea }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+                location = {
+                    owner = { has_country_flag = h8_sea }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				reduce_pop = 0
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_sea }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                     owner = { has_country_flag = h8_kurds }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = jewish_cultures
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				has_pop_culture = greek
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = hungarian_culture_group
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = pan_romanian
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+				owner = { has_country_flag = h8_meds }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_anglos }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = yes }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = -4
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -1
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 3
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 1
+				}
+			}
+			clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+	option = {
+		name = "Our homeland must be the focus. Why should i care about who is living in the colonies?"
+			badboy = 9
+			plurality = -25
+			add_country_modifier = {
+				name = kebabbies
+				duration = 3650
+			}
+			any_pop = {
+            limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+                location = {
+                    owner = { has_country_flag = h8_anglos }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+                location = {
+                    owner = { has_country_flag = h8_anglos }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+                location = {
+                    owner = { has_country_flag = h8_meds }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+                location = {
+                    owner = { has_country_flag = h8_meds }
+					}
+				}
+				reduce_pop = 0
+			}	
+						any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				reduce_pop = 0
+			}	
+									any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+                location = {
+                    owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+                location = {
+                    owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				reduce_pop = 0
+			}	
+any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = pan_romanian
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = pan_romanian
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = hungarian_culture_group
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = hungarian_culture_group
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				has_pop_culture = greek
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				has_pop_culture = greek
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				is_culture_group = jewish_cultures
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				is_culture_group = jewish_cultures
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+                location = {
+                    owner = { has_country_flag = h8_kurds }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+                location = {
+                    owner = { has_country_flag = h8_kurds }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				reduce_pop = 0
+			}				
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+                location = {
+                    owner = { has_country_flag = h8_sea }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+                location = {
+                    owner = { has_country_flag = h8_sea }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				reduce_pop = 0
+			}	
+			any_pop = {
+            limit = {
+			location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				NOT = {
+					OR = {
+						pop_type = slaves
+						pop_type = slaves_factory
+					}
+				}
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				reduce_pop = 0.65
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+				location = { is_colonial = no }
+					is_primary_culture = no
+					is_accepted_culture = no
+					OR = {
+					pop_type = soldiers
+					pop_type = officers
+					pop_type = capitalists
+					pop_type = aristocrats
+					pop_type = bureaucrats
+					pop_type = clergymen
+					}
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				reduce_pop = 0
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = japanese
+				has_pop_culture = ainu
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_nipps }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = east_asian
+				has_pop_culture = korean
+				has_pop_culture = tibetan
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_eastasians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = southeast_asian
+				is_culture_group = oceanic
+				is_culture_group = native_american
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_sea }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = south_asian
+				has_pop_culture = pashtun
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_indians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = arab
+				has_pop_culture = persian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_arabs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = turkish
+				has_pop_culture = azerbaijani
+				has_pop_culture = uzbek
+				has_pop_culture = tatar
+				has_pop_culture = mongol
+				has_pop_culture = siberian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_turks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = kurdish
+				has_pop_culture = north_caucasian
+				has_pop_culture = armenian
+				has_pop_culture = assyrian
+				has_pop_culture = georgian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                     owner = { has_country_flag = h8_kurds }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = jewish_cultures
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_jews }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				has_pop_culture = greek
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_greeks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = hungarian_culture_group
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_magyars }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				is_culture_group = pan_romanian
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_romanians }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = pan_albanian
+				has_pop_culture = bosniak
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_bosniaks }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = polish_culture_group
+                is_culture_group = czecho_slovak_culture_group
+				has_pop_culture = russian
+				has_pop_culture = byelorussian
+				has_pop_culture = ukrainian
+				has_pop_culture = croat
+				has_pop_culture = serb
+				has_pop_culture = bulgarian
+				has_pop_culture = slovene
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_slavs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = italian
+                is_culture_group = iberian
+				is_culture_group = south_american_cultures
+				is_culture_group = central_american_cultures
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+				owner = { has_country_flag = h8_meds }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				has_pop_culture = british
+				has_pop_culture = yankee
+				has_pop_culture = dixie
+				has_pop_culture = british
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                   owner = { has_country_flag = h8_anglos }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = scandinavian
+                is_culture_group = baltic
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_nordics }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = french
+                has_pop_culture = irish
+				has_pop_culture = french
+				has_pop_culture = wallonian
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_frogs }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+									any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = germanic
+				has_pop_culture = dutch
+				has_pop_culture = flemish
+				has_pop_culture = boer
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_germans }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}
+						any_pop = {
+				limit = {
+				location = { is_colonial = no }
+				is_primary_culture = no
+				is_accepted_culture = no
+				OR = {
+				is_culture_group = central_african
+                is_culture_group = african_diaspora_cultures
+				is_culture_group = central_african
+				is_culture_group = central_african
+				is_culture_group = central_african
+				}
+				OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+				}
+                location = {
+                    owner = { has_country_flag = h8_africans }
+					}
+				}
+				pop_type = artisans
+				militancy = 9
+				consciousness = 9
+			}			
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+				scaled_militancy = {
+					ideology = fascist
+					factor = -8
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -6
+				}
+				scaled_militancy = {
+					ideology = socialist
+					factor = 4
+				}
+				scaled_militancy = {
+					ideology = communist
+					factor = 1
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = -2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = 6
+				}
+				scaled_militancy = {
+					ideology = anarcho_liberal
+					factor = 2
+				}
+			}
+			clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+		}
+	option = {
+		name = "On second thought, i quite like fighting Jacobins"
+					clr_country_flag = h8_africans
+			clr_country_flag = h8_germans
+			clr_country_flag = h8_frogs
+			clr_country_flag = h8_nordics
+			clr_country_flag = h8_meds
+			clr_country_flag = h8_slavs
+			clr_country_flag = h8_anglos
+			clr_country_flag = h8_bosniaks
+			clr_country_flag = h8_romanians
+			clr_country_flag = h8_magyars
+			clr_country_flag = h8_greeks
+			clr_country_flag = h8_jews
+			clr_country_flag = h8_kurds
+			clr_country_flag = h8_turks
+			clr_country_flag = h8_arabs
+			clr_country_flag = h8_indians
+			clr_country_flag = h8_sea
+			clr_country_flag = h8_eastasians
+			clr_country_flag = h8_nipps
+			clr_country_flag = integration_policy_flag
+	}
+}
+country_event = {
+
+	id = 1322228
+	title = "The JQ"
+	desc = "EVTDESC1322128"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "On second thought, just do it to all of them"
+		country_event = 1322123
+	}
+	option = {
+		name = "Select European Cultures"
+		country_event = 1322238
+	}
+	option = {
+		name = "Select Asian Cultures"
+		country_event = 1322126
+	}
+	option = {
+		name = "Select Middle-Eastern Cultures"
+		country_event = 1322128
+	}
+	option = {
+		name = "All Africans are at fault"
+		set_country_flag = h8_africans
+		country_event = { id = 1322228 days = 1 }
+	}
+	option = {
+		name = "I have made my choices"
+		country_event = 1322131
+	}
+}
+country_event = {
+
+	id = 1322238
+	title = "The JQ"
+	desc = "EVTDESC1322125"
+	picture = "Integration"
+
+	is_triggered_only = yes
+	option = {
+		name = "All Northern Europeans are at fault. Get them all."
+		set_country_flag = h8_germans
+		set_country_flag = h8_frogs
+		set_country_flag = h8_nordics
+		set_country_flag = h8_slavs
+		set_country_flag = h8_anglos
+		set_country_flag = h8_celts
+		country_event = { id = 1322238 days = 1 } 
+	}
+	option = {
+		name = "All those from the South are at fault. Get them all"
+		set_country_flag = h8_meds
+		set_country_flag = h8_bosniaks
+		set_country_flag = h8_romanians
+		set_country_flag = h8_magyars
+		set_country_flag = h8_greeks
+		country_event = { id = 1322238 days = 1 } 
+	}
+	option = {
+		name = "Select Northern European Cultures"
+		country_event = 1322125
+	}
+	option = {
+		name = "Select Southern European Cultures"
+		country_event = 1322127
+	}
+	option = {
+		name = "Return to the Previous Menu"
+		country_event = 1322138
+	}
+}
+country_event = {
+
+	id = 1322125
+	title = "The JQ"
+	desc = "EVTDESC1322125"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = "The Krauts and Dutch are at fault"
+		set_country_flag = h8_germans
+		country_event = { id = 1322125 days = 1 } 
+	}
+	option = {
+		name = "The Frogs and Celts are at fault"
+		set_country_flag = h8_frogs
+		country_event = { id = 1322125 days = 1 } 
+	}
+	option = {
+		name = "The Nordics and Balts are at fault"
+		set_country_flag = h8_nordics
+		country_event = { id = 1322125 days = 1 } 
+	}
+	option = {
+		name = "The Eternal Anglo and the Yankees are at fault"
+		set_country_flag = h8_anglos
+		country_event = { id = 1322125 days = 1 } 
+	}
+	option = {
+		name = "The Slavs are at fault"
+		set_country_flag = h8_slavs
+		country_event = { id = 1322125 days = 1 } 
+	}
+	option = {
+		name = "Return to the previous menu"
+		country_event = 1322228
+	}
+}
+country_event = {
+
+	id = 1322127
+	title = "The JQ"
+	desc = "EVTDESC1322125"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "They're all at fault. Get them all."
+		set_country_flag = h8_meds
+		set_country_flag = h8_bosniaks
+		set_country_flag = h8_romanians
+		set_country_flag = h8_magyars
+		set_country_flag = h8_greeks
+		country_event = 1322228
+	}
+	option = {
+		name = "The lazy Meds and the Sudacas are at fault"
+		set_country_flag = h8_meds
+		country_event = { id = 1322127 days = 1 }
+	}
+	option = {
+		name = "Bosniak roaches and Albanians are at fault"
+		set_country_flag = h8_bosniaks
+		country_event = { id = 1322127 days = 1 }
+	}
+	option = {
+		name = "The Gypsies are at fault"
+		set_country_flag = h8_romanians
+		country_event = { id = 1322127 days = 1 }
+	}
+	option = {
+		name = "The Magyars are at fault"
+		set_country_flag = h8_magyars
+		country_event = { id = 1322127 days = 1 }
+	}
+	option = {
+		name = "The Greeks are at fault"
+		set_country_flag = h8_greeks
+		country_event = { id = 1322127 days = 1 }
+	}
+	option = {
+		name = "Return to the previous menu"
+		country_event = 1322228
+	}
+}
+country_event = {
+
+	id = 1322126 
+	title = "The JQ"
+	desc = "EVTDESC1322125"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "They're all at fault. Get them all."
+		set_country_flag = h8_indians
+		set_country_flag = h8_sea
+		set_country_flag = h8_eastasians
+		set_country_flag = h8_nipps
+		country_event = 1322228
+	}
+	option = {
+		name = "Those smelly Indians are at fault"
+		set_country_flag = h8_indians
+		country_event = { id = 1322126 days = 1 } 
+	}
+	option = {
+		name = "Those Jungle Asians and Native Americans are at fault"
+		set_country_flag = h8_sea
+		country_event = { id = 1322126 days = 1 } 
+	}
+	option = {
+		name = "Those Bugmen are at fault"
+		set_country_flag = h8_eastasians
+		country_event = { id = 1322126 days = 1 } 
+	}
+	option = {
+		name = "The Japanese are at fault"
+		set_country_flag = h8_nipps
+		country_event = { id = 1322126 days = 1 } 
+	}
+	option = {
+		name = "Return to the previous menu"
+		country_event = 1322228
+	}
+}
+
+country_event = {
+
+	id = 1322128
+	title = "The JQ"
+	desc = "EVTDESC1322125"
+	picture = "Integration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "They're all at fault. Get them all."
+		set_country_flag = h8_jews
+		set_country_flag = h8_kurds
+		set_country_flag = h8_turks
+		set_country_flag = h8_arabs
+		country_event = 1322228
+	}
+	option = {
+		name = "The filthy Jews are at fault"
+		set_country_flag = h8_jews
+		country_event = { id = 1322128 days = 1 } 
+	}
+	option = {
+		name = "Kurds and Caucasians are at fault"
+		set_country_flag = h8_kurds
+		country_event = { id = 1322128 days = 1 } 
+	}
+	option = {
+		name = "The noble Turks are at fault"
+		set_country_flag = h8_turks
+		country_event = { id = 1322128 days = 1 } 
+	}
+	option = {
+		name = "Arabs and Farsi are at fault"
+		set_country_flag = h8_arabs
+		country_event = { id = 1322128 days = 1 } 
+	}
+	option = {
+		name = "Return to the previous menu"
+		country_event = 1322228
+	}
+}

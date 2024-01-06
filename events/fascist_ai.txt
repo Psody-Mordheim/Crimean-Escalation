@@ -1,0 +1,66 @@
+country_event = {
+	id = 881469
+	title = "EVTNAME881469"
+	desc = "EVTDESC881469"
+	picture = "disease"
+	
+	trigger = {
+		NOT = {
+		has_country_flag = fascist_ai
+		}
+		ai = yes
+		government = fascist_dictatorship
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA881469"
+		set_country_flag = fascist_ai
+	}
+}
+country_event = {
+	id = 8814692
+	title = "EVTNAME8814692"
+	desc = "EVTDESC8814692"
+	picture = "disease"
+	
+	trigger = {
+		has_country_flag = fascist_ai
+		ai = yes
+		NOT = {
+		government = fascist_dictatorship
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA8814692"
+		clr_country_flag = fascist_ai
+	}
+}
+country_event = {
+	id = 8814693
+	title = "EVTNAME8814693"
+	desc = "EVTDESC8814693"
+	picture = "disease"
+	
+	trigger = {
+		has_country_flag = fascist_ai
+		ai = no
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "EVTOPTA8814693"
+		clr_country_flag = fascist_ai
+	}
+}

@@ -1,0 +1,240 @@
+
+
+GON = {
+	value = 75
+}
+
+TIG = {
+	value = 75
+}
+
+SHW = {
+	value = 65
+}
+FRA = {
+	value = 50
+}
+
+leader = {
+	name = "Ibrahim Pasha"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_4.4-0
+	prestige = 0.2
+}
+
+leader = {
+	name = "Suleyman Pasha"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.4-0
+	prestige = 0.1
+}
+
+navy = {
+	name = "Taba"
+	location = 1751
+	ship = {
+		name= "Toushka"
+		type = manowar
+	}
+
+	ship = {
+		name= "Sharm El-Sheikh"
+		type = manowar
+	}
+
+	ship = {
+		name= "Damyat"
+		type = manowar
+	}
+
+	ship = {
+		name= "Rasheed"
+		type = manowar
+	}
+
+	ship = {
+		name= "El Suez"
+		type = manowar
+	}
+
+	ship = {
+		name= "El Aboukir"
+		type = frigate
+	}
+
+	ship = {
+		name= "Najim al Zafir"
+		type = frigate
+	}
+
+	ship = {
+		name= "Cairo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Al Iskandariyah"
+		type = frigate
+	}
+
+	ship = {
+		name= "Aswan"
+		type = frigate
+	}
+
+	ship = {
+		name= "Port Said"
+		type = frigate
+	}
+
+	ship = {
+		name= "Marsa Matruh"
+		type = frigate
+	}
+
+	ship = {
+		name= "Bur Tawfiq"
+		type = frigate
+	}
+
+	ship = {
+		name= "Al Ghardaqah"
+		type = frigate
+	}
+
+	ship = {
+		name= "Bur Safajah"
+		type = frigate
+	}
+
+	ship = {
+		name= "1st transport flotilla"
+		type = clipper_transport
+	}
+
+}
+
+army = {
+	name = "Army of Egypt"
+	location = 1745
+	regiment = {
+		name= "1.1 Sipahis"
+		type = hussar
+		home = 1745
+	}
+
+	regiment = {
+		name= "2.1 Sipahis"
+		type = hussar
+		home = 1745
+	}
+
+	regiment = {
+		name= "3.1 Sipahis"
+		type = infantry
+		home = 1745
+	}
+
+	regiment = {
+		name= "1.1 Infantry"
+		type = infantry
+		home = 1745
+	}
+
+	regiment = {
+		name= "Egyptian Bombards"
+		type = artillery
+		home = 1745
+	}
+
+	regiment = {
+		name= "Egyptian Bombards"
+		type = artillery
+		home = 1753
+	}
+
+	regiment = {
+		name= "Egyptian Bombards"
+		type = artillery
+		home = 1751
+	}
+
+	regiment = {
+		name= "Egyptian Bombards"
+		type = artillery
+		home = 1751
+	}
+	regiment = {
+		name= "Egyptian Bombards"
+		type = artillery
+		home = 1751
+	}
+}
+
+army = {
+	name = "Army of Syria"
+	location = 902
+
+	regiment = {
+		name= "3.1 Sipahi"
+		type = hussar
+		home = 1745
+	}
+
+	regiment = {
+		name= "3.2 Sipahi"
+		type = hussar
+		home = 1745
+	}
+
+	regiment = {
+		name= "3.1th Infantry"
+		type = infantry
+		home = 1751
+	}
+	regiment = {
+		name= "3.2th Infantry"
+		type = infantry
+		home = 1751
+	}
+}
+
+army = {
+	name = "Army of the Upper Nile"
+	location = 1827
+	regiment = {
+		name= "1.2 Sipahis"
+		type = hussar
+		home = 1745
+	}
+
+	regiment = {
+		name= "2.2 Sipahis"
+		type = hussar
+		home = 1751
+	}
+
+	regiment = {
+		name= "4.5 Infantry"
+		type = infantry
+		home = 1762
+	}
+
+	regiment = {
+		name= "1.5 Infantry"
+		type = infantry
+		home = 1827
+	}
+
+	regiment = {
+		name= "2.5 Infantry"
+		type = infantry
+		home = 1827
+	}
+
+}
+

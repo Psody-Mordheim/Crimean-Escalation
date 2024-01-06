@@ -1,0 +1,55 @@
+leader = {
+	name = "Bento Gonçalves"
+	type = land
+	date = 1836.1.1
+	personality = old_school
+	background = defence_3.4-0
+}
+
+leader = {
+	name = "Antônio de Sousa Neto"
+	type = land
+	date = 1836.1.1
+	personality = old_school
+	background = defence_3.3-0
+}
+
+leader = {
+	name = "Giuseppe Garibaldi"
+	type = land
+	date = 1836.1.1
+	personality = natural_born_leader
+	background = defence_4.4-0
+	picture = european_general_46
+}
+
+army = {
+	name = "Exército Gaucho"
+	location = 2463
+
+	regiment = {
+			name= "1. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "2. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "3. Divisão Gaucha"
+			type = irregular
+			home = 2463
+	}
+	regiment = {
+			name= "4. Divisão Gaucha"
+			type = irregular
+			home = 2466
+	}
+	regiment = {
+			name= "5. Divisão Gaucha"
+			type = cavalry
+			home = 2467
+	}
+}

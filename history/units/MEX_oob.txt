@@ -1,0 +1,118 @@
+USA = {
+	value = 100
+}
+SPA = {
+	value = 75
+}
+
+leader = {
+	name = "Antonio Santa Ana"
+	type = land
+	date="1836.1.1"
+	personality = politician
+	background = defence_4.3-0
+	prestige = 0.3
+}
+
+leader = {
+	name = "Martin de Cos"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.3-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Nicolas Bravo"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.3-0
+}
+
+leader = {
+	name = "Mariano Arista"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.3-0
+}
+
+leader = {
+	name = "Juan Álvarez"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.3-0
+}
+
+leader = {
+	name = "José de Herrera"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.3-0
+}
+
+army = {
+	name = "Activo Oajaca"
+	location = 2177
+	regiment = {
+		name= "1.Oajaca y Tlaxcala"
+		type = infantry
+		home = 2172
+	}
+
+	regiment = {
+		name= "2.Oajaca y Tlaxcala"
+		type = infantry
+		home = 2172
+	}
+
+	regiment = {
+		name= "3.Oajaca y Tlaxcala"
+		type = infantry
+		home = 2172
+	}
+
+}
+
+army = {
+	name = "Ejército del Ciudad Mejico"
+	location = 2172
+	regiment = {
+		name= "1.Division Comonfort"
+		type = infantry
+		home = 2172
+	}
+
+	regiment = {
+		name= "2.Division Comonfort"
+		type = infantry
+		home = 2172
+	}
+
+	regiment = {
+		name= "3.Division Comonfort"
+		type = infantry
+		home = 2172
+	}
+
+}
+
+navy = {
+	name = "Armada de Mexico"
+	location = 2162
+	ship = {
+		name= "Vencedor del Alamo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Matilda"
+		type = clipper_transport
+	}
+
+}
+

@@ -1,0 +1,1232 @@
+political_decisions = {
+		lorraine_rename = {
+			picture = unite_romania_without
+			potential = {
+				OR = {
+					AND = {
+						is_culture_group = germanic
+						owns = 411 NOT = { has_global_flag = german_renamed_lorraine }
+					}
+					AND = {
+						is_culture_group = french
+						owns = 411 
+						has_global_flag = german_renamed_lorraine
+					}
+				}
+			}
+
+			allow = {
+				war = no
+			}
+
+			effect = {
+				random_owned = {
+					limit = {
+						province_id = 411
+						owner = { is_culture_group = germanic }
+					}
+					411 = {
+						change_province_name = "Nanzig"
+						add_province_modifier = { name = new_lands duration = 7300 }
+						state_scope = { change_region_name = "Lothringen" }
+					}
+					414 = { change_province_name = "Spinneln" add_province_modifier = { name = new_lands duration = 7300 } }
+					413 = { change_province_name = "Wirten" add_province_modifier = { name = new_lands duration = 7300 } }
+					owner = {
+						set_global_flag = german_renamed_lorraine
+					}
+				}
+				random_owned = {
+					limit = {
+						province_id = 411
+						owner = { is_culture_group = french }
+					}
+					411 = {
+						change_province_name = "Nancy"
+						state_scope = { change_region_name = "Franche-Comté" }
+					}
+					414 = { change_province_name = "Épinal" }
+					413 = { change_province_name = "Verdun" }
+					owner = {
+						clr_global_flag = german_renamed_lorraine
+					}
+				}
+			}
+
+			ai_will_do = { factor = 1 }
+		}
+
+	mazovia_rename_german = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 706
+			NOT = { has_global_flag = mazovia_rename_german }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			set_global_flag = mazovia_rename_german
+			362 = { change_province_name = "Mariampol" add_province_modifier = { name = drang_nach_osten duration = -1 } add_province_modifier = { name = new_lands duration = 3650 } }
+			706 = {
+				change_province_name = "Warschau"
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Südpreußen" }
+			}
+			707 = { change_province_name = "Sudauen" add_province_modifier = { name = new_lands duration = 7300 } }
+			708 = { change_province_name = "Schröttersburg" add_province_modifier = { name = new_lands duration = 7300 } }
+			709 = { change_province_name = "Lumbsee" add_province_modifier = { name = new_lands duration = 7300 } }
+			710 = { change_province_name = "Wartheland" add_province_modifier = { name = new_lands duration = 7300 } }
+			712 = { change_province_name = "Litzmannstadt" add_province_modifier = { name = new_lands duration = 7300 } }
+			717 = { change_province_name = "Kalisch" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	mazovia_rename_russian = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 706 #Warsaw
+			has_global_flag = mazovia_rename_german
+			}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			clr_global_flag = mazovia_rename_german
+			362 = { change_province_name = "Marijampole" }
+			710 = { change_province_name = "Skierniewice" }
+			706 = {
+				change_province_name = "Warsaw"
+				state_scope = { change_region_name = "Masovia" }
+			}
+			707 = { change_province_name = "Suwalki" }
+			708 = { change_province_name = "Plock" }
+			709 = { change_province_name = "Lomza" }
+			712 = { change_province_name = "Lodz" }
+			717 = { change_province_name = "Kalisz" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	west_galicia_rename_german = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 713
+			NOT = { has_global_flag = west_galicia_rename_german }
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			set_global_flag = west_galicia_rename_german
+			713 = {
+				change_province_name = "Radenau"
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Kleinpolen" }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	west_galicia_rename_russian = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 713
+			has_global_flag = west_galicia_rename_german
+			is_vassal = no
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+			clr_global_flag = west_galicia_rename_german
+			713 = {
+				change_province_name = "Radom"
+				state_scope = { change_region_name = "West Galicia" }
+			}
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	france_rename_rhine = {
+		picture = unite_romania_without
+		potential = {
+			OR = {
+				primary_culture = french
+				primary_culture = wallonian
+			}
+			owns = 575
+			NOT = { has_global_flag = france_rename_rhine }
+		}
+		
+		allow = {
+			owns = 575
+			war = no
+		}
+		
+		effect = {
+				575 = {
+					change_province_name = "Cologne"
+					state_scope = { change_region_name = "Rhénanie"  }
+				}
+				576 = { change_province_name = "Aix-la-Chapelle" }
+				571 = { change_province_name = "Caseloutre"  }
+				572 = { change_province_name = "Trèves" }
+				577 = { change_province_name = "Clèves" }
+				574 = { change_province_name = "Cruciniacum" }
+				573 = { change_province_name = "Sarrebruck" }
+				570 = { change_province_name = "Mayence" }
+				set_global_flag = france_rename_rhine
+				any_owned = {
+				limit = {
+				region = PRU_575
+				}
+				add_province_modifier = { name = new_lands duration = 7300 }
+				}
+			}
+		ai_will_do = { factor = 1 }
+		}
+	
+	german_rename_rhine = {
+		picture = unite_romania_without
+		potential = {
+			is_culture_group = germanic
+			owns = 575
+			has_global_flag = france_rename_rhine
+		}
+		
+		allow = {
+			owns = 575
+			war = no
+		}
+		
+		effect = {
+				575 = { 
+					change_province_name = "Cologne"
+					state_scope = { change_region_name = "Rheinland" }
+				}
+				576 = { change_province_name = "Aachen" }
+				572 = { change_province_name = "Trier" }
+				577 = { change_province_name = "Cleves" }
+				574 = { change_province_name = "Kreuznach" }
+				573 = { change_province_name = "Saarbrücken" }
+				570 = { change_province_name = "Mainz" }
+				571 = { change_province_name = "Kaiserlautern" }
+				clr_global_flag = france_rename_rhine
+			}
+	
+		ai_will_do = { factor = 1 }
+	}
+	
+	###Special Thanks to  "Obstination" for helping me with the renaming!###
+	german_rename_jylland = {
+		picture = claim_schleswig
+		potential = {
+			is_culture_group = germanic
+			owns = 367
+			owns = 368
+			owns = 2557
+			owns = 366
+			NOT = { has_global_flag = german_rename_jylland }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_jylland
+			367 = { 
+				change_province_name = "Aalburg" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Jutland" }
+			}
+			2557 = { change_province_name = "Esberg" add_province_modifier = { name = new_lands duration = 7300 } }
+			366 = { change_province_name = "Arenhusen" add_province_modifier = { name = new_lands duration = 7300 } }
+			368 = { change_province_name = "Vamdrup" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	scandinavian_rename_jylland = {
+		picture = claim_schleswig
+		potential = {
+			is_culture_group = scandinavian
+			owns = 367
+			owns = 368
+			owns = 2557
+			owns = 366
+			has_global_flag = german_rename_jylland
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_jylland
+			367 = { 
+				change_province_name = "Aalborg" 
+				state_scope = { change_region_name = "Jylland" }
+			}
+			2557 = { change_province_name = "Esbjerg" }
+			366 = { change_province_name = "Aarhus" }
+			368 = { change_province_name = "Vamdrup" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_sjaelland = {
+		picture = claim_schleswig
+		potential = {
+			is_culture_group = germanic
+			owns = 373
+			owns = 372
+			owns = 374
+			NOT = { has_global_flag = german_rename_sjaelland }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_sjaelland
+			372 = { 
+				change_province_name = "Kopenhagen" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Nord Seeland" }
+			}
+			373 = { change_province_name = "Ottensee" add_province_modifier = { name = new_lands duration = 7300 } }
+			374 = { change_province_name = "Bornholm" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	scandinavian_rename_sjaelland = {
+		picture = claim_schleswig
+		potential = {
+			is_culture_group = scandinavian
+			owns = 373
+			owns = 372
+			owns = 374
+			has_global_flag = german_rename_sjaelland
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_sjaelland
+			372 = { 
+				change_province_name = "Copenhagen" 
+				state_scope = { change_region_name = "Sjaelland" }
+			}
+			373 = { change_province_name = "Odense" }
+			374 = { change_province_name = "Bornholm" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_holland = {
+		picture = become_belgium
+		potential = {
+			is_culture_group = germanic
+			owns = 385
+			owns = 382
+			NOT = { has_global_flag = german_rename_friesland }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_friesland
+			385 = { change_province_name = "Leuwarden" add_province_modifier = { name = new_lands duration = 7300 } }
+			382 = { change_province_name = "Arnheim" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+		
+	beneluxian_rename_zeeland = {
+		picture = become_belgium
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 378
+			has_global_flag = german_rename_zeeland 
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_zeeland
+			379 = { 
+				change_province_name = "Eindhoven" 
+				state_scope = { change_region_name = "Zeeland" }
+			}
+			378 = { change_province_name = "Middelburg" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	beneluxian_rename_holland = {
+		picture = become_belgium
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 385
+			owns = 382
+			has_global_flag = german_rename_friesland
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_friesland
+			385 = { change_province_name = "Leeuwarden" }
+			382 = { change_province_name = "Arnhem" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	german_rename_zeeland = {
+		picture = become_belgium
+		potential = {
+			is_culture_group = germanic
+			owns = 378
+			NOT = { has_global_flag = german_rename_zeeland }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_zeeland
+			379 = { 
+				change_province_name = "Eindhofen" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Nord Brabant" }
+			}
+			378 = { change_province_name = "Mittelburg" add_province_modifier = { name = new_lands duration = 7300 } }
+			381 = { add_province_modifier = { name = new_lands duration = 7300 } }
+			381 = { add_core = THIS }
+			
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	polish_minsk = {
+		picture = become_poland_lithuania
+		potential = {
+			is_culture_group = polish_culture_group
+			owns = 940
+			NOT = { has_global_flag = polish_minsk }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_minsk
+			set_global_flag = polish_minsk
+			clr_global_flag = german_rename_pinsk
+			set_global_flag = polish_pinsk
+			939 = { change_province_name = "Molodeczno" add_province_modifier = { name = new_lands duration = 7300 } }
+			941 = { change_province_name = "Sluck" add_province_modifier = { name = new_lands duration = 7300 } }
+			942 = { change_province_name = "Mozyrz" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	polish_kyiv = {
+		picture = become_poland_lithuania
+		potential = {
+			is_culture_group = polish_culture_group
+			owns = 958
+			NOT = { has_global_flag = polish_kyiv }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_kyiv
+			clr_global_flag = german_rename_kyiv
+			958 = { 
+				change_province_name = "Kijów" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Kijów" }
+			}
+			960 = { change_province_name = "Zytomierz" add_province_modifier = { name = new_lands duration = 7300 } }
+			959 = { change_province_name = "Korstów" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	polish_brêst = {
+		picture = become_poland_lithuania
+		potential = {
+			is_culture_group = polish_culture_group
+			owns = 936
+			owns = 937
+			NOT = { has_global_flag = polish_brêst }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_brêst
+			clr_global_flag = german_rename_brêst
+			937 = { change_province_name = "Brzesc Litewski" add_province_modifier = { name = new_lands duration = 7300 }
+			state_scope = { change_region_name = "Brzesc" }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	polish_orsha = {
+		picture = become_poland_lithuania
+		potential = {
+			is_culture_group = polish_culture_group
+			owns = 944
+			NOT = { has_global_flag = polish_orsha }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = polish_orsha
+			944 = { 
+				change_province_name = "Orsza" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Orsza" }
+			}
+			945 = { change_province_name = "Witebsk" add_province_modifier = { name = new_lands duration = 7300 } }
+			946 = { change_province_name = "Polock" add_province_modifier = { name = new_lands duration = 7300 } }
+			948 = { change_province_name = "Moglew" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	russian_orsha = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			is_culture_group = east_slavic
+			owns = 944
+			has_global_flag = polish_orsha
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_orsha
+			944 = { 
+				change_province_name = "Orsha" 
+				state_scope = { change_region_name = "Orsha" }
+			}
+			945 = { change_province_name = "Vitebsk" }
+			946 = { change_province_name = "Polotsk" }
+			948 = { change_province_name = "Mogilev" }
+			949 = { change_province_name = "Gomel" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	polish_volyn = {
+		picture = become_poland_lithuania
+		potential = {
+			is_culture_group = polish_culture_group
+			owns = 956
+			owns = 957
+			has_global_flag = german_rename_volyn
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_volyn
+			set_global_flag = polish_volyn
+			956 = { 
+				change_province_name = "Równe" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Wolyn" }
+			}
+			957 = { change_province_name = "Kowel" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_kyiv = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 958
+			NOT = { has_global_flag = german_rename_kyiv }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_kyiv
+			clr_global_flag = polish_kyiv
+			958 = { 
+				change_province_name = "Kiew" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Neperland" }
+			}
+			960 = { change_province_name = "Schytomyr" add_province_modifier = { name = new_lands duration = 7300 } }
+			961 = { change_province_name = "Chortiza" add_province_modifier = { name = new_lands duration = 7300 } }
+			954 = { change_province_name = "Winnyzja" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	degermanize_kyiv = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			is_culture_group = east_slavic
+			owns = 958
+			OR = {
+				has_global_flag = german_rename_kyiv 
+				has_global_flag = polish_kyiv
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_kyiv
+			clr_global_flag = polish_kyiv
+			958 = { 
+				change_province_name = "Kiev" 
+				state_scope = { change_region_name = "Kiev" }
+			}
+			960 = { change_province_name = "Zhitomir" }
+			961 = { change_province_name = "Cherkassy" }
+			954 = { change_province_name = "Vinnitsa" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_brest = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 936
+			owns = 937
+			NOT = { has_global_flag = german_rename_brêst }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_brêst
+			clr_global_flag = polish_brêst
+			936 = { 
+				change_province_name = "Garten" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Brest" }
+			}
+			719 = { change_province_name = "Pruschany" add_province_modifier = { name = new_lands duration = 7300 } }
+			937 = { change_province_name = "Brest-Litowsk" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	degermanize_brest = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			is_culture_group = east_slavic
+			owns = 936
+			owns = 937
+			OR = {
+				has_global_flag = german_rename_brêst
+				has_global_flag = polish_brêst
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_brêst
+			clr_global_flag = polish_brêst
+			936 = { 
+				change_province_name = "Grodno" 
+				state_scope = { change_region_name = "Brêst" }
+			}
+			719 = { change_province_name = "Bialystok" }
+			937 = { change_province_name = "Brest-Litovsk" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_pinsk = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 940
+			owns = 941
+			owns = 942
+			owns = 947
+			NOT = { has_global_flag = german_rename_pinsk }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_pinsk
+			clr_global_flag = polish_pinsk
+			940 = { 
+				change_province_name = "Pinsch" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Weißrußland" }
+			}
+			947 = { change_province_name = "Mengau" add_province_modifier = { name = new_lands duration = 7300 } }
+			941 = { change_province_name = "Sluzk" add_province_modifier = { name = new_lands duration = 7300 } }
+			942 = { change_province_name = "Mosyr" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	degermanize_pinsk = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			is_culture_group = east_slavic
+			owns = 940
+			owns = 947
+			OR = {
+				has_global_flag = german_rename_pinsk
+				has_global_flag = polish_pinsk
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_pinsk
+			clr_global_flag = polish_pinsk
+			940 = { 
+				change_province_name = "Pinsk" 
+				state_scope = { change_region_name = "Pinsk" }
+			}
+			941 = { change_province_name = "Slutsk" }
+			942 = { change_province_name = "Mozyr" }
+			947 = { change_province_name = "Pastavy" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_volyn = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 956
+			owns = 957
+			NOT = { has_global_flag = german_rename_volyn }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_volyn
+			clr_global_flag = polish_volyn
+			955 = { change_province_name = "Proskrauw" add_province_modifier = { name = new_lands duration = 7300 } }
+			956 = { 
+				change_province_name = "Riwne" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Wolhynien" }
+			}
+			957 = { change_province_name = "Koweil" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	degermanize_rename_volyn = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			is_culture_group = east_slavic
+			owns = 956
+			owns = 957
+			OR = {
+				has_global_flag = german_rename_volyn
+				has_global_flag = polish_volyn
+			}
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_volyn
+			clr_global_flag = polish_culture_group
+			955 = { change_province_name = "Proskorov" }
+			956 = { 
+				change_province_name = "Rovne" 
+				state_scope = { change_region_name = "Volyn" }
+			}
+			957 = { change_province_name = "Kovel" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_artoris = {
+		picture = become_belgium
+		potential = {
+			is_culture_group = germanic
+			owns = 400
+			owns = 399
+			owns = 401
+			NOT = { has_global_flag = german_rename_artoris }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_artoris
+			399 = { change_province_name = "Ryssel" add_province_modifier = { name = new_lands duration = 7300 } }
+			399 = { state_scope = { change_region_name = "Artesien" } }
+			400 = { change_province_name = "Dünkirchen" add_province_modifier = { name = new_lands duration = 7300 } }
+			401 = { change_province_name = "Atrecht" add_province_modifier = { name = new_lands duration = 7300 } }
+			404 = { change_province_name = "Kamerich" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	french_rename_artesia = {	
+		picture = become_belgium
+		potential = {
+			is_culture_group = french
+			owns = 400
+			owns = 399
+			owns = 401
+			has_global_flag = german_rename_artoris
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_artoris
+			399 = { change_province_name = "Lille" state_scope = { change_region_name = "Nord Pas-de-Calais" } }
+			400 = { change_province_name = "Dunkirk" }
+			401 = { change_province_name = "Arras" }
+			404 = { change_province_name = "Cambrai" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_vlaanderen = {
+		picture = become_belgium
+		potential = {
+			is_culture_group = germanic
+			owns = 390
+			owns = 387
+			owns = 388
+			NOT = { has_global_flag = german_rename_vlaanderen }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_vlaanderen
+			387 = { 
+				change_province_name = "Brüssel" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Flandern" }
+			}	
+			388 = { change_province_name = "Brügge" add_province_modifier = { name = new_lands duration = 7300 } }
+			390 = { change_province_name = "Antorf" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	beneluxian_rename_vlaanderen = {
+		picture = become_belgium
+		potential = {
+			OR = {
+			NOT = { is_culture_group = germanic }
+			is_culture_group = french
+			}
+			owns = 390
+			owns = 387
+			owns = 388
+			has_global_flag = german_rename_vlaanderen
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_vlaanderen
+			387 = { 
+				change_province_name = "Brussels" 
+				state_scope = { change_region_name = "Flanders" }
+			}
+			388 = { change_province_name = "Bruges" }
+			390 = { change_province_name = "Antwerp" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_wallonien = {
+		picture = become_belgium
+		potential = {
+			is_culture_group = germanic
+			owns = 393
+			owns = 394
+			owns = 392
+			NOT = { has_global_flag = german_rename_wallonien }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_wallonien
+			394 = { 
+				change_province_name = "Karolingen" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Wallonien" }
+			}
+			393 = { change_province_name = "Dornick" add_province_modifier = { name = new_lands duration = 7300 } }
+			392 = { change_province_name = "Namür" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	beneluxian_rename_wallonien = {
+		picture = become_belgium
+		potential = {
+			OR = {
+			NOT = { is_culture_group = germanic }
+			is_culture_group = french
+			}
+			owns = 393
+			owns = 394
+			owns = 392
+			has_global_flag = german_rename_wallonien
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_wallonien
+			394 = { 
+				change_province_name = "Charleroi" 
+				state_scope = { change_region_name = "Wallonia" }
+			}
+			393 = { change_province_name = "Tournai" }
+			392 = { change_province_name = "Namur" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	german_rename_bessarabien = {
+		picture = retake_crimea
+		potential = {
+			is_culture_group = germanic
+			owns = 678
+			owns = 677
+			owns = 676
+			NOT = { has_global_flag = german_rename_bessarabien }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_bessarabien
+			676 = { 
+				change_province_name = "Kischinau" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Bessarabien" }
+			}
+			677 = { change_province_name = "Bohlrad" add_province_modifier = { name = new_lands duration = 7300 } }
+			678 = { change_province_name = "Ismailburg" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	degermanize_bessarabien = {
+		picture = retake_crimea
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 678
+			owns = 677
+			owns = 676
+			has_global_flag = german_rename_bessarabien
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_bessarabien
+			676 = { 
+				change_province_name = "Chisinau" 
+				state_scope = { change_region_name = "Bessarabia" }
+			}
+			677 = { change_province_name = "Balti" }
+			678 = { change_province_name = "Izmail" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_yekaterinoslav = {
+		picture = retake_crimea
+		potential = {
+			is_culture_group = germanic
+			owns = 971
+			owns = 972
+			owns = 970
+			NOT = { has_global_flag = german_rename_yekaterinoslav }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_yekaterinoslav
+			972 = { 
+				change_province_name = "Alexanderstadt" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Westgotenland" }
+			}
+			968 = { change_province_name = "Wilhelmsburg" add_province_modifier = { name = new_lands duration = 7300 } }
+			969 = { change_province_name = "Balta" add_province_modifier = { name = new_lands duration = 7300 } }
+			970 = { change_province_name = "Nikolitz" add_province_modifier = { name = new_lands duration = 7300 } }
+			971 = { change_province_name = "Rog" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	degermanize_yekaterinoslav = {
+		picture = retake_crimea
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 971
+			owns = 972
+			owns = 970
+			has_global_flag = german_rename_yekaterinoslav
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_yekaterinoslav
+			968 = { change_province_name = "Odessa" }
+			969 = { change_province_name = "Pervomaisk" }
+			972 = {
+				change_province_name = "Yekaterinoslav" 
+				state_scope = { change_region_name = "Transnistria" }
+			}
+			970 = { change_province_name = "Nikolaev" }
+			971 = { change_province_name = "Krivoy Rog" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	swedish_rename_ingermanland = {
+		picture = greater_finland
+		potential = {
+			OR = {
+				is_culture_group = scandinavian
+				tag = FIN
+				tag = SCA
+				tag = SWE
+			}
+			owns = 994
+			NOT = { has_global_flag = swedish_rename_ingermanland }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = swedish_rename_ingermanland
+			994 = { 
+				change_province_name = "Newaborg" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Ingermanland" }
+			}
+			996 = { change_province_name = "Letby" add_province_modifier = { name = new_lands duration = 7300 } }
+			997 = { change_province_name = "Gattschina" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	russian_rename_ingermanland = {
+		picture = greater_finland
+		potential = {
+			tag = RUS
+			owns = 994
+			has_global_flag = swedish_rename_ingermanland
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = swedish_rename_ingermanland
+			994 = { 
+				change_province_name = "St. Petersburg" 
+				state_scope = { change_region_name = "Ingria" }
+			}
+			996 = { change_province_name = "Luga" }
+			997 = { change_province_name = "Gdov" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	german_rename_volga = {
+		picture = german_east_africa
+		potential = {
+			is_culture_group = germanic
+			owns = 1038
+			owns = 1037
+			NOT = { has_global_flag = german_rename_volga }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			1037 = { change_province_name = "Saratau" add_province_modifier = { name = drang_nach_osten duration = -1 } add_province_modifier = { name = new_lands duration = 7300 } }
+			1038 = { change_province_name = "Neu Ulzen" add_province_modifier = { name = drang_nach_osten duration = -1 } add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	russian_rename_volga = {
+		picture = treaty_of_guadalupe_hidalgo
+		potential = {
+			is_culture_group = germanic
+			owns = 1038
+			owns = 1037
+			has_global_flag = german_rename_volga
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_volga
+			1037 = { change_province_name = "Saratov" }
+			1038 = { change_province_name = "Novo Uzensk" }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	german_rename_crimea = {
+		picture = retake_crimea
+		potential = {
+			is_culture_group = germanic
+			owns = 967
+			owns = 964
+			owns = 966
+			NOT = { has_global_flag = german_rename_crimea }
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_global_flag = german_rename_crimea
+			967 = { 
+				change_province_name = "Theodorichshafen" 
+				add_province_modifier = { name = new_lands duration = 7300 }
+				state_scope = { change_region_name = "Ostgotenland" }
+			}
+			964 = { change_province_name = "Gotenburg" add_province_modifier = { name = new_lands duration = 7300 } }
+			966 = { change_province_name = "Kertsch" add_province_modifier = { name = new_lands duration = 7300 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	degermanize_crimea = {
+		picture = retake_crimea
+		potential = {
+			NOT = { is_culture_group = germanic }
+			owns = 967
+			owns = 964
+			owns = 966
+			has_global_flag = german_rename_crimea
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = german_rename_crimea
+			967 = { change_province_name = "Sevastopol" }
+			964 = { change_province_name = "Simferopol" }
+			966 = {
+				change_province_name = "Kerch" 
+				state_scope = { change_region_name = "Crimea" }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

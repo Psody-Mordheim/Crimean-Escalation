@@ -1,0 +1,332 @@
+rail_focus = {
+	encourage_rail = {
+		railroads = 0.8
+		icon = 2
+		limit = {
+			NOT = { owner = { economic_policy = planned_economy } }
+			owner = { ai = no }
+		}
+	}
+}
+
+immigration_focus = {
+	immigration = {
+		immigrant_attract = 10
+		icon = 3
+	}
+emigration_focus = {
+        immigrant_push = 2.5
+        icon = 4
+        limit = {
+            owner = { ai = no }
+			is_colonial = no
+            owner = { civilized = yes }
+			NOT = { owner = { border_policy = closed_borders } }
+        }
+    }
+}
+
+diplomatic_focus = {
+	increase_tension = {
+		icon = 4
+		has_flashpoint = yes
+		own_provinces = no
+
+		flashpoint_tension = 0.15
+		limit = {
+			owner = { has_global_flag = revolution_n_counter_researched }
+			THIS = { is_greater_power = no }
+			THIS = { civilized = yes }
+			is_core = THIS
+		}
+	}
+}
+
+promotion_focus = {
+	promote_aristocrats = {
+		aristocrats = 0.20
+		icon = 5
+		outliner_show_as_percent = yes
+		
+		limit = {
+			owner = { NOT = { government = proletarian_dictatorship } } 
+		}
+	}
+
+	promote_artisans = {
+		artisans = 0.20
+		icon = 6
+		outliner_show_as_percent = yes
+	}
+
+	promote_bureaucrats = {
+		bureaucrats = 0.20
+		icon = 7
+		outliner_show_as_percent = yes
+		limit = {
+			owner = { ai = no }
+		}
+	}
+	promote_capitalists = {
+		capitalists = 0.20
+		icon = 8
+		outliner_show_as_percent = yes
+		limit = {
+			NOT = { owner = { economic_policy = planned_economy } }
+			civilized = yes
+			NOT = { state_scope = { capitalists = 0.007 } }
+			is_colonial = no
+			OR = {
+			owner = { ai = no }
+			AND = {
+			OR = {
+			state_scope = { total_pops = 40000 }
+			NOT = { number_of_states = 3 }
+				}
+			}
+		}
+		}
+	}
+	
+	promote_clergymen = {
+		clergymen = 0.20
+		icon = 9
+		outliner_show_as_percent = yes
+		limit = {
+		OR = {
+			owner = { ai = no }
+			AND = {
+			NOT = {
+			state_scope = { clergymen = 0.036 }
+			state_scope = { is_colonial = yes }
+			}
+			OR = {
+			state_scope = { total_pops = 40000 }
+			NOT = { number_of_states = 3 }
+				}
+			}
+		}
+	}
+}
+
+	promote_clerks = {
+		clerks = 0.20
+		icon = 10
+		outliner_show_as_percent = yes
+		limit = {
+			NOT = { state_scope = { is_colonial = yes } }
+		}
+	}
+
+	promote_craftsmen = {
+		craftsmen = 0.20
+		icon = 11
+		outliner_show_as_percent = yes
+		limit = {
+			NOT = { state_scope = { is_colonial = yes } }
+			OR = {
+			owner = { ai = no }
+			AND = {
+			OR = {
+			state_scope = { total_pops = 40000 }
+			NOT = { number_of_states = 3 }
+				}
+			}
+		}
+		}
+	}
+
+	promote_farmers = {
+		farmers = 0.20
+		icon = 12
+		outliner_show_as_percent = yes
+	}
+	
+	promote_labourers = {
+		labourers = 0.20
+		icon = 13
+		outliner_show_as_percent = yes
+	}
+
+	promote_officers = {
+		officers = 0.20
+		icon = 14
+		outliner_show_as_percent = yes
+		limit = {
+			civilized = yes
+			NOT = { state_scope = { officers = 0.002 } }
+		}
+	}
+
+	promote_soldiers = {
+		soldiers = 0.10
+		icon = 15
+		outliner_show_as_percent = yes
+		limit = {
+			OR = {
+			owner = { ai = no }
+			NOT = { state_scope = { soldiers = 0.048 } }
+			}
+			OR = {
+			owner = { ai = no }
+			state_scope = { total_pops = 40000 }
+			NOT = { number_of_states = 3 }
+			}
+		}
+	}
+}
+
+production_focus = {
+	automation_focus = {
+		aeroplanes = 40
+		barrels = 40
+		automobiles = 40
+		icon = 16
+		limit = {
+			year = 1880
+			civilized = yes
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	electrical_focus = {
+		radio = 40
+		telephones = 40
+		electric_gear = 40
+		icon = 17
+		limit = {
+			year = 1880
+			civilized = yes
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	chemical_focus = {
+		fuel = 40
+		oil = 40
+		icon = 18
+		limit = {
+			year = 1880
+			civilized = yes
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	shipping_focus = {
+		steamer_convoy = 40
+		clipper_convoy = 40
+		icon = 19
+		limit = {
+			state_scope = { any_owned_province = { port = yes } }
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	textile_focus = {
+		luxury_clothes = 340
+		regular_clothes = 40
+		fabric = 40
+		dye = 40
+		icon = 20
+		limit = { 
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	wood_focus = {
+		paper = 40
+		luxury_furniture = 40
+		furniture = 40
+		lumber = 40
+		icon = 21
+		limit = { 
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	basic_industry_focus = {
+		steel = 40
+		machine_parts = 40
+		cement = 40
+		icon = 22
+		limit = {
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	armaments_focus = {
+		artillery = 40
+		small_arms = 40
+		ammunition = 40
+		canned_food = 40
+		explosives = 40
+		fertilizer = 30
+		icon = 23
+		limit = {
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+
+	consumer_focus = {
+		liquor = 30
+		wine = 30
+		glass = 30
+		icon = 24
+		limit = { 
+			NOT = { owner = { economic_policy = planned_economy } }
+			is_colonial = no
+		}
+	}
+}
+
+party_loyalty_focus = {
+	fascist_focus = {
+		ideology = fascist
+		loyalty_value = 0.003
+		icon = 25
+	}
+	
+	reactionary_focus = {
+		ideology = reactionary
+		loyalty_value = 0.003
+		icon = 26
+	}
+	
+	conservative_focus = {
+		ideology = conservative
+		loyalty_value = 0.003
+		icon = 27
+	}
+	
+	socialist_focus = {
+		ideology = socialist
+		loyalty_value = 0.003
+		icon = 28
+	}
+	
+	communist_focus = {
+		ideology = communist
+		loyalty_value = 0.003
+		icon = 29
+	}
+	
+	liberal_focus = {
+		ideology = liberal
+		loyalty_value = 0.003
+		icon = 30
+	}
+	
+	anarcho_liberal_focus = {
+		ideology = anarcho_liberal
+		loyalty_value = 0.003
+		icon = 31
+	}
+}

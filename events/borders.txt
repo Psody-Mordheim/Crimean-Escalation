@@ -1,0 +1,20 @@
+country_event = {
+    id = 1133228
+	title = "Opening the Borders"
+	desc = "Now that we have changed to a more progressive government, it's time to revert the policies of our predecessors."
+	picture = switch_to_liberty
+		trigger = {
+			border_policy = closed_borders
+			OR = {
+			government = democracy
+			government = hms_government
+			}
+		}
+		mean_time_to_happen = {
+		days = 30
+		}
+		option = {
+	    name = "Good Riddance."
+			political_reform = open_borders
+		}
+	}

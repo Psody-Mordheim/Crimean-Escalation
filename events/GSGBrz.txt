@@ -1,0 +1,75 @@
+#Brazil events by a brave Anon
+country_event = {
+	id = 6019999
+	title = "EVTNAME6019999"
+	desc = "EVTDESC6019999"
+	picture = "greatpowers"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA60130"
+		prestige = 5
+		inherit = FROM
+		URU_2344 = {
+			add_core = THIS
+			}	
+		THIS = {
+			remove_accepted_culture = platinean
+			primary_culture = platinean
+			add_accepted_culture = brazilian
+			}	
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB60130"
+		clr_country_flag = crown_from_the_gutter
+		any_pop = {
+			militancy = 0.1
+		}
+		FROM = {
+			set_country_flag = does_not_want_to_unify
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 3
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+
+	id = 203890
+	title = "New Arrivals"
+	desc = "An Italian has joined our forces and brings much support for the uprising."
+	picture = "Rebellion"
+
+	trigger = {
+		tag = RGS
+		year = 1836
+		war_with = BRZ
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "This will give us the chance we need to win."
+		small_arms = 25
+		canned_food = 25
+		ammunition = 20
+		money = 500
+	}
+}

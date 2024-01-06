@@ -1,0 +1,346 @@
+political_decisions = {
+	an_elephant_for_america = {
+		potential = {
+			tag = SIA
+			year = 1861
+			exists = USA
+			NOT = {
+				has_country_flag = sent_an_elephant_to_america
+			}
+		}
+		allow = {
+			relation = {
+				who = USA
+				value = -100
+			}
+		}
+		effect = {
+			USA = {
+				country_event = 13350
+			}
+			set_country_flag = sent_an_elephant_to_america
+		}
+	}
+
+	enact_muhammad_alis_reforms = {
+		potential = {
+			tag = EGY
+			civilized = no
+			NOT = { 
+				has_country_flag = muhammad_alis_reforms_enacted
+				has_global_flag = egypt_submitted_to_ottomans
+			}
+		}
+		allow = {
+			vassal_of = TUR
+		}
+		effect = {
+			set_country_flag = muhammad_alis_reforms_enacted
+			prestige = 10
+			small_arms = 50
+			artillery = 50
+			regular_clothes = 50
+			military_reform = yes_army_schools
+			economic_reform = yes_admin_reform
+			add_country_modifier = {
+				name = muhammad_alis_reforms
+				duration = 10950
+			}
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				consciousness = 4
+				ideology = {
+					value = reactionary
+					factor = 0.2
+				}
+			}
+		}
+	}
+	
+	establish_the_dar_al_funun = {
+		potential = {
+			tag = PER
+			NOT = { has_country_flag = dar_al_funun_built }
+		}
+		allow = {
+			OR = {
+			year = 1850
+			literacy = 0.12
+			}
+		}
+		effect = {
+			years_of_research = 1.5
+			any_pop = { consciousness = 0.5 }
+			set_country_flag = dar_al_funun_built
+			add_country_modifier = {
+				name = dar_al_funun
+				duration = 3650
+			}
+			}
+		}
+	
+	begin_zemene_mesafint = {
+		potential = {
+			civilized = no
+			OR = {
+				tag = GON
+				tag = SHW
+				tag = TIG
+			}
+			any_neighbor_country = { primary_culture = african_minor }
+			NOT = { 
+				has_global_flag = is_negusa_nagast
+				has_country_modifier = zemene_mesafint
+			}
+		}
+		
+		allow = {
+			any_neighbor_country = {
+				primary_culture = african_minor
+				war_with = THIS
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = zemene_mesafint
+				duration = 1095
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_negusa_nagast = {
+		potential = {
+			OR = {
+				tag = GON
+				tag = SHW
+				tag = TIG
+			}
+			primary_culture = african_minor
+			ETH = { exists = no }
+		}
+		
+		allow = {
+			war = no
+			ETH = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						empty = yes
+						province_id = 1848
+						province_id = 1849
+						province_id = 1850
+						owner = {
+							NOT = { primary_culture = african_minor }
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			set_global_flag = is_negusa_nagast
+			prestige = 10
+			years_of_research = 4
+			GON = {
+				all_core = { remove_core = GON }
+			}
+			SHW = {
+				all_core = { remove_core = SHW }
+			}
+			TIG = {
+				all_core = { remove_core = TIG }
+			}
+			relation = {
+				who = EGY
+				value = 200
+			}
+			add_country_modifier = {
+				name = self_strengthening_movement
+				duration = 1095
+			}
+			change_tag = ETH
+			any_pop = { militancy = -9 }
+		}
+	}
+	
+	build_addis_ababa = {
+		picture = move_capital_to_algiers
+		potential = {
+			tag = ETH
+			owns = 1859
+			NOT = { has_country_flag = addis_ababa_built }
+		}
+		
+		allow = {
+			war = no
+			year = 1880
+			owns = 1859
+		}
+		
+		effect = {
+			set_country_flag = addis_ababa_built
+			prestige = 5
+			1859 = {
+				change_province_name = "Addis Ababa"
+				life_rating = 3
+			}
+			capital = 1859
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	eth_mission_to_cairo = {
+		potential = {
+			tag = ETH
+			ai = yes
+			EGY = {
+				ai = yes
+				exists = yes
+				neighbour = ETH
+				NOT = {
+					any_owned_province = { is_core = ETH }
+					casus_belli = ETH
+				}
+			}
+			NOT = {
+				has_country_flag = mission_to_cairo
+				any_owned_province = { is_core = EGY }
+				any_owned_province = { is_core = SUD }
+				casus_belli = EGY
+				truce_with = EGY
+			}
+		}
+		
+		allow = {
+			NOT = { war_with = EGY }
+		}
+		
+		effect = {
+			set_country_flag = mission_to_cairo
+			years_of_research = 1
+			relation = { who = EGY value = 200 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_the_tower_of_babylon = {
+		potential = {
+			tag = IRQ
+			is_greater_power = yes
+		}
+		
+		allow = {
+			owns = 926
+			advanced_metallurgy = 1
+		}
+		
+		effect = {
+			IRQ = {
+				all_core = {
+					add_core = BAB
+				}
+			}
+			926 = {
+				change_province_name = Babylon
+			}
+			change_tag = BAB
+			prestige = 20
+		}
+	}
+	move_capital_to_algiers = {
+		potential = {
+			tag = ALD
+			NOT = { capital = 1700 }
+		}
+
+		allow = {
+			owns = 1700
+		}
+
+		effect = {
+			prestige = 2
+			capital = 1700
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tonghak_reforms = {
+	picture = tonghak_reforms
+		potential = {
+			tag = KOR
+			has_country_flag = tonghak_rebellion_happened
+			NOT = { has_country_flag = tonghak }
+		}
+		allow = {
+			war = no
+			NOT = {
+				num_of_revolts = 1
+				any_owned_province = { has_province_modifier = peasant_revolt }
+			}
+		}
+		effect = {
+			set_country_flag = tonghak 
+			prestige = 20
+			years_of_research = 5
+			political_reform = no_slavery
+			add_country_modifier = {
+				name = self_strengthening_movement
+				duration = 1825
+			}
+			poor_strata = {
+				militancy = -2
+				consciousness = -2
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	second_tonghak_reforms = {
+	picture = tonghak_reforms
+		potential = {
+			tag = KOR
+			has_country_flag = tonghak_rebellion_happened
+			has_country_flag = tonghak
+			NOT = { has_country_flag = tonghak_2 }
+		}
+		allow = {
+			war = no
+			NOT = {
+				num_of_revolts = 1
+				any_owned_province = { has_province_modifier = peasant_revolt }
+			}
+		}
+		effect = {
+			set_country_flag = tonghak_2 
+			random_country = {
+				limit = { primary_culture = korean is_vassal = yes }
+				overlord = {
+					release_vassal = KOR
+					casus_belli ={ target = KOR type = make_puppet months = 30 }
+					relation = { who = KOR value = -200 }
+					diplomatic_influence = { who = KOR value = -200 }
+				}
+			}
+			years_of_research = 3
+			poor_strata = {
+				militancy = -1
+				consciousness = -1
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

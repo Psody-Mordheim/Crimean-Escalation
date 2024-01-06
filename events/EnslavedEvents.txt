@@ -1,0 +1,90 @@
+	country_event = {
+	id = 1488
+	title = "Slavery Ended"
+	desc = "EVTDESC1488"
+	picture = "slaves_freed"
+	
+	trigger = {
+		is_disarmed = yes
+		has_country_flag = enslaving_minorities
+		}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "We are at their mercy."
+		political_reform = abolish_slavery
+		clr_country_flag = slave_trade_leader
+		clr_country_flag = slave_trader
+		clr_country_flag = enslaving_minorities
+		clr_country_flag = enslaving_minorities2
+		remove_country_modifier = the_slavery_debate
+		remove_country_modifier = atlantic_slave_trade
+		remove_country_modifier = enslaving_minorities
+		}
+	}
+	country_event = {
+	id = 148869
+	title = "Slavery Ended"
+	desc = "EVTDESC148869"
+	picture = "slaves_freed"
+	
+	trigger = {
+		OR = {
+		government = hms_government
+		government = democracy
+		government = prussian_constitutionalism
+		}
+		NOT = {
+		primary_culture = dixie
+		primary_culture = boer
+		}
+		has_country_flag = enslaving_minorities
+		}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Understandable"
+		clr_country_flag = slave_trade_leader
+		clr_country_flag = slave_trader
+		clr_country_flag = enslaving_minorities
+		clr_country_flag = enslaving_minorities2
+		remove_country_modifier = the_slavery_debate
+		remove_country_modifier = atlantic_slave_trade
+		remove_country_modifier = enslaving_minorities
+		}
+	}
+
+	country_event = {
+	id = 14886
+	title = "Slavery Ended"
+	desc = "EVTDESC148869"
+	picture = "slaves_freed"
+	
+	trigger = {
+		OR = {
+		has_country_flag = enslaving_minorities
+		has_country_flag = enslaving_minorities2
+		}
+		slavery = no_slavery
+		}
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Understandable"
+		clr_country_flag = slave_trade_leader
+		clr_country_flag = slave_trader
+		clr_country_flag = enslaving_minorities
+		clr_country_flag = enslaving_minorities2
+		remove_country_modifier = the_slavery_debate
+		remove_country_modifier = atlantic_slave_trade
+		remove_country_modifier = enslaving_minorities
+		}
+	}

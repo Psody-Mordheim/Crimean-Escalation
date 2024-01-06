@@ -1,0 +1,28 @@
+political_decisions = {
+	colony_settling = {
+		alert = no
+		picture = embrace_the_boer
+		potential = {
+			ai = no
+			has_country_flag = utility_options
+			colonial_nation = yes
+			civilized = yes
+		}
+		allow = {
+		colonial_nation = yes
+		}
+		effect = {
+			clr_country_flag = 250kpopscolony
+			clr_country_flag = 120kpopscolony
+			clr_country_flag = 60kpopscolony
+			clr_country_flag = 30kpopscolony
+			clr_country_flag = africamigration
+			clr_country_flag = asiamigration
+			clr_country_flag = europemigration
+			country_event = { id = 220001 days = 0 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

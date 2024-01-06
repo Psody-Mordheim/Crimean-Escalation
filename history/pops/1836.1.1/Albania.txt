@@ -1,0 +1,327 @@
+#Albania Region (1096000)
+#under the rule of Ottoman Empire in 1836
+#Tirana (296000/74000 POPS)
+849 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 750
+	}
+
+	bureaucrats = {
+		culture = albanian
+		religion = sunni
+		size = 150
+	}
+
+	officers = {
+		culture = albanian
+		religion = sunni
+		size = 150
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 325
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 1500
+	}
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size = 1000
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 25000
+	}
+
+	farmers = {
+		culture = aromanian
+		religion = orthodox
+		size = 625
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = orthodox
+		size = 125
+	}
+
+	artisans = {
+		culture = albanian
+		religion = orthodox
+		size = 500
+	}
+
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 6425
+	}
+}
+#Shkoder (408000/102000 POPS)
+850 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 1150
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 350
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 1500
+	}
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size = 1000
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 38300
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = catholic
+		size = 125
+	}
+
+	artisans = {
+		culture = albanian
+		religion = catholic
+		size = 550
+	}
+
+	farmers = {
+		culture = albanian
+		religion = catholic
+		size = 12725
+	}
+}
+#Durres (120000/30000 POPS)
+851 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 300
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 125
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 600
+	}
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size = 600
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 10500
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = catholic
+		size = 105
+	}
+
+	artisans = {
+		culture = albanian
+		religion = catholic
+		size = 300
+	}
+
+	farmers = {
+		culture = albanian
+		religion = catholic
+		size = 3450
+	}
+}
+#Vlore (272000/68000 POPS)
+852 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 700
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 325
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 1250
+	}
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size = 300
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 24025
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = orthodox
+		size = 100
+	}
+
+	artisans = {
+		culture = albanian
+		religion = orthodox
+		size = 250
+	}
+
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 3100
+	}
+
+	farmers = {
+		culture = aromanian
+		religion = orthodox
+		size = 2125
+	}
+
+	farmers = {
+		culture = aromanian
+		religion = orthodox
+		size = 2125
+	}
+
+	artisans = {
+		culture = greek
+		religion = orthodox
+		size = 1000
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 2100
+	}
+}
+#Epirus Region (168000) #see Greece.txt for balance of region 
+#under the rule of Ottoman Empire in 1836
+#Gjirokaster (168000/42000 POPS) #now part of Albania   
+853 = {
+	aristocrats = {
+		culture = albanian
+		religion = sunni
+		size = 450
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = sunni
+		size = 125
+	}
+
+	artisans = {
+		culture = albanian
+		religion = sunni
+		size = 350
+	}
+
+	soldiers = {
+		culture = albanian
+		religion = sunni
+		size = 300
+	}
+
+	farmers = {
+		culture = albanian
+		religion = sunni
+		size = 9525
+	}
+
+	clergymen = {
+		culture = albanian
+		religion = orthodox
+		size = 100
+	}
+
+	artisans = {
+		culture = albanian
+		religion = orthodox
+		size = 250
+	}
+
+	farmers = {
+		culture = albanian
+		religion = orthodox
+		size = 4650
+	}
+
+	clergymen = {
+		culture = greek
+		religion = orthodox
+		size = 125
+	}
+
+	artisans = {
+		culture = greek
+		religion = orthodox
+		size = 1100
+	}
+
+	farmers = {
+		culture = greek
+		religion = orthodox
+		size = 7775
+	}
+
+	farmers = {
+		culture = aromanian
+		religion = orthodox
+		size = 2875
+	}
+
+	farmers = {
+		culture = aromanian
+		religion = orthodox
+		size = 875
+	}
+
+}

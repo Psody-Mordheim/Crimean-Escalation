@@ -1,0 +1,60 @@
+EGY = {
+	value = 60
+}
+
+
+leader = {
+   name = "Sahle Selassie"
+   type = land
+   date = 1836.1.1
+   personality = old_school
+   background = defence_4.4-0
+   prestige = 0.5
+}
+
+army = {
+	name = "Army of the Negus of Shewa"
+	location = 1859
+	regiment = {
+		name= "Negus' Guards"
+		type = infantry
+		home = 1859
+	}
+
+	regiment = {
+		name= "Negus' Horsemen"
+		type = cavalry
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Shewa Division"
+		type = infantry
+		home = 1859
+	}
+
+	regiment = {
+		name= "2nd Shewa Division"
+		type = cavalry
+		home = 1859
+	}
+
+	regiment = {
+		name= "3rd Shewa Division"
+		type = infantry
+		home = 1859
+	}
+
+	regiment = {
+		name= "1st Hawassa Division"
+		type = infantry
+		home = 1860
+	}
+
+	regiment = {
+		name= "1st Aselia Division"
+		type = cavalry
+		home = 1861
+	}
+
+}

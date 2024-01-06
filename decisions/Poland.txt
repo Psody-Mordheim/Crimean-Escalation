@@ -1,0 +1,638 @@
+political_decisions = {
+
+	become_poland = {
+
+		potential = {
+			primary_culture = polish
+			NOT = { exists = POL }
+			NOT = { tag = PLC }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			owns = 706
+			NOT = { has_country_modifier = neutrality }
+		}
+
+		effect = {
+			prestige = 10
+			all_core = { add_core = POL }
+			all_core = { remove_core = THIS }
+			change_tag = POL
+			capital = 706
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_poland_lithuania = {
+
+		potential = {
+			OR = {
+				primary_culture = polish
+				primary_culture = lithuanian
+			}
+			NOT = { exists = PLC }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+
+		allow = {
+			war = no
+			OR = {
+			is_secondary_power = yes
+			is_greater_power = yes
+			}
+			360 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			706 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			703 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			718 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			958 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+			695 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			prestige = 30
+			random_owned = {
+				limit = {
+					owner = { primary_culture = polish }
+				}
+				owner = {
+					add_accepted_culture = lithuanian
+				}
+				LIT = {
+					all_core = { add_core = POL }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { primary_culture = lithuanian }
+				}
+				owner = {
+					add_accepted_culture = polish
+				}
+				POL = {
+					all_core = { add_core = LIT }
+				}
+			}
+			LAT = {
+				all_core = { add_core = THIS }
+			}
+			BYE = {
+				all_core = { add_core = THIS }
+			}
+			RUS_958 = { add_core = THIS }
+			PRU_695 = { add_core = THIS } 
+			any_country = {
+				limit = {
+					primary_culture = polish
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = LIT
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				THIS = { inherit = LIT }
+			}
+			random_country = {
+				limit = {
+					tag = BYE
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				THIS = { inherit = BYE }
+			}
+			random_country = {
+				limit = {
+					tag = LAT
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				THIS = { inherit = LAT }
+			}
+			any_country = {
+				limit = {
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = { is_core = THIS }
+					secede_province = THIS
+				}
+			}
+			capital = 703
+			any_greater_power = {
+				limit = {
+					OR = {
+						primary_culture = russian
+						is_culture_group = germanic
+					}
+					neighbour = THIS
+				}
+				relation = { who = THIS value = -200 }
+				leave_alliance = THIS
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stop_poland_lithuania = {
+		picture = become_poland_lithuania
+		alert = no
+		potential = {
+			tag = PLC
+			primary_culture = polish
+			NOT = { exists = POL }
+		}
+
+		allow = {
+			war = no
+			is_greater_power = no
+			NOT = { owns = 695 }
+			NOT = { owns = 958 }
+			NOT = { owns = 718 }
+		}
+
+		effect = {
+			prestige = -30
+			PLC = { all_core = { remove_core = PLC } }
+			689 = { add_core = POL }
+			702 = { add_core = POL }
+			704 = { add_core = POL }
+			705 = { add_core = POL }
+			714 = { add_core = POL }
+			951 = { add_core = POL }
+			952 = { add_core = POL }
+			953 = { add_core = POL }
+			2584 = { add_core = POL }
+			684 = { add_core = POL }
+			685 = { add_core = POL }
+			690 = { add_core = POL }
+			691 = { add_core = POL }
+			694 = { add_core = POL }
+			699 = { add_core = POL }
+			700 = { add_core = POL }
+			701 = { add_core = POL }
+			703 = { add_core = POL }
+			360 = { add_core = POL }
+			706 = { add_core = POL }
+			707 = { add_core = POL }
+			708 = { add_core = POL }
+			709 = { add_core = POL }
+			710 = { add_core = POL }
+			711 = { add_core = POL }
+			712 = { add_core = POL }
+			713 = { add_core = POL }
+			715 = { add_core = POL }
+			716 = { add_core = POL }
+			717 = { add_core = POL }
+			719 = { add_core = POL }
+			936 = { add_core = POL }
+			937 = { add_core = POL }
+			938 = { add_core = POL }
+			939 = { add_core = POL }
+			940 = { add_core = POL }
+			947 = { add_core = POL }
+			955 = { add_core = POL }
+			956 = { add_core = POL }
+			957 = { add_core = POL }	
+			any_pop = {
+				limit = { has_pop_culture = polish }
+				militancy = -6
+			}
+			remove_accepted_culture = lithuanian
+			change_tag = POL
+			capital = 706
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	stop_poland_lithuania_lit = {
+		picture = become_poland_lithuania
+		alert = no
+		potential = {
+			tag = PLC
+			primary_culture = lithuanian
+			NOT = { exists = LIT }
+		}
+
+		allow = {
+			war = no
+			is_greater_power = no
+			NOT = { owns = 695 }
+			NOT = { owns = 958 }
+			NOT = { owns = 718 }
+		}
+
+		effect = {
+			prestige = -30
+			PLC = { all_core = { remove_core = PLC } }
+			RUS_361 = { add_core = LIT }	
+			938 = { add_core = LIT }
+			947 = { add_core = LIT }
+			any_pop = {
+				limit = { has_pop_culture = lithuanian }
+				militancy = -6
+			}
+			remove_accepted_culture = polish
+			change_tag = LIT
+			capital = 360
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	unite_with_poland = {
+
+		potential = {
+			primary_culture = polish
+			NOT = { tag = POL }
+			NOT = { tag = PLC }
+			exists = POL
+			NOT = { has_country_flag = unite_with_poland }
+			NOT = { has_country_flag = post_colonial_country }
+		}
+
+		allow = {
+			war = no
+			OR = {
+				is_vassal = no
+				overlord = { tag = POL }
+			}
+			OR = {
+				part_of_sphere = no
+				sphere_owner = { is_sphere_leader_of = POL }
+				in_sphere = POL
+			}
+			POL = {
+				war = no
+				neighbour = THIS
+				is_vassal = no
+			}
+		}
+
+		effect = {
+			set_country_flag = unite_with_poland
+			random_country = {
+				limit = {
+					tag = POL
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = POL
+					ai = yes
+					THIS = { ai = no }
+				}
+				THIS = {
+					inherit = POL
+					random_owned = {
+						limit = { province_id = 706 }
+						owner = { capital = 706 }
+					}
+					change_tag = POL
+				}	
+			}
+			random_country = {
+				limit = {
+					tag = POL
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			}
+	}
+
+	galicia_annex_krakow = {
+		picture = unite_with_poland
+		potential = {
+			tag = KRA
+			exists = GLM
+			NOT = { has_country_flag = galicia_annex_krakow }
+		}
+
+		allow = {
+			war = no
+			OR = {
+				part_of_sphere = no
+				sphere_owner = { is_sphere_leader_of = GLM }
+			}
+			GLM = {
+				war = no
+				neighbour = THIS
+			}
+		}
+
+		effect = {
+			set_country_flag = galicia_annex_krakow
+			all_core = { remove_core = THIS }
+			random_country = {
+				limit = {
+					tag = GLM
+					ai = yes
+					THIS = { ai = yes }
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = GLM
+					ai = yes
+					THIS = { ai = no }
+				}
+				any_owned = { secede_province = THIS }
+				THIS = {
+					random_owned = {
+						limit = { province_id = 702 }
+						owner = { capital = 702 }
+					}
+					change_tag = GLM
+				}	
+			}
+			random_country = {
+				limit = {
+					tag = GLM
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+	krakow_form_galicia = {
+		picture = become_poland
+		potential = {
+			tag = KRA
+			is_subject = no
+			not = { exists = GLM }
+		}
+
+		allow = {
+			war = no
+			owns = 702 # Lvow
+			owns = 704 # Novy Sacz
+			owns = 705 # Przemsyl
+			owns = 714 # Tarnow
+			owns = 951 # Styri
+			owns = 952 # Ternopil
+			owns = 953 # Stanislavov
+		}
+
+		effect = {
+			prestige = 10
+			all_core = { remove_core = THIS }
+			change_tag = GLM
+			capital = 702
+		}
+	}
+	polish_names_germany = {
+		picture = map_posen
+		potential = {
+			owns = 690
+			owns = 691
+			owns = 699
+			owns = 700
+			OR = {
+				primary_culture = polish
+				tag = PLC
+			}
+			NOT = { has_global_flag = polish_names_germany }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+		}
+		
+		effect = {
+			set_global_flag = polish_names_germany
+			690 = { change_province_name = "Gdañsk" add_province_modifier = { name = new_lands duration = 5475 } }
+			691 = { change_province_name = "Tuchola" add_province_modifier = { name = new_lands duration = 5475 } }
+			699 = { change_province_name = "Poznañ" add_province_modifier = { name = new_lands duration = 5475 } }
+			700 = { change_province_name = "Bydgoszcz" add_province_modifier = { name = new_lands duration = 5475 } }
+			prestige = 2
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	german_names_poland = {
+		picture = map_posen
+		potential = {
+			owns = 690
+			owns = 691
+			owns = 699
+			owns = 700
+			NOT = {
+				OR = {
+					primary_culture = polish
+					tag = PLC
+				}
+			}
+			has_global_flag = polish_names_germany
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_names_germany
+			690 = { change_province_name = "Danzig" }
+			691 = { change_province_name = "Tuchel" }
+			699 = { change_province_name = "Posen" }
+			700 = { change_province_name = "Bromberg" }
+			prestige = 2
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	polish_names_silesia = {
+		picture = map_posen
+		potential = {
+			owns = 684
+			owns = 685
+			owns = 689
+			OR = {
+				primary_culture = polish
+				tag = PLC
+			}
+			NOT = { has_global_flag = polish_names_silesia }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+		}
+		
+		effect = {
+			set_global_flag = polish_names_silesia
+			684 = { change_province_name = "Opole" add_province_modifier = { name = new_lands duration = 5475 } }
+			685 = { change_province_name = "Katowice" add_province_modifier = { name = new_lands duration = 5475 } }
+			689 = { change_province_name = "Cieszyn" add_province_modifier = { name = new_lands duration = 5475 } }
+			prestige = 2
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	german_names_silesia = {
+		picture = map_posen
+		potential = {
+			owns = 684
+			owns = 685
+			owns = 689
+			NOT = {
+				OR = {
+					primary_culture = polish
+					tag = PLC
+				}
+			}
+			has_global_flag = polish_names_silesia
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_names_silesia
+			684 = { change_province_name = "Oppeln" }
+			685 = { change_province_name = "Kattowitz" }
+			689 = { change_province_name = "Tesin" }
+			prestige = 2
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	polish_names_austria = {
+		picture = map_galicia
+		potential = {
+			owns = 702
+			owns = 951
+			owns = 952
+			owns = 953
+			OR = {
+				primary_culture = polish
+				tag = PLC
+			}
+			NOT = { has_global_flag = polish_names_austria }
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+		}
+		
+		effect = {
+			set_global_flag = polish_names_austria
+			702 = { change_province_name = "Lwów" add_province_modifier = { name = new_lands duration = 5475 } }
+			951 = { change_province_name = "Stryj" add_province_modifier = { name = new_lands duration = 5475 } }
+			952 = { change_province_name = "Tarnopol" add_province_modifier = { name = new_lands duration = 5475 } }
+			953 = { change_province_name = "Stanislawów" add_province_modifier = { name = new_lands duration = 5475 } }
+			prestige = 2
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	austrian_names_poland = {
+		picture = map_galicia
+		potential = {
+			owns = 702
+			owns = 951
+			owns = 952
+			owns = 953
+			NOT = {
+				OR = {
+					primary_culture = polish
+					tag = PLC
+				}
+			}
+			has_global_flag = polish_names_austria
+		}
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			clr_global_flag = polish_names_austria
+			702 = { change_province_name = "Lvov" }
+			951 = { change_province_name = "Stryi" }
+			952 = { change_province_name = "Ternopil" }
+			953 = { change_province_name = "Stanislavov" }
+			prestige = 2
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

@@ -1,0 +1,31 @@
+BAV = {
+	value = 200
+}
+
+leader = {
+	name = "Prince Georg"
+	date = 1820.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+	prestige = 0.2
+}
+
+leader = {
+	name = "Prince Karl"
+	date = 1836.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+}
+
+army = {
+	name = "Groﬂherzogliche Armee"
+	location = 2560
+	regiment = {
+		name= "1. Groﬂherzogliche Infanterie"
+		type = infantry
+		home = 2560
+	}
+
+}

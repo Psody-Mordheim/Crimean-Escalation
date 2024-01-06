@@ -1,0 +1,169 @@
+SPA = {
+	value = 100
+}
+POR = {
+	value = 100
+}
+PBC = {
+	value = 60
+}
+
+leader = {
+	name = "Luís Alves de Lima e Silva"
+	picture = southamerican_general_6
+	date = 1836.1.1
+	type = land
+	personality = old_school
+	background = defence_3.4-0
+	prestige = 0.05
+}
+
+leader = {
+	name = "Sebastião Pinto"
+	date = 1825.1.1
+	type = land
+	personality = old_school
+	background = defence_4.3-0
+}
+
+leader = {
+	name = "Barão de Tramandaí"
+	date = 1830.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+}
+
+leader = {
+	name = "Manuel Marques de Sousa"
+	date = 1833.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+}
+
+leader = {
+	name = "Frederico Mariath"
+	picture = european_admiral_0
+	date = 1830.1.1
+	type = sea
+	personality = old_school
+	background = defence_3.3-0
+}
+
+army = {
+	name = "I Corpo do exército"
+	location = 2447
+	regiment = {
+		name= "1. Brigada de Infantaria"
+		type = infantry
+		home = 2447
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantaria"
+		type = infantry
+		home = 2450
+	}
+	regiment = {
+		name= "3. Brigada de Infantaria"
+		type = infantry
+		home = 2450
+	}
+	regiment = {
+		name= "1. Brigada de Artilharia"
+		type = artillery
+		home = 2432
+	}
+
+	regiment = {
+		name= "1. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2446
+	}
+
+	regiment = {
+		name= "2. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2429
+	}
+
+	regiment = {
+		name= "3. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2429
+	}
+	regiment = {
+		name= "3. Brigada de Artilharia"
+		type = artillery
+		home = 2447
+	}
+
+	regiment = {
+		name= "4. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2457
+	}
+
+	regiment = {
+		name= "5. Brigada de Cavalaria"
+		type = cuirassier
+		home = 2436
+	}
+	regiment = {
+		name= "4. Brigada de Artilharia"
+		type = artillery
+		home = 2447
+	}
+	regiment = {
+		name= "2. Brigada de Artilharia"
+		type = artillery
+		home = 2447
+	}
+
+}
+
+navy = {
+	name = "Armada Imperial Brasileira"
+	location = 2447
+
+	ship = {
+		name = "Imperatriz"
+		type = frigate
+	}
+
+	ship = {
+		name = "Dona Januária"
+		type = frigate
+	}
+
+	ship = {
+		name = "Abaeté"
+		type = frigate
+	}
+
+	ship = {
+		name = "Bertioga"
+		type = frigate
+	}
+
+	ship = {
+		name = "Constituição"
+		type = frigate
+	}
+
+	ship = {
+		name = "Andorinha"
+		type = frigate
+	}
+
+	ship = {
+		name = "Brigue Transporte Alcides"
+		type = clipper_transport
+	}
+
+	ship = {
+		name = "Brigue Transporte Aníbal"
+		type = clipper_transport
+	}
+}

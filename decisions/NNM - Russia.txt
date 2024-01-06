@@ -1,0 +1,166 @@
+political_decisions = {
+
+	#############################################
+	#				Russian States				#
+	#############################################
+	create_russian_states = {
+		potential = {
+			tag = RUS
+			always = no
+			NOT = { has_global_flag = russian_states_created }
+		}
+		allow = {
+			tag = RUS
+		}
+		effect = {
+			set_global_flag = russian_states_created
+			
+			#Altai Republic
+
+			#Circassia
+			1095 = { add_core = CIR }
+			1048 = { add_core = CIR }
+			1049 = { add_core = CIR }
+			1050 = { add_core = CIR }
+			1051 = { add_core = CIR }
+			1056 = { add_core = CIR }
+			1052 = { add_core = AZB }
+			1053 = { add_core = AZB }
+			#Congress Poland
+			#first we must fix the Polish cores
+			POL = {
+				all_core = { remove_core = POL }
+			}
+			PLC = {
+				all_core = { remove_core = PLC }
+			}
+			
+			#Crimea
+			973 = { add_core = CRI }
+			965 = { add_core = CRI }
+			
+			#now we can add the cores for Congress Poland
+			706 = { add_core = CPL }
+			707 = { add_core = CPL }
+			708 = { add_core = CPL }
+			709 = { add_core = CPL }
+			710 = { add_core = CPL }
+			711 = { add_core = CPL }
+			712 = { add_core = CPL }
+			713 = { add_core = CPL }
+			715 = { add_core = CPL }
+			716 = { add_core = CPL }
+			717 = { add_core = CPL }
+			
+			689 = { add_core = POL }
+			702 = { add_core = POL }
+			704 = { add_core = POL }
+			705 = { add_core = POL }
+			714 = { add_core = POL }
+			951 = { add_core = POL }
+			952 = { add_core = POL }
+			953 = { add_core = POL }
+			2584 = { add_core = POL }
+			684 = { add_core = POL }
+			685 = { add_core = POL }
+			690 = { add_core = POL }
+			691 = { add_core = POL }
+			694 = { add_core = POL }
+			699 = { add_core = POL }
+			700 = { add_core = POL }
+			701 = { add_core = POL }
+			703 = { add_core = POL }
+			360 = { add_core = POL }
+			362 = { add_core = POL }
+			706 = { add_core = POL }
+			707 = { add_core = POL }
+			708 = { add_core = POL }
+			709 = { add_core = POL }
+			710 = { add_core = POL }
+			711 = { add_core = POL }
+			712 = { add_core = POL }
+			713 = { add_core = POL }
+			715 = { add_core = POL }
+			716 = { add_core = POL }
+			717 = { add_core = POL }
+			719 = { add_core = POL }
+			936 = { add_core = POL }
+			937 = { add_core = POL }
+			938 = { add_core = POL }
+			939 = { add_core = POL }
+			940 = { add_core = POL }
+			947 = { add_core = POL }
+			955 = { add_core = POL }
+			956 = { add_core = POL }
+			957 = { add_core = POL }
+
+			#Cossackia
+			1041 = { add_core = KMK }
+			1046 = { add_core = KMK }
+			#Dagestan
+			1052 = { add_core = DAG }
+			1053 = { add_core = DAG }
+			1054 = { add_core = DAG }
+			1055 = { add_core = DAG }
+			1091 = { add_core = DAG }
+			1057 = { add_core = DAG }
+			1103 = { add_core = DAG }
+			1104 = { add_core = DAG }
+
+			979 = { add_core = DON }
+			1036 = { add_core = DON }
+			1045 = { add_core = DON }
+			1046 = { add_core = DON }
+			1047 = { add_core = DON }
+			1048 = { add_core = DON }
+			1050 = { add_core = DON }
+			1051 = { add_core = DON }
+			1054 = { add_core = DON }
+			1055 = { add_core = DON }
+			1057 = { add_core = DON }
+			1056 = { add_core = DON }
+			1039 = { add_core = DON }
+			1041 = { add_core = DON }
+			1040 = { add_core = DON }
+			1049 = { add_core = DON }
+			#Kalmykia
+			#Tannu Tuva
+			1469 = { add_core = TNT }
+
+			#Tatarstan
+			1030 = { add_core = TAR }
+			1032 = { add_core = TAR }
+			1033 = { add_core = TAR }
+			1034 = { add_core = TAR }
+			1042 = { add_core = TAR }
+
+			#Ukraine (re-work)
+			UKR = {
+				all_core = { remove_core = UKR }
+			}
+			678 = { add_core = UKR }
+			954 = { add_core = UKR }
+			955 = { add_core = UKR }
+			956 = { add_core = UKR }
+			957 = { add_core = UKR }
+			958 = { add_core = UKR }
+			959 = { add_core = UKR }
+			960 = { add_core = UKR }
+			961 = { add_core = UKR }
+			962 = { add_core = UKR }
+			963 = { add_core = UKR }
+			965 = { add_core = UKR }
+			968 = { add_core = UKR }
+			969 = { add_core = UKR }
+			970 = { add_core = UKR }
+			971 = { add_core = UKR }
+			972 = { add_core = UKR }
+			973 = { add_core = UKR }
+			974 = { add_core = UKR }
+			975 = { add_core = UKR }
+			976 = { add_core = UKR }
+			978 = { add_core = UKR }
+			980 = { add_core = UKR }
+		}
+	}
+}

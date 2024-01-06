@@ -1,0 +1,196 @@
+political_decisions = {
+
+	#############################################
+	#				North America				#
+	#############################################
+	create_north_american_states = {
+		potential = {
+			tag = TEX
+			always = no
+			NOT = { has_global_flag = north_american_states_created }
+		}
+		allow = {
+			tag = TEX
+		}
+		effect = {
+			set_global_flag = north_american_states_created
+			
+			#Alaska
+			1 = { add_core = LSK }
+			2 = { add_core = LSK }
+			3 = { add_core = LSK }
+			4 = { add_core = LSK }
+			5 = { add_core = LSK }
+			2599 = { add_core = LSK }
+			2630 = { add_core = LSK }
+			2631 = { add_core = LSK }
+			
+			#Belize
+			2190 = {
+				add_core = BLZ
+				remove_core = GUA
+			}
+			
+			#Canada
+			249 = {
+				remove_core = CAN
+				add_core = QUE
+			}
+			250 = {
+				remove_core = CAN
+				add_core = QUE
+			}
+			69 = {
+				add_core = QUE
+			}
+			68 = {
+				add_core = QUE
+			}
+			71 = {
+				add_core = QUE
+			}
+			72 = {
+				add_core = QUE
+			}
+			13 = { add_core = ENG }
+			14 = { add_core = ENG }
+			ENG_6 = { remove_core = CAN }
+			ENG_9 = { remove_core = CAN }
+			CAN_13 = { remove_core = CAN }
+			CAN_19 = { remove_core = CAN }
+			ENG_22 = { remove_core = CAN }
+			ENG_30 = { remove_core = CAN }
+			ENG_36 = { remove_core = CAN }
+			CAN_50 = { remove_core = CAN }
+			50 = { add_core = CAN }
+			51 = { add_core = CAN }
+			CAN_46 = { add_core = ENG }
+			CAN_60 = {
+				remove_core = CAN
+				add_core = QUE
+				add_core = RPL
+			}
+			CAN_58 = {
+				remove_core = CAN
+				add_core = ENG
+			}
+			ENG_68 = {
+				remove_core = CAN
+				add_core = ENG
+				add_core = MRU
+				add_core = QUE
+			}
+			74 = {
+				add_core = ENG
+				remove_core = QUE
+				remove_core = CAN
+			}
+			75 = {
+				add_core = ENG
+				remove_core = QUE
+				remove_core = CAN
+			}
+			76 = {
+				add_core = ENG
+				remove_core = QUE
+				remove_core = CAN
+			}
+			2625 = {
+				add_core = ENG
+				remove_core = QUE
+				remove_core = CAN
+			}
+			250 = {
+				remove_core = CAN
+				add_core = MRU
+				add_core = ENG
+				add_core = QUE
+			}
+			70 = {
+				remove_core = QUE
+			}
+			random_owned = {
+				limit = {
+					owner = { year = 1860 }
+				}
+				250 = {
+					remove_core = MRU
+					remove_core = ENG
+				}
+			}
+			ENG = {
+				any_owned = {
+					limit = {
+						OR = {
+							region = ENG_6
+							region = ENG_9
+							region = CAN_19
+							region = ENG_22
+							region = ENG_30
+							region = ENG_36
+							region = CAN_50
+							region = CAN_60
+						}
+						NOT = {
+							is_core = CAN
+							is_core = QUE
+							is_core = COL
+						}
+					}
+					add_core = RPL
+				}
+			}
+			
+			#Chiapas
+			2181 = { add_core = CHP }
+			2182 = { add_core = CHP }
+			
+			#Deseret (cores added by event)
+			DES = {
+				all_core = { remove_core = DES }
+			}
+			
+			#Greenland
+			
+			#Jamaica
+			2217 = { add_core = JAM }
+
+			#Los Altos
+			2182 = { add_core = LOS }
+			2187 = { add_core = LOS }
+
+			#Puerto Rico
+			2222 = { add_core = PRI }
+
+			#Rio Grande
+			138 = { add_core = RGR }
+			2146 = { add_core = RGR }
+			2147 = { add_core = RGR }
+			2148 = { add_core = RGR }
+			2149 = { add_core = RGR }
+			2150 = { add_core = RGR }
+			2151 = { add_core = RGR }
+			2152 = { add_core = RGR }
+			2155 = { add_core = RGR }
+
+			#Sonora
+			102 = { add_core = SON }
+			2137 = { add_core = SON }
+			2138 = { add_core = SON }
+			2139 = { add_core = SON }
+			2140 = { add_core = SON }
+			2141 = { add_core = SON }
+
+			#Trinidad
+			2237 = { add_core = TTB }
+			2238 = { add_core = TTB }
+
+			#Yucatan
+			2183 = { add_core = YUC }
+			2184 = { add_core = YUC }
+			2185 = { add_core = YUC }
+
+			250 = { add_core = USA }
+		}
+	}
+}

@@ -1,0 +1,321 @@
+#########################################################
+#														#
+#      			   Colonial Core Spread					#
+#														#
+#########################################################
+
+#Morocco
+province_event = {
+	id = 98891
+	title = "EVTNAME98800"
+	desc = "EVTDESC98891"
+	
+	trigger = {
+		region = MOR_1696
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = MOR
+		}
+		owner = {
+			civilized = yes
+			OR = {
+				NOT = { capital_scope = { continent = africa } }
+				tag = MOR
+			}
+		}
+		OR = {
+			AND = {
+				owner = { owns = 1680 }
+				MOR = { exists = no }
+			}
+			MOR = {
+				vassal_of = THIS
+			}
+		}
+		NOT = {
+			is_core = MOR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = MOR }
+				}
+				add_core = MOR
+				remove_core = TRZ
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+#South Africa
+province_event = {
+	id = 98900
+	title = "EVTNAME98800"
+	desc = "EVTDESC98900"
+	
+	trigger = {
+		OR = {
+			region = ENG_2087
+			region = ENG_2092
+			region = ENG_2094
+			region = ENG_2096
+			region = ORA_2103
+			region = TRN_2108
+			region = ZUL_2113
+			region = ENG_2078
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = SAF
+		}
+		owner = {
+			civilized = yes
+			NOT = { capital_scope = { continent = africa } }
+		}
+		OR = {
+			AND = {
+				owner = { owns = 2087 }
+				SAF = { exists = no }
+			}
+			AND = {
+				SAF = {
+					vassal_of = THIS
+					is_culture_group = THIS
+				}
+				owner = { has_country_flag = south_africa_organizer }
+			}
+		}
+		NOT = {
+			is_core = SAF
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = SAF }
+				}
+				add_core = SAF
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+#Rupert's Land
+province_event = {
+	id = 98905
+	title = "EVTNAME98800"
+	desc = "EVTDESC98905"
+	
+	trigger = {
+		OR = {
+			region = ENG_6
+			region = ENG_9
+			region = CAN_19
+			region = ENG_22
+			region = ENG_30
+			region = ENG_36
+			region = CAN_50
+			region = CAN_60
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		any_neighbor_province = {
+			is_core = RPL
+		}
+		owner = {
+			OR = {
+				tag = ENG
+				tag = ENL
+			}
+		}
+		OR = {
+			RPL = { exists = no }
+			RPL = { vassal_of = THIS }
+		}
+		NOT = {
+			is_core = RPL
+			is_core = CAN
+			is_core = COL
+			is_core = QUE
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = {
+						is_core = CAN
+						is_core = COL
+						is_core = QUE
+					}
+				}
+				add_core = RPL
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+
+#West Indies
+province_event = {
+	id = 98859
+	title = "EVTNAME98800"
+	desc = "EVTDESC98859"
+	
+	trigger = {
+		OR = {
+			region = ENG_2224
+			region = ENG_2228
+			region = NET_2235
+			region = ENG_203
+		}
+		owned_by = THIS
+		controlled_by = THIS
+		owner = {
+			civilized = yes
+			has_global_flag = west_indies_organized
+			NOT = {
+				is_culture_group = african_diaspora_cultures
+				is_culture_group = central_american_cultures
+			}
+		}
+		OR = {
+			AND = {
+				owner = { owns = 2237 }
+				CRB = { exists = no }
+			}
+			CRB = {
+				vassal_of = THIS
+			}
+		}
+		NOT = {
+			is_core = CRB
+			province_id = 2222
+			has_global_flag = formed_west_indies
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "An excellent development!"
+		state_scope = {
+			any_owned = {
+				limit = {
+					NOT = { is_core = CRB }
+				}
+				add_core = CRB
+				any_pop = { militancy = -3 }
+			}
+		}
+	}
+}
+#Algeria
+country_event = {
+	id = 98822
+	title = "EVTNAME98800"
+	desc = "EVTDESC98822"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        owns = 1713
+        1714 = { empty = yes }
+		year = 1885
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "An excellent development!"
+			1714 = { secede_province = THIS }
+			1716 = { secede_province = THIS }
+			1717 = { secede_province = THIS }
+			1718 = { secede_province = THIS }
+			1719 = { secede_province = THIS }
+			1721 = { secede_province = THIS }
+			1722 = { secede_province = THIS }
+			1724 = { secede_province = THIS }
+			1720 = { secede_province = THIS }
+	}
+}
+#Tripoli 
+country_event = {
+	id = 98823
+	title = "Libyan Deserts"
+	desc = "The time has come for us to claim the Libyan deserts"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        owns = 1742
+        1740 = { empty = yes }
+		year = 1884
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "An excellent development!"
+		    1738 = { secede_province = THIS }
+		    1739 = { secede_province = THIS }
+			1740 = { secede_province = THIS }
+            2585 = { secede_province = THIS }
+	}
+}
+country_event = {
+	id = 98824
+	title = "Djibuti"
+	desc = "The time has come for us to claim the province of Djibuti"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        owns = 1851
+        1875 = { empty = yes }
+		year = 1900
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "An excellent development!"
+		    1875 = { secede_province = THIS }
+	}
+}

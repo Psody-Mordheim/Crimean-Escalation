@@ -1,0 +1,19 @@
+POR = {
+	value = 100
+}
+
+XHO = {
+	value = 30
+}
+
+BSH = {
+	value = 40
+}
+
+ZUL = {
+	value = 100
+}
+
+MAT = {
+	value = 50
+}

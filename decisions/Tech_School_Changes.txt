@@ -1,0 +1,181 @@
+political_decisions = {
+	switch_to_army_tech = {
+		alert = yes
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+			}
+			OR = {
+				jingoism = 4
+				pro_military = 4
+			}
+			military_score = 100
+			prestige = 20
+		}
+		effect = {
+			prestige = -20
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = army_tech_school
+		}
+	}
+	
+	switch_to_navy_tech = {
+		alert = yes
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			colonial_nation = yes
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			OR = {
+				pro_military = 4
+				laissez_faire = 4
+			}
+			prestige = 20
+			military_score = 100
+			total_amount_of_ships = 30
+		}
+		effect = {
+			prestige = -20
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = naval_tech_school
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	switch_to_culture_tech = {
+		alert = yes
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = socialist
+			}
+			OR = {
+				pacifism = 4
+				secularized = 4
+			}
+			prestige = 70
+			average_consciousness = 3
+		}
+		effect = {
+			prestige = -10
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = culture_tech_school
+		}
+	}
+	
+	switch_to_trade_tech = {
+		alert = yes
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+			}
+			OR = {
+				laissez_faire = 4
+				free_trade = 4
+			}
+			prestige = 20
+			industrial_score = 100
+		}
+		effect = {
+			prestige = -20
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = commerce_tech_school
+		}
+	}
+	
+	switch_to_industry_tech = {
+		alert = yes
+		potential = {
+			civilized = yes
+			tech_school = traditional_academic
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = socialist
+				ruling_party_ideology = communist
+			}
+			OR = {
+				interventionism = 4
+				protectionism = 4
+			}
+			prestige = 20
+			industrial_score = 100
+		}
+		effect = {
+			prestige = -20
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = industrial_tech_school
+		}
+	}
+	
+	switch_to_traditional_academic = {
+		alert = no
+		potential = {
+			has_country_flag = utility_options
+			NOT = { tech_school = traditional_academic }
+			ai = no
+			civilized = yes
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+		}
+		effect = {
+			prestige = -20
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = traditional_academic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

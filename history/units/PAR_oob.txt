@@ -1,0 +1,19 @@
+leader = {
+	name = "Wilhelm Albrecht"
+	date = 1836.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+	prestige = 0.5
+}
+
+army = {
+	name = "Esercito di Parma"
+	location = 738
+	regiment = {
+		name= "1.Fanteria di Linea"
+		type = infantry
+		home = 738
+	}
+}
+

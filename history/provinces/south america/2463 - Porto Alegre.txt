@@ -1,0 +1,15 @@
+owner = RGS
+controller = RGS
+add_core = RGS
+add_core = BRZ
+trade_goods = cattle
+life_rating = 35
+state_building = {
+	level = 1
+	building = winery
+	upgrade = yes
+}
+1860.1.1 = {
+	owner = BRZ
+	controller = BRZ
+}

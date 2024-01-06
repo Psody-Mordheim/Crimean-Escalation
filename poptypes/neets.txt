@@ -1,0 +1,139 @@
+sprite = 14
+color = { 0  153  0 }
+strata = poor
+allowed_to_vote = no
+
+rebel = {
+	cavalry = 0.0
+	artillery = 0.0
+	cuirassier = 0.0
+	dragoon = 0.0
+	guard = 0.0
+	stormtrooper = 0.0
+	hussar = 0.0
+	infantry = 0.0
+	irregular = 1
+}
+
+
+life_needs = {
+	cattle = 0.5
+	wool =  0.75
+	fish =  0.5
+	fruit =  0.5
+	grain =  0.5
+	liquor = 0.75
+	wine = 0.75
+	opium = 0.75
+	tobacco = 0.5
+}
+everyday_needs = {
+}
+
+luxury_needs = {
+}
+country_migration_target = {
+	factor = 0
+}
+migration_target = {
+	factor = 0
+}
+
+promote_to = {
+		slaves = {
+		factor = 0.01
+					modifier = { 
+					factor = 200
+					country = {
+					has_country_flag = enslaving_minorities
+					}
+				}
+					modifier = { 
+					factor = -1000
+					NOT = {	
+					country = {
+					has_country_flag = enslaving_minorities
+					}
+				}
+			}
+						modifier = {
+			factor = -1000
+			OR = {
+			slavery = abolish_slavery
+			slavery = no_slavery
+			}
+		}
+					modifier = {
+					factor = -1000
+					is_primary_culture = yes
+					}
+					modifier = {
+					factor = -1000
+					is_accepted_culture = yes
+					}
+			}
+	artisans = {
+		factor = 0.01
+		group = {
+		modifier = {
+				factor = 1
+				literacy = 0.1
+			}
+		modifier = {
+				factor = 1
+				literacy = 0.3
+			}
+		modifier = {
+				factor = 1
+				literacy = 0.5
+			}
+		modifier = {
+				factor = 1
+				literacy = 0.7
+			}
+		modifier = {
+				factor = 1
+				literacy = 0.9
+			}
+		}
+	}
+	
+	farmers = { #and labourers
+		factor = 0.02
+		modifier = {
+			factor = 10
+			literacy = 0.01
+		}
+	}
+}
+
+ideologies = {
+	liberal = {
+		factor = 1
+	}
+	reactionary = {
+		factor = 3
+	}
+	conservative = {
+		factor = 3
+	}
+}
+
+issues = {
+	jingoism = {
+		factor = 1
+	}
+	moralism = {
+    factor = 1
+        modifier = {
+            factor = 0
+            is_state_religion = no
+        }
+    }
+   	pluralism = {
+    factor = 1
+    }
+	pro_military = {
+		factor = 2
+	}
+}

@@ -1,0 +1,41 @@
+country_event = {
+    id = 585187
+	title = "Luxembourg Nerf"
+	desc = "for ai"
+	
+	trigger = {
+		ai = yes
+		tag = LUX
+		NOT= {
+		has_country_modifier = negative_immigrant
+		}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+	    name = "OK"
+		add_country_modifier = {
+			name = negative_immigrant
+			duration = -1
+			}
+	}
+}
+country_event = {
+    id = 585188
+	title = "Luxembourg Nerf"
+	desc = "for ai"
+	
+	trigger = {
+		ai = no
+		tag = LUX
+		has_country_modifier = negative_immigrant
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+	name = "OK"
+	remove_country_modifier = negative_immigrant
+	}
+}

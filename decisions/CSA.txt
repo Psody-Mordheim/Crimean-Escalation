@@ -1,0 +1,1577 @@
+political_decisions = {
+	enact_the_homestead_act_csa = {
+		picture = enact_the_homestead_act
+		potential = {
+			OR = {
+				tag = CSA
+				tag = TEX
+			}
+			OR = {
+			government = bourgeois_dictatorship
+			government = democracy
+			government = hms_government
+			}
+			NOT = {
+				has_country_modifier = the_homestead_act
+			}
+			year = 1862
+		}
+		
+		allow = {
+			prestige = 30
+			war = no
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = the_homestead_act
+				duration = -1
+			}
+			any_owned = {
+				limit = {
+					owned_by = THIS
+					OR = {
+						province_id = 78
+						province_id = 79
+						province_id = 80
+						province_id = 81
+						province_id = 82
+						province_id = 83
+						province_id = 84
+						province_id = 85
+						province_id = 86
+						province_id = 87
+						province_id = 88
+						province_id = 89
+						province_id = 90
+						province_id = 91
+						province_id = 92
+						province_id = 93
+						province_id = 94
+						province_id = 95
+						province_id = 96
+						province_id = 97
+						province_id = 98
+						province_id = 99
+						province_id = 100
+						province_id = 101
+						province_id = 102
+						province_id = 103
+						province_id = 104
+						province_id = 105
+						province_id = 106
+						province_id = 107
+						province_id = 108
+						province_id = 109
+						province_id = 110
+						province_id = 111
+						province_id = 112
+						province_id = 113
+						province_id = 114
+						province_id = 115
+						province_id = 116
+						province_id = 117
+						province_id = 118
+						province_id = 119
+						province_id = 120
+						province_id = 121
+						province_id = 122
+						province_id = 123
+						province_id = 124
+						province_id = 125
+						province_id = 126
+						province_id = 127
+						province_id = 128
+						province_id = 129
+						province_id = 130
+						province_id = 131
+						province_id = 132
+						province_id = 133
+						province_id = 134
+						province_id = 135
+						province_id = 136
+						province_id = 137
+						province_id = 138
+						province_id = 143
+						province_id = 144
+						province_id = 145
+						province_id = 151
+						province_id = 152
+						province_id = 153
+						province_id = 154
+						province_id = 155
+						province_id = 156
+						province_id = 157
+						province_id = 158
+						province_id = 173
+						province_id = 146
+						province_id = 147
+						province_id = 148
+						province_id = 149
+						province_id = 150
+						province_id = 174
+						province_id = 175
+						province_id = 176
+						province_id = 177
+						province_id = 198
+						province_id = 199
+						province_id = 200
+						province_id = 159
+						province_id = 160
+						province_id = 161
+						province_id = 162
+						province_id = 163
+						province_id = 166
+						province_id = 165
+						province_id = 167
+						province_id = 168
+						province_id = 164
+					}
+				}
+				add_province_modifier = { name = homestead duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					owned_by = THIS
+					OR = {
+						province_id = 139
+						province_id = 140
+						province_id = 141
+						province_id = 142
+						province_id = 169
+						province_id = 170
+						province_id = 171
+						province_id = 172
+						province_id = 178
+						province_id = 179
+						province_id = 180
+						province_id = 181
+						province_id = 182
+						province_id = 183
+						province_id = 184
+						province_id = 185
+						province_id = 186
+						province_id = 187
+						province_id = 188
+						province_id = 189
+						province_id = 190
+						province_id = 191
+						province_id = 192
+						province_id = 193
+						province_id = 194
+						province_id = 195
+						province_id = 196
+						province_id = 197
+						province_id = 201
+						province_id = 202
+						province_id = 204
+						province_id = 205
+						province_id = 206
+						province_id = 2555
+						province_id = 2556
+						province_id = 207
+						province_id = 208
+						province_id = 209
+						province_id = 210
+						province_id = 211
+						province_id = 212
+						province_id = 213
+						province_id = 214
+						province_id = 215
+						province_id = 216
+						province_id = 217
+						province_id = 218
+						province_id = 219
+						province_id = 220
+						province_id = 221
+						province_id = 222
+						province_id = 223
+						province_id = 224
+						province_id = 225
+						province_id = 226
+						province_id = 227
+						province_id = 228
+						province_id = 229
+						province_id = 230
+						province_id = 231
+						province_id = 232
+						province_id = 233
+						province_id = 234
+						province_id = 235
+						province_id = 236
+						province_id = 237
+						province_id = 238
+						province_id = 239
+						province_id = 240
+						province_id = 241
+						province_id = 242
+						province_id = 243
+						province_id = 244
+						province_id = 245
+						province_id = 246
+						province_id = 247
+						province_id = 248
+						province_id = 249
+						province_id = 250
+					}
+				}
+				add_province_modifier = { name = westward_migration duration = -1 }
+				add_province_modifier = { name = dixieland_assimilation duration = 3650 }
+			}
+		}
+	}
+	custers_expedition_csa = {
+		potential = {
+			OR = {
+				tag = CSA
+				tag = TEX
+			}
+			NOT = {
+				has_country_flag = custers_expedition_sent
+			}
+			owns = 122
+			year = 1874
+			USA = {
+				NOT = {
+					has_country_flag = custers_expedition_sent
+				}
+			}
+		}
+		
+		allow = {
+			122 = {
+				units_in_province = 1
+			}
+		}
+		
+		effect = {
+			prestige = 1
+			set_country_flag = custers_expedition_sent
+		}
+	}
+
+	golden_cuba = {
+		potential = {
+			tag = CSA
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = golden_cuba
+			}
+		}
+
+		allow = {
+			war = no
+			prestige = 50
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_country_flag = golden_cuba
+			badboy = 3
+			SPA_2209 = { add_core = CSA }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+		}
+	}
+
+	golden_circle_1 = {
+		picture = golden_circle
+		potential = {
+			tag = CSA
+			has_country_flag = golden_cuba
+			NOT = {
+				has_country_flag = golden_circle_1
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+			}
+			prestige = 50
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			set_country_flag = golden_circle_1
+			plurality = -5
+			prestige_factor = -0.05
+			badboy = 6
+			any_pop = { consciousness = 1 }
+			RGR = { all_core = { add_core = CSA	} }
+			2143 = { add_core = CSA } #Paso del Norte
+			2144 = { add_core = CSA } #Delicias
+			HAI_2213 = { add_core = CSA } #Hispanola
+			2222 = { add_core = CSA } #Puerto Rico
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = african_minor
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+					}
+				}
+				consciousness = 2
+				militancy = 1
+			}
+			any_country = {
+				limit = {
+					any_owned_province = {
+						is_core = CSA
+					}
+				}
+				relation = { who = CSA value = -100 }
+			}
+			any_greater_power = {
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.7
+			}
+		}
+	}
+	
+	golden_circle_2 = {
+		picture = golden_circle
+		potential = {
+			tag = CSA
+			has_country_flag = golden_circle_1
+			NOT = {
+				has_country_flag = golden_circle_2
+			}
+		}
+		allow = {
+			prestige = 100
+			war = no
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			set_country_flag = golden_circle_2
+			plurality = -10
+			prestige_factor = -0.1
+			badboy = 10
+			any_pop = { consciousness = 1 }
+			2162 = { add_core = CSA } #Veracruz
+			2163 = { add_core = CSA } #Tampico
+			2164 = { add_core = CSA } #Minatitlan
+			MEX_2183 = { add_core = CSA } #Yucatan
+			MEX_2181 = { add_core = CSA } #Chiapas
+			UCA_2186 = { add_core = CSA } #Guatemala
+			UCA_2191 = { add_core = CSA } #El Salvador
+			2217 = { add_core = CSA } #Jamaica
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = african_minor
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+					}
+				}
+				consciousness = 4
+				militancy = 2
+			}
+			any_country = {
+				limit = {
+					any_owned_province = {
+						is_core = CSA
+					}
+				}
+				relation = { who = CSA value = -100 }
+			}
+			any_greater_power = {
+				leave_alliance = THIS
+				relation = { who = THIS value = -25 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+	
+	golden_circle_3 = {
+		picture = golden_circle
+		potential = {
+			tag = CSA
+			has_country_flag = golden_circle_2
+			NOT = {
+				has_country_flag = golden_circle_3
+			}
+		}
+		allow = {
+			prestige = 125
+			war = no
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			set_country_flag = golden_circle_3
+			plurality = -15
+			prestige_factor = -0.15
+			badboy = 15
+			any_pop = { consciousness = 1 }
+			2155 = { add_core = CSA } #Torreon
+			2159 = { add_core = CSA } #San Luis de Potosi
+			2167 = { add_core = CSA } #Guanajuato
+			2173 = { add_core = CSA } #Queretaro
+			2175 = { add_core = CSA } #Tulancingo
+			2176 = { add_core = CSA } #Puebla
+			2177 = { add_core = CSA } #Oaxaca
+			UCA_2193 = { add_core = CSA } #Honduras
+			UCA_2197 = { add_core = CSA } #Nicaragua
+			UCA_2201 = { add_core = CSA } #Costa Rica
+			CLM_1723 = { add_core = CSA } #Panama
+			2218 = { add_core = CSA } #Cayman Islands
+			2219 = { add_core = CSA } #Bahamas
+			2220 = { add_core = CSA } #Turks and Caicos
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = african_minor
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+					}
+				}
+				consciousness = 6
+				militancy = 4
+			}
+			any_country = {
+				limit = {
+					any_owned_province = {
+						is_core = CSA
+					}
+				}
+				relation = { who = CSA value = -100 }
+			}
+			any_greater_power = {
+				leave_alliance = THIS
+				relation = { who = THIS value = -50 }
+				casus_belli = {
+					target = THIS
+					type = humiliate
+					months = 60
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.4
+			}
+		}
+	}
+	
+	golden_circle_4 = {
+		picture = golden_circle
+		potential = {
+			tag = CSA
+			has_country_flag = golden_circle_3
+			NOT = {
+				has_country_flag = golden_circle_4
+			}
+		}
+		allow = {
+			prestige = 150
+			war = no
+			is_greater_power = yes
+			nationalism_n_imperialism = 1
+			all_core = { owned_by = THIS }
+		}
+		effect = {
+			set_country_flag = golden_circle_4
+			plurality = -20
+			prestige_factor = -0.2
+			badboy = 20
+			any_pop = { consciousness = 1 }
+			MEX = { all_core = { add_core = CSA } }
+			2252 = { add_core = CSA } #Medellin
+			2253 = { add_core = CSA } #Quibdo
+			2254 = { add_core = CSA } #Cartagena
+			2255 = { add_core = CSA } #Barranquilla
+			2270 = { add_core = CSA } #Maracaafrican_minor
+			2271 = { add_core = CSA } #Valera
+			2272 = { add_core = CSA } #Coro
+			2264 = { add_core = CSA } #Caracas
+			2268 = { add_core = CSA } #san felipe
+			2273 = { add_core = CSA } #Barquisimeto
+			NET_2235 = { add_core = CSA } #Leeward Antilles
+			2267 = { add_core = CSA } #Cumana
+			2269 = { add_core = CSA } #Guiria
+			2276 = { add_core = CSA } #Curiapo
+			ENG_2224 = { add_core = CSA } #West Indies
+			ENG_2228 = { add_core = CSA } #Lesser Antilles
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = african_minor
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+						has_pop_culture = afro_american
+					}
+				}
+				consciousness = 8
+				militancy = 6
+			}
+			any_country = {
+				limit = {
+					any_owned_province = {
+						is_core = CSA
+					}
+				}
+				relation = { who = CSA value = -100 }
+			}
+			any_greater_power = {
+				leave_alliance = THIS
+				relation = { who = THIS value = -100 }
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 60
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.01
+			}
+		}
+	}
+
+	cuba_pri_purchase = {
+		picture = golden_hispania
+		potential = {
+			tag = CSA
+			has_country_flag = golden_circle_1
+			OR = {
+				SPA = {
+					exists = yes
+					ai = yes
+					OR = {
+						any_owned_province = { is_core = CSA }
+						is_sphere_leader_of = PRI
+						is_sphere_leader_of = CUB
+					}
+				}
+				SPC = {
+					exists = yes
+					ai = yes
+					OR = {
+						any_owned_province = { is_core = CSA }
+						is_sphere_leader_of = PRI
+						is_sphere_leader_of = CUB
+					}
+				}
+				IBR = {
+					exists = yes
+					ai = yes
+					OR = {
+						any_owned_province = { is_core = CSA }
+						is_sphere_leader_of = PRI
+						is_sphere_leader_of = CUB
+					}
+				}
+			}
+			NOT = { 
+				has_country_flag = cuba_pri_purchase
+			}
+		}
+		allow = {
+			war = no
+			money = 250000
+			OR = {
+				SPA = {
+					exists = yes
+					war = no
+					NOT = { truce_with = CSA }
+					is_greater_power = no
+				}
+				SPC = {
+					exists = yes
+					war = no
+					NOT = { truce_with = CSA }
+					is_greater_power = no
+				}
+				IBR = {
+					exists = yes
+					war = no
+					NOT = { truce_with = CSA }
+					is_greater_power = no
+				}
+			}
+		}
+		effect = {
+			set_country_flag = cuba_pri_purchase
+			treasury = -250000
+			random_country = {
+				limit = {
+					tag = SPA
+					exists = yes
+				}
+				treasury = 250000
+				any_owned = {
+					limit = { is_core = CSA }
+					secede_province = CSA
+				}
+				relation = { 
+					who = CSA
+					value = 50
+				}
+			}
+			random_country = {
+				limit = {
+					tag = SPC
+					exists = yes
+				}
+				treasury = 250000
+				any_owned = {
+					limit = { is_core = CSA }
+					secede_province = CSA
+				}
+				relation = { 
+					who = CSA
+					value = 50
+				}
+			}
+			random_country = {
+				limit = {
+					tag = IBR
+					exists = yes
+				}
+				treasury = 250000
+				any_owned = {
+					limit = { is_core = CSA }
+					secede_province = CSA
+				}
+				relation = { 
+					who = CSA
+					value = 50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	burn_the_white_house = {
+		picture = washington_burning
+		potential = {
+			NOT = { tag = USA }
+			war_with = USA
+			USA = {
+				owns = 220
+			}
+			NOT = {
+				has_global_flag = white_house_burned
+			}
+		}
+		allow = {
+			war_with = USA
+			controls = 220
+		}
+		effect = {
+			badboy = 2
+			set_global_flag = white_house_burned
+			USA = {
+				prestige = -20
+				war_exhaustion = 10
+				country_event = 182000
+			}
+		}
+	}
+
+	atlantic_slave_trade_reinstate = {
+		picture = slave_trade
+		potential = {
+			is_greater_power = yes
+			slavery = yes_slavery
+			NOT = { government = proletarian_dictatorship }
+			NOT = {
+				has_country_flag = slave_trade_leader
+				has_global_flag = slave_trade_reinstated
+				has_global_flag = berlin_conference
+			}
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				capital_scope = { continent = africa }
+			}
+		}
+		allow = {
+			slavery = yes_slavery
+			is_greater_power = yes
+			is_disarmed = no
+			OR = {
+			NOT = { tag = USA }
+			NOT = { government = democracy }
+			primary_culture = dixie
+			}
+			NOT = {
+				has_country_flag = national_confusion
+			}
+			total_num_of_ports = 8
+		}
+		effect = {
+			badboy = 10
+			any_greater_power = {
+				limit = {
+					NOT = {
+						alliance_with = THIS
+					}
+					slavery = no_slavery
+				}
+				relation = {
+					who = THIS
+					value = -200
+				}
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 24
+				}
+			}
+			add_country_modifier = {
+				name = atlantic_slave_trade
+				duration = -1
+			}
+			add_country_modifier = {
+				name = national_confusion
+				duration = 365
+			}
+			set_global_flag = slave_trade_reinstated
+			set_country_flag = slave_trade_leader
+			set_country_flag = the_slavery_debate
+			ENG = {
+				casus_belli = {
+					target = THIS
+					type = cut_down_to_size
+					months = 360
+				}
+				relation = {
+					who = THIS
+					value = -400
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					truce_with = ENG
+					badboy = 0.5
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						ruling_party_ideology = reactionary
+						ruling_party_ideology = conservative
+						ruling_party_ideology = fascist
+					}
+				}
+			}
+		}
+	}
+
+	join_slave_trade = {
+		picture = slave_ship
+		potential = {
+			slavery = yes_slavery
+			has_global_flag = slave_trade_reinstated
+			NOT = { has_country_flag = slave_trade_leader }
+			NOT = { tag = USA }
+			NOT = { tag = EGY }
+			NOT = { has_country_flag = slave_trader }
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = africa
+				}
+			}
+		}
+		allow = {
+			slavery = yes_slavery
+			total_num_of_ports = 1
+			war = no
+			is_disarmed = no
+			NOT = {
+				has_country_modifier = national_confusion
+			}
+		}
+		effect = {
+			badboy = 5
+			remove_country_modifier = the_slavery_debate
+			set_country_flag = the_slavery_debate
+			add_country_modifier = {
+				name = atlantic_slave_trade
+				duration = -1
+			}
+			set_country_flag = slave_trader
+			add_country_modifier = {
+				name = national_confusion
+				duration = 365
+			}
+			any_greater_power = {
+				limit = {
+					slavery = no_slavery
+				}
+				relation = {
+					who = THIS
+					value = -50
+				}
+			}
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = slave_trade_leader
+						has_country_flag = slave_trader
+					}
+				}
+				relation = {
+					who = THIS
+					value = 80
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				war = yes
+			}
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = berlin_conference
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						ruling_party_ideology = reactionary
+						ruling_party_ideology = conservative
+						ruling_party_ideology = fascist
+					}
+				}
+			}
+		}
+	}
+	leave_slave_trade = {
+		picture = slaves_freed
+		alert = no
+		potential = {
+			has_country_flag = slave_trader
+		}
+		allow = {
+			war = no
+			NOT = {
+				has_country_modifier = national_confusion
+			}
+			upper_house = {
+				ideology = liberal
+				value = 0.38
+			}
+		}
+		effect = {
+			remove_country_modifier = the_slavery_debate
+			clr_country_flag = the_slavery_debate
+			remove_country_modifier = atlantic_slave_trade
+			add_country_modifier = { 
+				name = national_confusion
+				duration = 365
+			}
+			clr_country_flag = slave_trader
+			any_country = {
+				limit = {
+					OR = {
+						has_country_flag = slave_trader
+						has_country_flag = slave_trade_leader
+					}
+					relation = {
+						who = THIS
+						value = -60
+					}
+				}
+			}
+			any_pop = {
+				militancy = -3
+				consciousness = 1
+			}
+			badboy = -3
+		}
+		ai_will_do = {
+			factor = 0.4
+			modifier = {
+				factor = 0
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+					ruling_party_ideology = reactionary
+					NOT = {
+						OR = { 
+							government = democracy
+							government = hms_government
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					ruling_party_ideology = liberal
+					ruling_party_ideology = anarcho_liberal
+				}
+			}
+			modifier = { # When the Scramble for Africa begins and European powers move in, the Slave Trade should naturally fall apart
+				factor = 100
+				has_global_flag = berlin_conference
+			}
+		}
+	}
+	end_slave_trade = {
+		picture = slaves_freed
+		alert = no
+		potential = {
+			has_country_flag = slave_trade_leader
+		}
+		allow = {
+			war = no
+			NOT = {
+				has_country_modifier = national_confusion
+			}
+			upper_house = {
+				ideology = liberal
+				value = 0.51
+			}
+		}
+		effect = {
+			clr_global_flag = slave_trade_reinstated
+			clr_country_flag = slave_trade_leader
+			clr_country_flag = the_slavery_debate
+			remove_country_modifier = the_slavery_debate
+			remove_country_modifier = atlantic_slave_trade
+			add_country_modifier = {
+				name = national_confusion
+				duration = 365
+			}
+			any_country = {
+				limit = {
+					has_country_flag = slave_trader
+				}
+				set_country_flag = slave_trade_ended
+			}
+			badboy = -7
+			prestige = 10
+			any_pop = {
+				militancy = -4
+			}
+			any_greater_power = {
+				limit = {
+					NOT = {
+						tag = THIS
+					}
+				}
+				relation = {
+					who = THIS
+					value = 50
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+				modifier = {
+					factor = 0
+					is_greater_power = yes
+				}
+				modifier = {
+					factor = 100
+					is_greater_power = no
+					is_secondary_power = no
+				}
+		}
+	}
+	#New York declaration of independence
+	declaration_independence_ny = {
+		picture = new_york_flag
+		potential = {
+			tag = UNY
+			has_global_flag = ny_independent_flag
+			NOT = {
+				has_country_flag = ny_declaration_independence
+			}
+		}
+		allow = {
+			war = no
+		}
+		effect = {
+			war_exhaustion = -25
+			232 = {
+				add_province_modifier = {
+					name = gateway_to_america
+					duration = -1
+				}
+			}
+			prestige = 10
+			USA = {
+				country_event = 187907
+			}
+			set_country_flag = ny_declaration_independence
+		}
+	}
+	
+	#New York City claims the whole state
+	claim_ny_state = {
+		picture = new_york_flag
+		potential = {
+			tag = UNY
+			NOT = {
+				has_country_flag = has_claimed_ny
+			}
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			NOT = {
+				alliance_with = USA
+			}
+		}
+		allow = {
+			war = no
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+		}
+		effect = {
+			badboy = 5
+			set_country_flag = has_claimed_ny
+			relation = {
+				who = USA
+				value = -100
+			}
+			234 = {
+				add_core = UNY
+			}
+			235 = {
+				add_core = UNY
+			}
+			236 = {
+				add_core = UNY
+			}
+			237 = {
+				add_core = UNY
+			}
+			238 = {
+				add_core = UNY
+			}
+			239 = {
+				add_core = UNY
+			}
+			240 = {
+				add_core = UNY
+			}
+		}
+	}	
+	
+	#Aberdeen Act for UK
+	aberdeen_act = {
+		potential = {
+			tag = ENG
+			is_greater_power = yes
+			slavery = no_slavery
+			BRZ = {
+				slavery = yes_slavery
+			}
+			NOT = {
+				has_country_flag = aberdeen_act_signed
+			}
+		}
+		allow = {
+			state_n_government = 1
+			war = no
+		}
+		effect = {
+			prestige = 5
+			set_country_flag = aberdeen_act_signed
+			BRZ = {
+				country_event = 187911
+			}
+		}
+	}
+	#Mulatto-African tension
+	mulatto_african_tension = {
+		picture = coloured_troops
+		potential = {
+			tag = BRZ
+			slavery = yes_slavery
+			NOT = {
+				has_country_flag = mulatto_tensions_flag
+			}
+		}
+		allow = {
+			war = no
+			year = 1836
+		}
+		effect = {
+			add_country_modifier = {
+				name = mulatto_modifier
+				duration = 18000
+			}
+			set_country_flag = mulatto_tensions_flag
+			any_state = {
+				limit = {
+					is_slave = yes
+				}
+				any_pop = {
+					limit = {
+						OR = {
+							type = slaves
+							type = slaves_factory
+						}
+					}
+					militancy = -5
+				}
+			}
+		}
+	}
+
+	pro_slavery_propaganda = {
+		picture = slavery_propaganda
+		alert = no
+		potential = {
+			OR = {
+				NOT = { tag = USA }
+				year = 1870
+			}
+			slavery = yes_slavery
+			civilized = yes
+			NOT = {
+				has_country_modifier = slavery_propaganda
+			}
+		}
+		
+		allow = {
+			prestige = 10
+			war = no
+			money = 25000
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		
+		effect = {
+			any_pop = {
+				militancy = -1
+				consciousness = -2
+				dominant_issue = {
+					value = yes_slavery
+					factor = 0.13
+				}
+			}
+			add_country_modifier = {
+				name = slavery_propaganda
+				duration = 5475
+			}
+			prestige = -10
+			badboy = 1
+			plurality = -5
+			treasury = -25000
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					war = yes
+					NOT = {
+					year = 1860
+					tag = BRZ
+					tag = CSA
+					}
+					badboy = 0.95
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
+		}
+	}
+	tex_support_csa = {
+		picture = reform_csa
+		potential = {
+			tag = TEX
+			exists = CSA
+			is_vassal = no
+			NOT = {	alliance_with = CSA }
+			NOT = { alliance_with = USA }
+			NOT = { has_country_flag = tex_supported_csa }
+		}
+		allow = {
+			exists = CSA
+		}
+		effect = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+			set_country_flag = tex_supported_csa
+			USA = {
+				relation = {
+					who = THIS
+					value = -100
+				}
+			}
+			relation = {
+				who = CSA
+				value = 200
+			}
+			create_alliance = CSA
+			diplomatic_influence = {
+				who = CSA
+				value = 200
+			}
+			add_casus_belli = {
+				target = USA
+				type = cut_down_to_size
+				months = 36
+			}
+		}
+	}
+	enslave_the_free = {
+		picture = slaves_cotton
+		alert = no
+		potential = {
+			slavery = yes_slavery
+			civilized = yes
+			OR = {
+				AND = {
+					year = 1840
+					NOT = {
+						tag = USA
+					}
+				}
+				has_global_flag = american_civil_war_has_happened
+			}
+			NOT = {
+				has_country_modifier = enslaved_freedom
+			}
+				any_owned_province = {
+				any_pop = {
+					OR = {
+					is_culture_group = african_diaspora_cultures
+					has_pop_culture = african_minor
+					has_pop_culture = asian_minor
+					}
+					OR = {
+						pop_type = farmers
+						pop_type = labourers
+						pop_type = soldiers
+						pop_type = clergymen
+						pop_type = bureaucrats
+						pop_type = officers
+						pop_type = artisans
+						pop_type = craftsmen
+						pop_type = clerks
+					}
+				NOT = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
+				}
+			}
+		}
+	}
+		allow = {
+			OR = {
+			is_secondary_power = yes
+			is_greater_power = yes
+			year = 1900
+			}
+			NOT = {
+				militancy = 6
+			}
+			war = no
+			NOT = { government = proletarian_dictatorship }
+		}
+		effect = {
+			badboy = 3
+			any_pop = {
+				consciousness = 1
+			}
+			any_state = {
+				limit = {
+					is_slave = no
+				}
+			any_owned = {
+			state_scope = {
+				is_slave = yes
+				}
+			}
+		}
+			any_pop = {
+				limit = {
+					OR = {
+						is_culture_group = african_diaspora_cultures
+						has_pop_culture = african_minor
+						has_pop_culture = asian_minor
+					}
+					OR = {
+						pop_type = farmers
+						pop_type = labourers
+						pop_type = soldiers
+						pop_type = clergymen
+						pop_type = bureaucrats
+						pop_type = officers
+						pop_type = artisans
+					}
+					NOT = {
+						OR = {
+							is_primary_culture = yes
+							is_accepted_culture = yes
+						}
+					}
+				}
+				pop_type = slaves
+				militancy = 9
+				consciousness = 9
+			}
+			any_pop = {
+				limit = {
+					OR = {
+						is_culture_group = african_diaspora_cultures
+						has_pop_culture = african_minor
+						has_pop_culture = asian_minor
+					}
+					OR = {
+					pop_type = craftsmen
+					pop_type = clerks
+					}
+					NOT = {
+						OR = {
+							is_primary_culture = yes
+							is_accepted_culture = yes
+						}
+					}
+				}
+				pop_type = slaves_factory
+				militancy = 9
+				consciousness = 9
+			}
+			add_country_modifier = {
+				name = enslaved_freedom
+				duration = 5475
+			}
+	}
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+				badboy = 0.8
+			}
+			modifier = {
+				factor = 0
+					capital_scope = {
+					continent = europe
+					}
+					NOT = { has_country_modifier = enslaving_minorities }
+				}
+			modifier = {
+				factor = 0
+				tag = BRZ
+				NOT = {
+				year = 1900
+				has_country_flag = slave_trade_leader
+				has_country_flag = slave_trader
+				}
+			}
+			modifier = {
+				factor = 10
+				tag = CSA
+			}
+			modifier = {
+				factor = 0
+				tag = TUR
+				NOT = {
+				year = 1890
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+				year = 1850
+				}
+			}
+			modifier = {
+				factor = 0
+				tag = USA
+				NOT = {
+				year = 1870
+				}
+			}
+			modifier = {
+				factor = 10
+				government = bourgeois_dictatorship
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ruling_party_ideology = socialist
+					ruling_party_ideology = communist
+				}
+			}
+		}
+	}
+	tex_final_independence = {
+		picture = switch_to_liberty
+		potential = {
+			tag = TEX
+			exists = USA
+			any_owned_province = { is_core = USA }
+			NOT = { has_country_flag = texas_final_independence }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			OR = {
+			is_greater_power = yes
+			is_secondary_power = yes
+			}
+			NOT = { num_of_revolts = 1 }
+			war = no
+		}
+		effect = {
+			set_country_flag = texas_final_independence
+			prestige = 10
+			any_pop = {
+				militancy = -5
+				consciousness = -5
+			}
+			any_owned = {
+				limit = {
+					is_core = USA
+					is_core = THIS
+				}
+				remove_core = USA
+			}
+			USA = {
+				prestige = -10
+				relation = {
+					who = THIS
+					value = -200
+				}
+				diplomatic_influence = {
+					who = THIS
+					value = -200
+				}
+			}
+		}
+	}
+	tex_claim_rio_grande = {
+		picture = manifest_destiny
+		potential = {
+			tag = TEX
+			exists = MEX
+			has_country_flag = texas_final_independence
+			NOT = { has_country_flag = rgr_claimed }
+			NOT = { has_country_flag = texanborders }
+			OR = {
+				NOT = { exists = RGR }
+				AND = {
+					exists = RGR
+					NOT = {
+						relation = {
+							who = RGR
+							value = 0
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 50
+			OR = {
+				is_secondary_power = yes
+				is_greater_power = yes
+			}
+			NOT = {
+				alliance_with = MEX
+			}
+			NOT = {
+				alliance_with = RGR
+			}
+			NOT = {
+				relation = {
+					who = MEX
+					value = 0
+				}
+			}
+			war = no
+		}
+		effect = {
+			set_country_flag = rgr_claimed
+			badboy = 10
+			any_pop = {
+				limit = {
+					OR = {
+						is_accepted_culture = yes
+						is_primary_culture = yes
+					}
+				}
+				dominant_issue = {
+					factor = 0.05
+					value = jingoism
+				}
+				consciousness = 1
+			}
+			RGR = {
+				all_core = {
+					add_core = TEX
+			}
+			2147 = {
+				add_core = TEX
+			}
+			2149 = {
+				add_core = TEX
+			}
+		}
+	}
+}
+}

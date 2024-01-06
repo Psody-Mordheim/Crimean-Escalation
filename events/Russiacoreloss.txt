@@ -1,0 +1,240 @@
+country_event = {
+	
+	id = 566673
+	title = "The Polish Nation"
+	desc = "We have ruled over the core Polish lands for quite a while. Whatever legitimacy Russia once had over the territory is long gone."
+	picture = "treaty"
+	
+	trigger = {
+		OR = {
+		tag = POL
+		tag = CPL
+		tag = PLC
+		}
+		NOT = { has_country_modifier = neutrality }
+		war = no
+		OR = {
+		706 = {
+			is_core = RUS
+		}
+		713 = {
+			is_core = RUS
+		}
+		710 = {
+			is_core = RUS
+		}
+		716 = {
+			is_core = RUS
+		}
+		}
+		RUS_706 = { owned_by = THIS }
+		RUS_715 = { owned_by = THIS }
+		}
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "Go home, Russian scum."
+		RUS_706 = {
+			remove_core = RUS
+		}
+		RUS_715 = {
+			remove_core = RUS
+		}
+		}
+	}
+country_event = {
+	
+	id = 566674
+	title = "The Gulf of Bothnia Isles"
+	desc = "The Russians have lost control of their main port in the Gulf of Bothnia for quite a while now, making it hard for Russia to be treated seriously when they claim that that it rightfully belongs to them."
+	picture = "treaty"
+	
+	trigger = {
+		OR = {
+		tag = SWE
+		tag = FIN
+		tag = SCA
+		}
+		war = no
+		348 = { owned_by = THIS }
+		348 = {
+			is_core = RUS
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "We have proven that the islands belong to us"
+		348 = {
+			remove_core = RUS
+			}
+		}
+	}
+country_event = {
+	
+	id = 566675
+	title = "Russian Claims"
+	desc = "The Russians have lost control of Finland for quite a while now, making it hard for Russia to be treated seriously when they claim that that it rightfully belongs to them."
+	picture = "treaty"
+	
+	trigger = {
+		OR = {
+		tag = SWE
+		tag = FIN
+		tag = SCA
+		}
+		war = no
+		343 = { owned_by = THIS }
+		343 = {
+			is_core = RUS
+		}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "Go home, Russian scum"
+		RUS_343 = {
+			remove_core = RUS
+			}
+		RUS_336 = {
+			remove_core = RUS
+			}
+		RUS_345 = {
+			remove_core = RUS
+			}
+		}
+	}
+country_event = {
+	
+	id = 566676
+	title = "Russian Claims"
+	desc = "We have held Estonia for quite some time, rendering the Russian claim over the land void of international legitimacy."
+	picture = "treaty"
+	
+	trigger = {
+		OR = {
+		tag = EST
+		tag = UBD
+		}
+		war = no
+		NOT = {
+		vassal_of = RUS
+		}
+		349 = { owned_by = THIS }
+	OR = {
+	351 = {
+			is_core = RUS
+		}
+	349 = {
+			is_core = RUS
+		}
+	}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "Go home, Russian scum."
+		RUS_349 = {
+			remove_core = RUS
+			}
+		}
+	}
+	country_event = {
+	
+	id = 566677
+	title = "Russian Claims"
+	desc = "We have held Latvia for quite some time, rendering the Russian claim over the land void of international legitimacy."
+	picture = "treaty"
+	
+	trigger = {
+		OR = {
+		tag = LAT
+		tag = UBD
+		}
+		war = no
+		NOT = {
+		vassal_of = RUS
+		}
+		354 = { owned_by = THIS }
+	OR = {
+	354 = {
+			is_core = RUS
+		}
+	358 = {
+			is_core = RUS
+		}
+	}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "Go home, Russian scum."
+		RUS_354 = {
+			remove_core = RUS
+			}
+		}
+	}
+	country_event = {
+	
+	id = 566678
+	title = "Russian Claims"
+	desc = "We have held Lithuania for quite some time, making it so that the Russian claim over the land no longer has any international legitimacy."
+	picture = "treaty"
+	
+	trigger = {
+		OR = {
+		tag = LIT
+		tag = UBD
+		}
+		war = no
+		NOT = {
+		vassal_of = RUS
+		}
+		364 = { owned_by = THIS }
+	OR = {
+	364 = {
+			is_core = RUS
+		}
+	365 = {
+			is_core = RUS
+		}
+	}
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "Go home, Russian scum."
+		RUS_361 = {
+			remove_core = RUS
+			}
+		362 = { remove_core = RUS }
+		}
+	}

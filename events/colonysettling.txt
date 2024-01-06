@@ -1,0 +1,80 @@
+country_event = {
+	id = 220001
+	title = "Colonial Migration Policy"
+	desc = "EVTDESC220001"
+	picture = "Panama8"
+
+	trigger = {
+		colonial_nation = yes
+		war = no
+		ai = no
+		NOT = { has_country_flag = set_colonial_migration }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "All of them"
+		clr_country_flag = africamigration
+		clr_country_flag = asiamigration
+		clr_country_flag = europemigration
+		set_country_flag = set_colonial_migration
+		country_event = { id = 220002 days = 0 }
+	}	
+	option = {
+		name = "Africa"
+		set_country_flag = africamigration
+		set_country_flag = set_colonial_migration
+		country_event = { id = 220001 days = 1 }
+	}
+	option = {
+		name = "Asia"
+		set_country_flag = asiamigration
+		set_country_flag = set_colonial_migration
+		country_event = { id = 220001 days = 1 }
+	}
+	option = {
+		name = "Americas, Oceania and Europe"
+		set_country_flag = europemigration
+		set_country_flag = set_colonial_migration
+		country_event = { id = 220001 days = 1 }
+	}
+	option = {
+		name = "I have made my choices"
+		set_country_flag = set_colonial_migration
+		country_event = { id = 220002 days = 0 }
+	}
+}
+
+
+
+country_event = {
+	id = 220002
+	title = "Colonial Migration Policy"
+	desc = "Now all that's left is to decide is if we want our people to move to desolate colonies or densely populated ones. What should be the max pops of the provinces they move to?"
+	picture = "migrationwest"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "No limits"
+	}	
+	option = {
+		name = "250.000 Pops at max"
+		set_country_flag = 250kpopscolony
+	}
+	option = {
+		name = "120.000 Pops at max"
+		set_country_flag = 120kpopscolony
+	}
+	option = {
+		name = "60.000 Pops at max"
+		set_country_flag = 60kpopscolony
+	}
+	option = {
+		name = "30.000 Pops at max"
+		set_country_flag = 30kpopscolony
+	}
+}

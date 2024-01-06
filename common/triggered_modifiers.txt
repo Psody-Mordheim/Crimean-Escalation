@@ -1,0 +1,381 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+the_british_raj = {
+	trigger = {
+		exists = yes
+		NOT = { is_culture_group = iranian_turanian }
+		NOT = { is_culture_group = south_asian }
+		1236 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1251 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1297 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 0.75
+	core_pop_militancy_modifier = -0.04
+	leadership = 1.0
+	prestige = 0.02
+	icon = 19
+}
+ai_raj = {
+	trigger = {
+		ai = yes	
+		exists = yes
+		is_culture_group = british
+		1236 = {
+			is_colonial = no
+			owned_by = THIS
+		}
+		NOT = { capital_scope = { continent = europe } }
+	}
+	research_points_modifier = -1
+	research_points = -2.5
+	icon = 19
+}
+dutch_east_india = {
+	trigger = {
+		exists = yes
+		capital_scope = { continent = europe }
+		1413 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1418 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	research_points = 0.5
+	core_pop_militancy_modifier = -0.01
+	leadership = 0.5
+	prestige = 0.01
+	icon = 19
+}
+
+vassal_nation = {
+	trigger = {
+		exists = yes
+		is_vassal = yes
+	}
+	icon = 10
+	prestige = -2.0
+}
+german_minor = {
+	trigger = {
+		exists = yes
+		is_culture_group = germanic
+		NOT = {
+		549 = {
+			owned_by = this
+		}
+		619 = {
+			owned_by = this
+		}
+		605 = {
+			owned_by = this
+			}
+		575 = {
+			owned_by = this
+			}
+		594 = {
+			owned_by = this
+			}
+		}
+	}
+	icon = 10
+	prestige = -0.15
+}
+laissez_faire_tarrifs = {
+	trigger = {
+		exists = yes
+		ai = yes
+		OR = {
+		economic_policy = laissez_faire	
+		civilized = no
+		NOT = {
+		year = 1860
+		}
+		NOT = {
+		literacy = 0.4
+		}
+		}
+		OR = {
+		NOT = {
+		is_culture_group = british
+		is_culture_group = french
+		is_culture_group = germanic
+		}
+		is_greater_power = no
+		NOT = { year = 1860 }
+		}
+		NOT = {
+		money = 3000000
+		}
+	}
+	icon = 10
+	min_tariff = 0.5
+}
+laissez_faire_tarrifs2 = {
+	trigger = {
+		exists = yes
+		ai = yes
+		trade_policy = protectionism
+		war = yes
+		OR = {
+		NOT = {
+		is_culture_group = british
+		is_culture_group = french
+		is_culture_group = germanic
+		}
+		is_greater_power = no
+		NOT = { year = 1870 }
+		}
+		NOT = {
+		money = 3000000
+		}
+	}
+	icon = 10
+	min_tariff = 0.25
+}
+low_lit_tariffs = {
+	trigger = {
+		exists = yes
+		ai = yes
+		trade_policy = protectionism
+		NOT = {
+		literacy = 0.2
+		}
+		NOT = {
+		money = 3000000
+		}
+	}
+	icon = 10
+	min_tariff = 0.25
+}
+low_lit_tariffs_war = {
+	trigger = {
+		exists = yes
+		ai = yes
+		war = yes
+		trade_policy = protectionism
+		NOT = {
+		literacy = 0.2
+		}
+		NOT = {
+		money = 3000000
+		}
+	}
+	icon = 10
+	min_tariff = 0.25
+}
+buffer_zone = {
+	trigger = {
+		exists = yes
+		is_culture_group = french
+		387 = { owned_by = this }
+		394 = { owned_by = this }
+		
+		NOT = {
+			462 = { owned_by = this }
+			422 = { owned_by = this }
+			436 = { owned_by = this }
+			375 = {
+			owned_by = this
+			}
+			425 = {
+			owned_by = this
+			}
+			400 = {
+			owned_by = this
+			}
+			378 = {
+			owned_by = this
+			}
+		}
+	}
+	icon = 10
+	prestige = -0.2
+}
+
+social_reformed_nation = {
+		trigger = {
+			exists = yes
+			wage_reform = good_minimum_wage
+			work_hours = eight_hours
+			safety_regulations = good_safety
+			unemployment_subsidies = good_subsidies
+			pensions = good_pensions
+			school_reforms = good_schools
+		}
+		
+	social_reform_desire = -0.3
+	icon = 13
+}
+
+war_ex2 = {
+		trigger = {
+		war_exhaustion = 35
+	}
+	global_pop_consciousness_modifier = 0.02
+	icon = 13
+}
+
+educational_spen = {
+	trigger = {
+		ai = yes
+		exists = yes
+		education_spending = 0.74
+	}
+
+	education_efficiency_modifier = 0.25
+	icon = 16
+}
+
+admin_spen = {
+	trigger = {
+		ai = yes
+		exists = yes
+		administration_spending = 0.74
+	}
+
+	administrative_efficiency_modifier = 0.25
+	icon = 16
+}
+
+ai_bonus = {
+	trigger = {
+		ai = yes
+		exists = yes
+	}
+	administrative_efficiency_modifier = 0.05
+}
+mobilization_bonus_minor1 = {
+	trigger = {
+		exists = yes
+		NOT = {
+			total_pops = 500000
+		}
+	}
+	tax_efficiency = 0.05
+	mobilisation_size = 0.02
+}
+mobilization_bonus_minor2 = {
+	trigger = {
+		exists = yes
+		total_pops = 500000
+		NOT = {
+			total_pops = 1000000
+		}
+	}
+	tax_efficiency = 0.025
+	mobilisation_size = 0.01
+}
+revanchism_modifier1 = {
+	trigger = {
+		exists = yes
+		revanchism = 0.05
+		NOT = { revanchism = 0.1 }
+	}
+	mobilisation_size = 0.01
+	war_exhaustion = -0.05
+	unit_start_experience = 0.025
+	leadership = 0.25
+}
+revanchism_modifier2 = {
+	trigger = {
+		exists = yes
+		revanchism = 0.1
+		NOT = { revanchism = 0.2 }
+	}
+	mobilisation_size = 0.02
+	war_exhaustion = -0.1
+	global_population_growth = 0.001
+	unit_start_experience = 0.05
+	leadership = 0.5
+}
+revanchism_modifier3 = {
+	trigger = {
+		exists = yes
+		revanchism = 0.2
+		NOT = { revanchism = 0.4 }
+	}
+	mobilisation_size = 0.04
+	war_exhaustion = -0.2
+	global_population_growth = 0.002
+	unit_start_experience = 0.075
+	leadership = 0.75
+}
+revanchism_modifier4 = {
+	trigger = {
+		exists = yes
+		revanchism = 0.4
+	}
+	mobilisation_size = 0.06
+	war_exhaustion = -0.4
+	global_population_growth = 0.003
+	unit_start_experience = 0.1
+	leadership = 1.0
+}
+pop_growth_unciv = {
+	trigger = {
+		exists = yes
+		civilized = no		
+		OR = {
+			NOT = {
+				is_culture_group = east_asian
+				is_culture_group = south_asian
+				primary_culture = japanese
+			}
+			primary_culture = korean
+		}
+		OR = {
+		year = 1837
+		month = 1
+		}
+	}
+	global_population_growth = 0.005
+}
+pop_growth_unciv2 = {
+	trigger = {
+		exists = yes
+		civilized = no
+		OR = {
+		is_culture_group = turko_semitic
+		is_culture_group = arab
+		is_culture_group = iranian_turanian
+		is_culture_group = central_asian
+		is_culture_group = levantine
+		}
+		OR = {
+		year = 1837
+		month = 1
+		}
+	}
+	global_population_growth = 0.003
+}
+
+uncivilized_mobilization = {
+	trigger = {
+		exists = yes
+		civilized = no
+		OR = {
+			is_culture_group = east_asian
+			is_culture_group = south_asian
+		}
+		NOT {
+			primary_culture = korean
+		}
+	}
+	icon = 10
+	mobilisation_size = -0.1
+}

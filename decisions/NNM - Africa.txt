@@ -1,0 +1,87 @@
+political_decisions = {
+
+	#############################################
+	#				Africa						#
+	#############################################
+	create_africa = {
+		potential = {
+			tag = EGY
+			always = no
+			NOT = { has_global_flag = africa_created }
+		}
+		allow = {
+			tag = EGY
+		}
+		effect = {
+			set_global_flag = africa_created
+			
+
+			TRI_1731 = { add_core = LBY }
+			TRI_1731 = { remove_core = TUR }
+			TRI_1731 = { remove_core = TRI }
+			TRI_1731 = { remove_core = CYR }
+			#Egypt (re-work)
+			CRE = {
+				all_core = {
+					remove_core = EGY
+					add_core = TUR
+				}
+			}
+			
+			#Ethiopia
+			ETH = {
+				all_core = { remove_core = ETH }
+			}
+			1848 = { add_core = ETH }
+			1849 = { add_core = ETH }
+			1850 = { add_core = ETH }
+			1851 = { add_core = ETH }
+			1852 = { add_core = ETH }
+			1853 = { add_core = ETH }
+			1854 = { add_core = ETH }
+			1855 = { add_core = ETH }
+			1856 = { add_core = ETH }
+			1857 = { add_core = ETH }
+			1858 = { add_core = ETH }
+			1859 = { add_core = ETH }
+			1860 = { add_core = ETH }
+			1861 = { add_core = ETH }
+			1862 = { add_core = ETH }
+			1863 = { add_core = ETH }
+			1864 = { add_core = ETH }
+			1865 = { add_core = ETH }
+			1866 = { add_core = ETH }
+			1867 = { add_core = ETH }
+
+			#Sokoto (re-work)
+			
+			#Sudan
+			1827 = { add_core = SUD }
+			1828 = { add_core = SUD }
+			1829 = { add_core = SUD }
+			1830 = { add_core = SUD }
+			1831 = { add_core = SUD }
+			1832 = { add_core = SUD }
+			1833 = { add_core = SUD }
+			1834 = { add_core = SUD }
+			1835 = { add_core = SUD }
+			1836 = { add_core = SUD }
+			1837 = { add_core = SUD }
+			1838 = { add_core = SUD }
+			1839 = { add_core = SUD }
+			1840 = { add_core = SUD }
+			1843 = { add_core = SUD }
+			1842 = { add_core = SUD }
+			1841 = { add_core = SUD }
+			1847 = { add_core = SUD }
+			1844 = { add_core = SUD }
+			1846 = { add_core = SUD }
+			1845 = { add_core = SUD }
+			2564 = { add_core = SUD }
+
+			1875 = { add_core = ETH }
+			
+			#Tripoli (add cores)
+		}
+	}
+}

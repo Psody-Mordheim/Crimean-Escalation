@@ -1,0 +1,5 @@
+trade_goods = fish
+owner = FRA
+controller = FRA
+life_rating = 15
+ 

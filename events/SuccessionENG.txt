@@ -1,0 +1,264 @@
+#Death of William IV
+country_event = {
+	id = 333345
+	title = "The Death of King William"
+	desc = "EVTDESC333345"
+	picture = "Victoria_accession"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1837
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 7
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1838
+		}
+	}
+
+	option = {
+		name = "EVTOPTA333345"
+		any_pop = {
+			consciousness = 1
+		}
+	}
+}
+
+#Marriage of Albert Edward
+country_event = {
+	id = 333346
+	title = "EVTNAME333346"
+	desc = "EVTDESC333346"
+	picture = "Wedding_Edward"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1863
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1864
+		}
+	}
+
+	option = {
+		name = "EVTOPTA333346"
+		prestige = 5
+		relation = { who = DEN value = 50 }
+	}
+}
+
+#Marriage of George Frederick
+country_event = {
+	id = 333347
+	title = "EVTNAME333347"
+	desc = "EVTDESC333347"
+	picture = "Wedding_George"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1893
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 7
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1894
+		}
+	}
+
+	option = {
+		name = "EVTOPTA333347"
+		prestige = 5
+	}
+}
+
+#Coronation of Edward VII
+country_event = {
+	id = 333348
+	title = "EVTNAME333348"
+	desc = "EVTDESC333348"
+	picture = "Coronation_Edward"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		has_global_flag = death_of_victoria
+		year = 1902
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 8
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1903
+		}
+	}
+
+	option = {
+		name = "EVTOPTA333348"
+		prestige = 5
+	}
+}
+
+#Death of Edward VII
+country_event = {
+	id = 333349
+	title = "EVTNAME333349"
+	desc = "EVTDESC333349"
+	picture = "Death_Edward"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1910
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 2
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1911
+		}
+	}
+
+	option = {
+		name = "EVTOPTA333349"
+		any_pop = {
+			consciousness = 1
+		}
+	}
+}
+
+#Coronation of George V
+country_event = {
+	id = 333350
+	title = "EVTNAME333350"
+	desc = "EVTDESC333350"
+	picture = "Coronation_George"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1911
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 4
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1912
+		}
+	}
+
+	option = {
+		name = "EVTOPTA333350"
+		prestige = 5
+	}
+}
+
+#Elizabeth Alexandra Mary
+country_event = {
+	id = 333351
+	title = "EVTNAME333351"
+	desc = "EVTDESC333351"
+	picture = "Elizabeth_ii"
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = ENL
+		}
+		year = 1933
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 4
+
+		modifier = {
+			factor = 0.95 #increase likelihood to happen
+			year = 1934
+		}
+	}
+
+	option = {
+		name = "Cute!"
+		prestige = 1
+	}
+}

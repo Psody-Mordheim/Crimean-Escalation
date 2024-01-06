@@ -1,0 +1,120 @@
+political_decisions = {
+	
+	enact_rama_iv_reforms = {
+		picture = mongkut
+		potential = {
+			tag = SIA
+			civilized = no
+			NOT = { has_country_flag = enact_rama_iv_reforms }
+		}
+		allow = {
+			war = no
+			year = 1850
+			has_country_modifier = western_influences
+			OR = { 
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+		}
+		
+		effect = {
+			set_country_flag = enact_rama_iv_reforms
+			prestige = 5
+			years_of_research = 3
+			add_country_modifier = {
+				name = rama_iv
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	enact_rama_v_reforms = {
+		picture = chulalongkorn
+		potential = {
+			tag = SIA
+			has_country_flag = enact_rama_iv_reforms 
+			OR = { 
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+			NOT = { 
+				has_country_modifier = rama_iv
+				has_country_flag = enact_rama_v_reforms
+			}
+		}
+		allow = {
+			war = no
+			year = 1868
+		}
+		
+		effect = {
+			set_country_flag = enact_rama_v_reforms
+			plurality = 2
+			years_of_research = 2
+			add_country_modifier = {
+				name = rama_v
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	thai_constitution = {
+		picture = thai_constitution
+		potential = {
+			tag = SIA
+			civilized = yes
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+			}
+			NOT = { has_country_flag = thai_constitution }
+		}
+		
+		allow = {
+			war = no
+			plurality = 20
+			state_n_government = 1
+			average_consciousness = 3
+		}
+		
+		effect = {
+			set_country_flag = thai_constitution
+			remove_country_modifier = uncivilized_isolationism
+			prestige = 10
+			political_reform = wealth_weighted_voting
+			random_owned = {
+				limit = {
+					owner = { political_parties = underground_parties }
+				}
+				owner = {
+					political_reform = harassment
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = { upper_house_composition = party_appointed }
+				}
+				owner = {
+					political_reform = appointed
+				}
+			}
+			
+			random_owned = {
+				limit = {
+					owner = { debt_law = serfdom }
+				}
+				owner = {
+					political_reform = debtors_prisons
+				}
+			}
+			government = prussian_constitutionalism
+			any_pop = { militancy = -2 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

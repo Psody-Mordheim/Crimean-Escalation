@@ -1,0 +1,413 @@
+#North America
+TEX = {
+	value = 125		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+MEX = {
+	value = 100		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+UCA = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+COL = {				#Columbia if released
+	value = 50		#relation
+	level = 2		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+
+#South America
+ECU = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+ARG = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+PEU = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+BOL = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+PBC = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+CHL = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+PRG = {
+	value = -200		#relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+RGS = {				
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+CLM = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+BRZ = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+URU = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+VNZ = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 10
+}
+
+#Other GP's
+ENG = {
+	value = 50
+}
+FRA = {
+	value = 75
+}
+
+#Other
+TKG = {
+	value = 0
+	level = 3
+	influence_value = 25
+}
+MOR = {
+	value = 200
+}
+
+QNG ={
+	level = 0
+}
+
+
+ZAN ={
+	value = -200
+	level = 0
+	influence_value = 0
+}
+
+LIB = {
+	value = 50
+	level = 5
+	influence_value = 0
+}
+EGY = {
+	value = 0		#relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+leader = {
+	name = "Winfield Scott"
+	date = 1836.1.1
+	type = land
+	personality = natural_born_leader
+	background = defence_4.4-0
+	prestige = 0.3
+}
+
+leader = {
+	name = "Zachary Taylor"
+	date = 1836.1.1
+	type = land
+	personality = old_school
+	background = defence_4.4-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Thomas Jesup"
+	date = 1836.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Edmund P. Gaines"
+	date = 1828.1.1
+	type = land
+	personality = old_school
+	background = defence_3.3-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Alexander Macomb"
+	date = 1812.1.1
+	type = land
+	personality = old_school
+	background = defence_4.3-0
+	prestige = 0.3
+}
+
+leader = {
+	name = "Isaac Hull"
+	date = 1810.1.1
+	type = sea
+	personality = old_school
+	background = defence_4.4-0
+	prestige = 0.2
+}
+
+leader = {
+	name = "William B. Shubrick"
+	date = 1836.1.1
+	type = sea
+	personality = old_school
+	background = defence_3.4-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "James Biddle"
+	date = 1830.1.1
+	type = sea
+	personality = old_school
+	background = defence_4.3-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Matthew C. Perry"
+	date = 1836.1.1
+	type = sea
+	personality = natural_explorer
+	background = defence_5.4-0
+	prestige = 0.2
+}
+
+army = {
+	name = "US Dragoons"
+	location = 199
+	regiment = {
+		name= "1st Cavalry Regiment"
+		type = dragoon
+		home = 223
+	}
+
+	regiment = {
+		name= "2nd Cavalry Regiment"
+		type = dragoon
+		home = 139
+	}
+
+	regiment = {
+		name= "3rd Cavalry Regiment"
+		type = dragoon
+		home = 205
+	}
+
+}
+
+army = {
+	name = "Army of the South"
+	location = 200
+	regiment = {
+		name= "1st Regiment of Infantry"
+		type = infantry
+		home = 211
+	}
+
+	regiment = {
+		name= "2nd Regiment of Infantry"
+		type = infantry
+		home = 194
+	}
+
+	regiment = {
+		name= "3rd Regiment of Infantry"
+		type = infantry
+		home = 188
+	}
+
+	regiment = {
+		name= "1st Regiment of Artillery"
+		type = artillery
+		home = 195
+	}
+
+}
+
+army = {
+	name = "US Army"
+	location = 220
+	regiment = {
+		name= "4th Regiment of Infantry"
+		type = infantry
+		home = 243
+	}
+
+	regiment = {
+		name= "5th Regiment of Infantry"
+		type = infantry
+		home = 232
+	}
+
+	regiment = {
+		name= "6th Regiment of Infantry"
+		type = infantry
+		home = 232
+	}
+
+	regiment = {
+		name= "2nd Regiment of Artillery"
+		type = artillery
+		home = 223
+	}
+
+}
+
+army = {
+	name = "Army of Observation"
+	location = 144
+	regiment = {
+		name= "7th Regiment of Infantry"
+		type = infantry
+		home = 169
+	}
+
+	regiment = {
+		name= "8th Regiment of Infantry"
+		type = infantry
+		home = 184
+	}
+
+	regiment = {
+		name= "9th Regiment of Infantry"
+		type = infantry
+		home = 247
+	}
+
+}
+
+navy = {
+	name = "1st Squadron"
+	location = 222
+	ship = {
+		name= "Franklin"
+		type = manowar
+	}
+
+	ship = {
+		name= "Pennsylvania"
+		type = manowar
+	}
+
+	ship = {
+		name= "Washington"
+		type = manowar
+	}
+
+	ship = {
+		name= "Columbia"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Constellation"
+		type = frigate
+	}
+	ship = {
+		name= "Ohio"
+		type = manowar
+	}
+
+	ship = {
+		name= "Hudson"
+		type = commerce_raider
+	}
+	ship = {
+		name= "John Adams"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "United States"
+		type = commerce_raider
+	}
+	ship = {
+		name= "Independance"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Brandywine"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Constitution"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "Potomac"
+		type = commerce_raider
+	}
+
+	ship = {
+		name= "'James McKay' Flotilla"
+		type = steam_transport
+	}
+	ship = {
+		name= "Alabama"
+		type = manowar
+	}
+
+	ship = {
+		name= "Vermont"
+		type = manowar
+	}
+
+	ship = {
+		name= "Virginia"
+		type = manowar
+	}
+
+	ship = {
+		name= "1st Reserve Transport"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "New York"
+		type = manowar
+	}
+
+	ship = {
+		name= "North Carolina"
+		type = manowar
+	}
+
+	ship = {
+		name= "2nd Reserve Transport"
+		type = steam_transport
+	}
+}

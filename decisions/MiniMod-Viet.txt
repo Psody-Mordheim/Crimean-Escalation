@@ -1,0 +1,29 @@
+political_decisions = {
+	annexation_of_cambodia = {
+		picture = force_vassal_freedom
+		potential = {
+			tag = DAI
+			owns = 1364
+			NOT = { has_country_flag = annexation_of_cambodia }
+			civilized = yes
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			prestige = 20
+			all_core = {
+				owned_by = THIS
+			}
+		}
+		
+		effect = {
+			badboy = 4
+			set_country_flag = annexation_of_cambodia 
+			SIA_1366 = {
+				add_core = DAI
+			}
+		}	
+		
+	}
+	
+}

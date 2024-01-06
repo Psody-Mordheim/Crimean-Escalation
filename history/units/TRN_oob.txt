@@ -1,0 +1,18 @@
+ORA = {
+	value = 200
+}
+army = {
+	name = "Army of Transvaal Vrij Staat"
+	location = 2105
+	regiment = {
+		name= "1.Transvaal Commando"
+		type = infantry
+		home = 2105
+	}
+    regiment = {
+		name= "2.Transvaal Commando"
+		type = artillery
+		home = 2105
+	}
+}
+

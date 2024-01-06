@@ -1,0 +1,207 @@
+country_event = {
+	id = 800009
+	title = "Unlawful Military Access"
+	desc = "Our spherelord has forbidden us from granting military access to their potential enemies"
+	
+	trigger = {
+		part_of_sphere = yes
+			OR = {
+			any_neighbor_country = {
+				military_access = THIS
+				NOT = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+					vassal_of = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+			any_greater_power = {
+				military_access = THIS
+				NOT = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+					vassal_of = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	option = {
+		name = "Makes Sense"
+		random_country = {
+			limit = {
+				military_access = THIS
+				NOT = {
+					is_sphere_leader_of = THIS
+					is_our_vassal = THIS
+					vassal_of = THIS
+					sphere_owner = { is_sphere_leader_of = THIS }
+				}
+			}
+			end_military_access = THIS
+			relation = {
+				who = THIS
+				value = -25
+			}
+		}
+	}
+}
+country_event = {
+	id = 80000911
+	title = "Ally With Overlord"
+	desc = "Ally With Overlord"
+	
+	trigger = {
+	is_vassal = yes
+	ai = yes
+	exists = yes
+	overlord = {
+		ai = yes
+		exists = yes
+		NOT = { alliance_with = THIS }
+	}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "Makes Sense"
+            random_owned = {
+                limit = {
+                    owner = {
+					exists = yes
+                    }
+                }
+                owner = {
+                    overlord = { country_event = 80000912 }
+                }
+            }
+	}
+}
+country_event = {
+	id = 80000912
+	title = "Ally With Vassal"
+	desc = "Ally With Vassal"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+            random_country = {
+                limit = {
+				vassal_of = THIS
+				NOT = { alliance_with = THIS }
+                }
+                create_alliance = THIS
+            }
+	}
+}
+country_event = {
+	id = 80000914
+	title = "Switzerland Cores"
+	picture = "theatre"
+	desc = "It is time we laid stake to the now non-neutral Switzerland. Fake countries should be wiped off the map"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let's free our brethren!"
+		608 = {
+			add_core = THIS
+		}
+		607 = {
+			add_core = THIS
+		}
+		609 = {
+			add_core = THIS
+		}
+		604 = {
+			add_core = THIS
+		}
+		}
+	}
+country_event = {
+	id = 80000915
+	title = "Switzerland Cores"
+	picture = "theatre"
+	desc = "It is time we laid stake to the now non-neutral Switzerland. Fake countries should be wiped off the map"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let's free our brethren!"
+			2568 = {
+				add_core = THIS
+			}
+			611 = {
+				add_core = THIS
+			}
+			609 = {
+				add_core = THIS
+			}
+		}
+	}
+country_event = {
+	id = 80000916
+	title = "Switzerland Cores"
+	picture = "theatre"
+	desc = "It is time we laid stake to the now non-neutral Switzerland. Fake countries should be wiped off the map"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Let's free our brethren!"
+			603 = { add_core = THIS }
+			604 = { add_core = THIS }
+			605 = { add_core = THIS }
+			606 = { add_core = THIS }
+			611 = { add_core = THIS }
+	}
+}
+
+
+country_event = {
+	id = 832193
+	title = "Our overlord died!"
+	desc = "He died"
+
+	trigger = {
+		exists = yes
+		is_vassal = yes
+		overlord = {
+			exists = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	option = {
+		name = "Freedom!"
+		random_owned = {
+			limit = {
+				owner = {
+				exists = yes
+				}
+			}
+			owner = {
+				overlord = { country_event = 80000917 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 80000917
+	title = "We died"
+	desc = "Dead"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Let's free our puppet!"
+		release_vassal = FROM
+	}
+}

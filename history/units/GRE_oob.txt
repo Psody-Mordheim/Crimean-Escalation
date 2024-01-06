@@ -1,0 +1,111 @@
+FRA = {
+	value = 120
+}
+ENG = {
+	value = 120
+}
+leader = {
+	name = "von Heideck"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_4.4-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Demetrios Kalergis"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_4.3-0
+	prestige = 0.2
+}
+
+leader = {
+	name = "Ioannis Kolokotronis"
+	type = land
+	date="1836.1.1"
+	personality = old_school
+	background = defence_3.4-0
+	prestige = 0.1
+}
+
+leader = {
+	name = "Antonios Kriezis"
+	type = sea
+	date="1836.1.1"
+	personality = old_school
+	background = defence_5.5-0
+}
+
+army = {
+	name = "Stratós Thessalías"
+	location = 836
+	regiment = {
+		name= "1. Taxiarchia Ippikou"
+		type = cavalry
+		home = 834
+	}
+
+	regiment = {
+		name= "2. Taxiarchia Pezikou"
+		type = infantry
+		home = 836
+	}
+
+	regiment = {
+		name= "3. Taxiarchia Pezikou"
+		type = infantry
+		home = 835
+	}
+
+	regiment = {
+		name= "4. Taxiarchia Pezikou"
+		type = infantry
+		home = 838
+	}
+	regiment = {
+		name= "1. Taxiarchia Pyrovolikou"
+		type = artillery
+		home = 842
+	}
+}
+
+army = {
+	name = "Stratós Epeírou"
+	location = 837
+	regiment = {
+		name= "5. Taxiarchia Pezikou"
+		type = infantry
+		home = 837
+	}
+
+		regiment = {
+		name= "6. Taxiarchia Pezikou"
+		type = infantry
+		home = 839
+	}
+	regiment = {
+		name= "2. Taxiarchia Pyrovolikou"
+		type = artillery
+		home = 845
+	}
+		regiment = {
+		name= "2. Taxiarchia Ippikou"
+		type = cavalry
+		home = 837
+	}
+}
+
+navy = {
+	name = "Hellenic Navy"
+	location = 834
+
+	ship = {
+		name= "Leda"
+		type = clipper_transport
+	}
+
+}
+

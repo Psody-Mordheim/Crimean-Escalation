@@ -1,0 +1,57 @@
+ political_decisions = {
+
+
+    clean_ghosts = {
+        alert = no
+        potential = {
+            ai = yes
+            NOT = {
+                has_global_flag = cleanin_ghosts
+            }
+            capital_scope = { province_control_days = 150 }
+            OR = {
+                any_owned_province = {
+                    province_control_days = 120
+                    any_core = {
+                        OR = {
+                            is_mobilised = yes
+                            total_amount_of_ships = 1
+                        }
+                        capital_scope = { NOT = { province_control_days = 120 } }
+                        has_country_flag = existing_country
+                        exists = no
+                        is_greater_power = no
+                    }
+                }
+                any_neighbor_country = {
+                    ai = no
+                    any_owned_province = {
+                        province_control_days = 120
+                        any_core = {
+                            OR = {
+                                is_mobilised = yes
+                                total_amount_of_ships = 1
+                            }
+                            capital_scope = { NOT = { province_control_days = 120 } }
+                            has_country_flag = existing_country
+                            exists = no
+                            is_greater_power = no
+                        }
+                    }
+                }
+            }
+        }
+
+        allow = {
+            war = no
+        }
+
+        effect = {
+            set_global_flag = cleaning_up_ghosts
+            THIS = { country_event = 6016821 }
+        }
+		ai_will_do = {
+				factor = 0.33
+		}
+    }
+}

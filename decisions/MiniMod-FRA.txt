@@ -1,0 +1,77 @@
+political_decisions = {
+	revengance = {
+		picture = abolish_prohibition
+		potential = {
+			tag = FRA
+			NOT = { has_country_flag = revengance }
+			owns = 2213
+		}
+		allow = {
+		}
+		effect = {
+		any_owned = {
+				limit = {
+					region = HAI_2213
+				}
+				add_province_modifier = { name = new_lands duration = 5475 }
+			}
+			set_country_flag = revengance
+			badboy = 2
+			prestige = 5
+			any_pop = {
+				limit = {
+					has_pop_culture = afro_american
+				}
+				reduce_pop = 0.66
+				militancy = 9
+			}
+		}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						government = fascist_dictatorship
+						government = presidential_dictatorship
+						government = absolute_monarchy
+					}			
+				}
+			}
+		}	
+	}
+	entente_cordiale = {
+		picture = entente
+		potential = {
+			tag = FRA
+			ENG = {
+				exists = yes
+				NOT = {
+					any_core = { owned_by = FRA }
+					government = fascist_dictatorship
+					government = proletarian_dictatorship
+				}
+			}
+			has_global_flag = great_wars_enabled
+			NOT = {
+				has_country_flag = entente_cordiale
+				government = fascist_dictatorship
+				government = proletarian_dictatorship
+			}
+		}
+		
+		allow = {
+			war = no
+			NOT = { war_with = ENG }
+			relation = { who = ENG value = 15 }
+		}
+		effect = {
+			set_country_flag = entente_cordiale
+			ENG = { country_event = 36980 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

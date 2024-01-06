@@ -1,0 +1,83 @@
+country_event = {
+		id = 998888
+		title = "The Autonomous Region of $COUNTRY$"
+		desc = "We are now an autonomous region under German control."
+		picture = "statue_of_liberty"
+			
+		trigger = {
+			OR = {
+				tag = HUN
+				tag = LOM
+				tag = CRO
+				tag = DLM
+				tag = BKV
+				tag = SLO
+				tag = BOH
+				tag = SLV
+				tag = BOS
+				tag = GLM
+				tag = LVN
+				tag = VEN
+				}
+			NOT = { has_country_flag = austrian_puppet }
+			war = no
+			OR = {
+			vassal_of = AUS
+			vassal_of = KUK
+			vassal_of = GCF
+			vassal_of = GER
+			vassal_of = SGF
+			vassal_of = NGF
+			vassal_of = PRU
+			}
+		}
+	mean_time_to_happen = {
+		months = 0
+	}
+			option = {
+			name = "Hurrah! Long live the Emperor and King!"
+			set_country_flag = austrian_puppet
+			add_accepted_culture = german
+			}
+		}
+	country_event = {
+		id = 998877
+		title = "Overthrow the Germans"
+		desc = "We are no longer under German control!"
+		picture = "statue_of_liberty"
+			
+		trigger = {
+			OR = {
+				tag = HUN
+				tag = LOM
+				tag = CRO
+				tag = DLM
+				tag = BKV
+				tag = SLO
+				tag = BOH
+				tag = SLV
+				tag = BOS
+				tag = GLM
+				tag = LVN
+				tag = VEN
+				}
+			has_country_flag = austrian_puppet
+			war = no
+			NOT = { vassal_of = AUS }
+			NOT = { vassal_of = KUK }
+			NOT = { vassal_of = GCF }
+			NOT = { vassal_of = GER }
+			NOT = { vassal_of = SGF }
+			NOT = { vassal_of = NGF }
+			NOT = { vassal_of = PRU }
+			}
+	mean_time_to_happen = {
+		months = 0
+	}
+			option = {
+			name = "Hurrah! Long live $COUNTRY$!"
+			prestige = 5
+			clr_country_flag = austrian_puppet
+			remove_accepted_culture = german
+			}
+		}

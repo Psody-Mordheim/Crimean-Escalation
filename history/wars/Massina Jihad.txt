@@ -1,0 +1,18 @@
+name = "War of Greek Independence"
+
+1821.10.2 = {
+	add_attacker = TUR
+	add_defender = GRE
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = TUR
+		receiver = GRE
+	}
+
+}
+
+1829.12.31 = {
+	rem_attacker = TUR
+	rem_defender = GRE
+}

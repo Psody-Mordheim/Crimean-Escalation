@@ -1,0 +1,34 @@
+leader = {
+    name = "Carl Magnus von der Pahlen"
+    date = 1825.1.1
+    type = land
+	personality = old_school
+	background = defence_3.3-0
+	picture = european_general_25
+	prestige = 0.3
+}
+
+army = {
+    name = "I. Korps"
+    location = 354
+    regiment = {
+        name= "I. Linieninfanteriebrigade"
+        type = infantry
+        home = 349
+    }
+    regiment = {
+        name= "II. Linieninfanteriebrigade"
+        type = infantry
+        home = 354
+    }
+    regiment = {
+        name= "I. Kavalleriebrigade"
+        type = hussar
+        home = 349
+    }
+    regiment = {
+        name= "I. Artilleriebrigade"
+        type = artillery
+        home = 354
+    }
+}

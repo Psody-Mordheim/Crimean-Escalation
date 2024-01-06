@@ -1,0 +1,14 @@
+RUS = {
+	value = 125
+}
+
+leader = {
+	name = "Mirko Petrovic"
+	type = land
+	date= "1836.1.1"
+	personality = old_school
+	background = defence_4.4-0
+	prestige = 0.2
+}
+
+

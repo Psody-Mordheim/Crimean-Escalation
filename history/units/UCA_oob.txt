@@ -1,0 +1,32 @@
+leader = {
+	name = "Francisco Morazán"
+	date = 1830.1.1
+	type = land
+	personality = politician
+	background = defence_4.3-0
+	prestige = 0.2
+}
+
+army = {
+	name = "Ejército Federal"
+	location = 2202
+	regiment = {
+		name= "1. División de Infantería"
+		type = infantry
+		home = 2186
+	}
+
+	regiment = {
+		name= "2. División de Infantería"
+		type = infantry
+		home = 2191
+	}
+
+	regiment = {
+		name= "3. División de Infantería"
+		type = hussar
+		home = 2186
+	}
+	}
+
+

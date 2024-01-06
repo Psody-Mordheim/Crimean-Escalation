@@ -1,0 +1,63 @@
+country_event = {
+    id = 585544
+	title = "foraicom"
+	desc = "foraicom"
+	
+	trigger = {
+		    ai = yes
+			has_country_flag = comte_partition
+			NOT = {
+			owns = 414
+			}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+	    name = "OK"
+		clr_country_flag = comte_partition
+	}
+}
+country_event = {
+    id = 585543
+	title = "foraiwal"
+	desc = "foraiwal"
+	
+	trigger = {
+		    ai = yes
+			has_country_flag = wallonia_partition
+			NOT = {
+			owns = 395
+			}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+	    name = "OK"
+		clr_country_flag = wallonia_partition
+	}
+}
+country_event = {
+    id = 585542
+	title = "foraisud"
+	desc = "forai11"
+	
+	trigger = {
+		    ai = yes
+			has_country_flag = sudetes_partition
+			NOT = {
+			owns = 627
+			}
+			NOT = {
+			owns = 688
+			}
+	}
+	mean_time_to_happen = {
+		days = 0
+	}
+	option = {
+	    name = "OK"
+		clr_country_flag = sudetes_partition
+	}
+}

@@ -1,0 +1,4603 @@
+#
+# Allowed variables 
+#
+# attack = + or - on dice roll in combat when attacking. (like skill in eu3)
+# defence = + or - on dice roll in combat. (like skill in eu3)
+# morale = % modifier on morale.
+# organisation = % bonus on org.
+# reconnaissance = % bonus on reconaissance.
+# speed = % bonus on movement
+# attrition = penalty on attrition. (negative is good)
+# experience = % bonus on experience gain.
+# reliability = mil gain or loss for pop associated.
+#
+
+
+
+personality = {
+	no_personality = {
+		morale = -0.01
+	}
+	drillmaster = { organisation = 0.1 experience = 0.25 }
+	natural_explorer = { attrition = -0.1  speed = 0.2 reconnaissance = 0.1 }
+	quartermaster = { attrition = -0.33 speed = 0.1 }
+	overcautious = { speed = -0.1 }
+	natural_born_leader =  { morale = 0.20 organisation = 0.1 }
+	deeply_religious =  { morale = 0.20 speed = 0.1 }
+	ballsy = { morale = 0.05 speed = 0.10 }
+	undisciplined = { organisation = -0.10 morale = -0.10 }
+	schizophrenic = { organisation = -0.25 morale = 0.25 }
+	butcher = { organisation = 0.05 speed = 0.2 }
+	politician = { morale = -0.10 experience = 0.10 }
+	horse_lover = { speed = 0.3 reconnaissance = 0.1 }
+	old_school = { experience = -0.15 morale = 0.2 }
+	reckless = { speed = 0.35 reconnaissance = -0.25 organisation = -0.05  }
+	unlucky = { attrition = 0.05 reconnaissance = -0.1 morale = -0.05  }
+	fatherly = { morale = 0.20 experience = 0.1  }
+	cruel = { morale = -0.33 organisation = 0.05  }
+	nationalist = { morale = 0.20 }
+	expert_raider = { experience = 0.05 speed = 0.3 reconnaissance = 0.2 }
+	renowned_adventurer = { experience = 0.1 reconnaissance = 0.1 speed = 0.15 }
+	aristocrat = { morale = 0.05 organisation = 0.05 experience = 0.10 }
+	son_of_hero = { morale = 0.10 organisation = 0.05 experience = 0.05 }
+	romantic = { morale = 0.10 }
+	paranoid = { morale = -0.10 speed = -0.2 }
+	poet = { morale = 0.10 experience = 0.05 }
+	wounded_veteran = { organisation = -0.05 speed = -0.1 experience = 0.10 }
+	hated = { morale = -0.10 experience = -0.10 }
+	strange = { morale = -0.10 experience = -0.05 speed = -0.05	 }
+	pompous = { attrition = 0.15 }
+	painfully_unfunny = { morale = -0.33 }
+}
+
+background = {
+	no_background = {
+		attack = 2
+		defence = 2
+	}
+defence_2.2-0 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-1 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-2 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-3 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-4 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-5 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-6 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-7 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-8 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-9 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-10 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-11 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-12 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-13 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-14 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-15 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-16 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-17 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-18 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-19 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-20 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-21 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-22 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-23 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-24 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-25 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-26 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-27 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-28 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-29 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-30 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-31 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-32 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-33 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-34 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-35 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-36 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-37 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-38 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-39 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-40 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-41 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-42 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-43 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-44 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-45 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-46 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-47 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-48 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-49 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-50 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-51 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-52 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-53 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-54 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-55 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-56 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-57 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-58 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-59 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-60 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-61 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-62 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-63 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-64 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-65 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-66 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-67 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-68 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-69 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-70 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-71 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-72 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-73 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-74 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-75 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-76 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-77 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-78 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-79 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-80 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-81 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-82 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-83 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-84 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-85 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-86 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-87 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-88 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-89 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-90 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-91 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-92 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-93 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-94 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-95 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-96 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-97 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-98 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-99 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-100 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-101 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-102 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-103 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-104 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-105 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-106 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-107 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-108 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-109 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-110 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-111 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-112 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-113 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-114 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-115 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-116 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-117 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-118 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-119 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-120 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-121 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-122 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-123 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-124 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-125 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-126 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-127 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-128 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-129 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-130 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-131 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-132 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-133 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-134 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-135 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-136 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-137 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-138 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-139 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-140 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-141 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-142 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-143 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-144 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-145 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-146 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-147 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-148 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-149 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-150 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-151 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-152 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-153 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-154 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-155 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-156 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-157 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-158 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-159 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-160 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-161 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-162 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-163 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-164 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-165 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-166 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-167 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-168 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-169 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-170 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-171 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-172 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-173 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-174 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-175 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-176 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-177 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-178 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-179 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-180 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-181 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-182 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-183 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-184 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-185 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-186 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-187 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-188 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-189 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-190 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-191 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-192 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-193 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-194 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-195 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-196 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-197 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-198 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-199 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-200 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-201 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-202 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-203 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-204 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-205 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-206 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-207 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-208 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-209 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-210 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-211 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-212 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-213 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-214 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-215 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-216 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-217 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-218 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-219 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-220 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-221 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-222 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-223 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-224 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-225 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-226 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-227 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-228 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-229 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-230 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-231 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-232 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-233 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-234 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-235 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-236 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-237 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-238 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-239 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-240 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-241 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-242 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-243 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-244 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-245 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-246 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-247 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-248 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-249 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-250 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-251 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-252 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-253 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-254 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-255 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-256 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-257 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-258 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-259 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-260 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-261 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-262 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-263 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-264 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-265 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-266 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-267 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-268 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-269 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-270 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-271 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-272 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-273 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-274 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-275 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-276 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-277 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-278 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-279 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-280 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-281 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-282 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-283 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-284 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-285 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-286 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-287 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-288 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-289 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-290 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-291 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-292 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-293 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-294 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-295 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-296 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-297 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-298 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-299 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-300 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-301 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-302 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-303 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-304 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-305 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-306 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-307 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-308 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-309 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-310 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-311 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-312 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-313 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-314 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-315 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-316 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-317 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-318 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-319 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-320 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-321 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-322 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-323 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-324 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-325 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-326 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-327 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-328 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-329 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-330 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-331 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-332 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-333 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-334 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-335 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-336 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-337 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-338 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-339 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-340 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-341 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-342 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-343 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-344 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-345 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-346 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-347 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-348 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-349 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-350 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-351 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-352 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-353 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-354 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-355 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-356 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-357 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-358 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-359 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-360 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-361 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-362 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-363 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-364 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-365 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-366 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-367 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-368 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-369 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-370 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-371 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-372 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-373 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-374 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-375 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-376 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-377 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-378 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-379 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-380 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-381 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-382 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-383 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-384 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-385 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-386 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-387 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-388 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-389 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-390 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-391 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-392 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-393 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-394 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-395 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-396 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-397 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-398 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-399 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-400 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-401 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-402 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-403 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-404 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-405 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-406 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-407 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-408 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-409 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-410 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-411 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-412 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-413 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-414 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-415 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-416 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-417 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-418 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-419 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-420 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-421 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-422 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-423 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-424 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-425 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-426 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-427 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-428 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-429 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-430 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-431 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-432 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-433 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-434 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-435 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-436 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-437 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-438 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-439 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-440 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-441 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-442 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-443 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-444 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-445 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-446 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-447 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-448 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-449 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-450 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-451 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-452 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-453 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-454 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-455 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-456 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-457 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-458 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-459 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-460 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-461 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-462 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-463 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-464 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-465 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-466 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-467 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-468 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-469 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-470 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-471 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-472 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-473 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-474 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-475 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-476 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-477 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-478 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-479 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-480 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-481 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-482 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-483 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-484 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-485 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-486 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-487 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-488 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-489 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-490 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-491 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-492 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-493 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-494 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-495 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-496 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-497 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-498 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-499 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-500 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-501 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-502 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-503 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-504 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-505 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-506 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-507 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-508 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-509 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-510 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_2.2-511 = { defence = 2 attack = 2 reliability = 1 }
+
+defence_3.2-0 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-1 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-2 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-3 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-4 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-5 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-6 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-7 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-8 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-9 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-10 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-11 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-12 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-13 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-14 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-15 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-16 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-17 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-18 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-19 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-20 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-21 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-22 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-23 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-24 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-25 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-26 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-27 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-28 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-29 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-30 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-31 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-32 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-33 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-34 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-35 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-36 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-37 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-38 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-39 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-40 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-41 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-42 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-43 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-44 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-45 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-46 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-47 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-48 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-49 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-50 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-51 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-52 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-53 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-54 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-55 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-56 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-57 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-58 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-59 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-60 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-61 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-62 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-63 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-64 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-65 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-66 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-67 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-68 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-69 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-70 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-71 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-72 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-73 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-74 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-75 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-76 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-77 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-78 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-79 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-80 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-81 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-82 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-83 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-84 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-85 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-86 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-87 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-88 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-89 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-90 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-91 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-92 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-93 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-94 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-95 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-96 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-97 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-98 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-99 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-100 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-101 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-102 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-103 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-104 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-105 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-106 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-107 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-108 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-109 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-110 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-111 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-112 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-113 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-114 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-115 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-116 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-117 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-118 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-119 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-120 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-121 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-122 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-123 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-124 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-125 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-126 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-127 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-128 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-129 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-130 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-131 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-132 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-133 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-134 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-135 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-136 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-137 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-138 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-139 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-140 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-141 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-142 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-143 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-144 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-145 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-146 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-147 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-148 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-149 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-150 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-151 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-152 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-153 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-154 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-155 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-156 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-157 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-158 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-159 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-160 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-161 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-162 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-163 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-164 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-165 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-166 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-167 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-168 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-169 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-170 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-171 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-172 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-173 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-174 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-175 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-176 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-177 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-178 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-179 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-180 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-181 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-182 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-183 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-184 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-185 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-186 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-187 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-188 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-189 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-190 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-191 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-192 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-193 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-194 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-195 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-196 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-197 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-198 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-199 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-200 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-201 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-202 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-203 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-204 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-205 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-206 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-207 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-208 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-209 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-210 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-211 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-212 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-213 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-214 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-215 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-216 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-217 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-218 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-219 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-220 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-221 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-222 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-223 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-224 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-225 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-226 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-227 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-228 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-229 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-230 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-231 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-232 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-233 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-234 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-235 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-236 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-237 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-238 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-239 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-240 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-241 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-242 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-243 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-244 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-245 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-246 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-247 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-248 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-249 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-250 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-251 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-252 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-253 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-254 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-255 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-256 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-257 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-258 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-259 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-260 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-261 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-262 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-263 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-264 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-265 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-266 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-267 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-268 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-269 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-270 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-271 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-272 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-273 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-274 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-275 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-276 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-277 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-278 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-279 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-280 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-281 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-282 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-283 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-284 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-285 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-286 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-287 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-288 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-289 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-290 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-291 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-292 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-293 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-294 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-295 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-296 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-297 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-298 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-299 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-300 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-301 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-302 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-303 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-304 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-305 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-306 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-307 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-308 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-309 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-310 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-311 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-312 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-313 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-314 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-315 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-316 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-317 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-318 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-319 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-320 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-321 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-322 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-323 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-324 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-325 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-326 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-327 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-328 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-329 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-330 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-331 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-332 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-333 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-334 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-335 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-336 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-337 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-338 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-339 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-340 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-341 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-342 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-343 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-344 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-345 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-346 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-347 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-348 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-349 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-350 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-351 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-352 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-353 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-354 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-355 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-356 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-357 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-358 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-359 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-360 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-361 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-362 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-363 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-364 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-365 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-366 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-367 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-368 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-369 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-370 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-371 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-372 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-373 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-374 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-375 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-376 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-377 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-378 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-379 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-380 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-381 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-382 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-383 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-384 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-385 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-386 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-387 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-388 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-389 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-390 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-391 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-392 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-393 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-394 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-395 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-396 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-397 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-398 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-399 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-400 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-401 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-402 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-403 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-404 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-405 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-406 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-407 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-408 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-409 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-410 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-411 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-412 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-413 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-414 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-415 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-416 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-417 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-418 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-419 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-420 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-421 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-422 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-423 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-424 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-425 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-426 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-427 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-428 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-429 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-430 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-431 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-432 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-433 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-434 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-435 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-436 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-437 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-438 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-439 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-440 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-441 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-442 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-443 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-444 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-445 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-446 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-447 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-448 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-449 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-450 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-451 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-452 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-453 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-454 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-455 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-456 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-457 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-458 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-459 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-460 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-461 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-462 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-463 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-464 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-465 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-466 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-467 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-468 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-469 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-470 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-471 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-472 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-473 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-474 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-475 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-476 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-477 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-478 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-479 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-480 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-481 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-482 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-483 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-484 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-485 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-486 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-487 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-488 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-489 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-490 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-491 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-492 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-493 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-494 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-495 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-496 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-497 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-498 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-499 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-500 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-501 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-502 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-503 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-504 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-505 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-506 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-507 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-508 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-509 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-510 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_3.2-511 = { defence = 3 attack = 2 reliability = 1 }
+
+defence_2.3-0 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-1 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-2 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-3 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-4 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-5 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-6 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-7 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-8 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-9 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-10 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-11 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-12 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-13 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-14 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-15 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-16 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-17 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-18 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-19 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-20 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-21 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-22 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-23 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-24 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-25 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-26 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-27 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-28 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-29 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-30 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-31 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-32 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-33 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-34 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-35 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-36 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-37 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-38 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-39 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-40 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-41 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-42 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-43 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-44 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-45 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-46 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-47 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-48 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-49 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-50 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-51 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-52 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-53 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-54 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-55 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-56 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-57 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-58 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-59 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-60 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-61 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-62 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-63 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-64 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-65 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-66 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-67 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-68 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-69 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-70 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-71 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-72 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-73 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-74 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-75 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-76 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-77 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-78 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-79 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-80 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-81 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-82 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-83 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-84 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-85 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-86 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-87 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-88 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-89 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-90 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-91 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-92 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-93 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-94 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-95 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-96 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-97 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-98 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-99 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-100 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-101 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-102 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-103 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-104 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-105 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-106 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-107 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-108 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-109 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-110 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-111 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-112 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-113 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-114 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-115 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-116 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-117 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-118 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-119 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-120 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-121 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-122 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-123 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-124 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-125 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-126 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-127 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-128 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-129 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-130 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-131 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-132 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-133 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-134 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-135 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-136 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-137 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-138 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-139 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-140 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-141 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-142 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-143 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-144 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-145 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-146 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-147 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-148 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-149 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-150 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-151 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-152 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-153 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-154 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-155 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-156 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-157 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-158 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-159 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-160 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-161 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-162 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-163 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-164 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-165 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-166 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-167 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-168 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-169 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-170 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-171 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-172 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-173 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-174 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-175 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-176 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-177 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-178 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-179 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-180 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-181 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-182 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-183 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-184 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-185 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-186 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-187 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-188 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-189 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-190 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-191 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-192 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-193 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-194 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-195 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-196 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-197 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-198 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-199 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-200 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-201 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-202 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-203 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-204 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-205 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-206 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-207 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-208 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-209 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-210 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-211 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-212 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-213 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-214 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-215 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-216 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-217 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-218 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-219 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-220 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-221 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-222 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-223 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-224 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-225 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-226 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-227 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-228 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-229 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-230 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-231 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-232 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-233 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-234 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-235 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-236 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-237 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-238 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-239 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-240 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-241 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-242 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-243 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-244 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-245 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-246 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-247 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-248 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-249 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-250 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-251 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-252 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-253 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-254 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-255 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-256 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-257 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-258 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-259 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-260 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-261 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-262 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-263 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-264 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-265 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-266 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-267 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-268 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-269 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-270 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-271 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-272 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-273 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-274 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-275 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-276 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-277 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-278 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-279 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-280 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-281 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-282 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-283 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-284 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-285 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-286 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-287 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-288 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-289 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-290 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-291 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-292 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-293 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-294 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-295 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-296 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-297 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-298 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-299 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-300 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-301 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-302 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-303 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-304 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-305 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-306 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-307 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-308 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-309 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-310 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-311 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-312 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-313 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-314 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-315 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-316 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-317 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-318 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-319 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-320 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-321 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-322 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-323 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-324 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-325 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-326 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-327 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-328 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-329 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-330 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-331 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-332 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-333 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-334 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-335 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-336 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-337 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-338 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-339 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-340 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-341 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-342 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-343 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-344 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-345 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-346 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-347 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-348 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-349 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-350 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-351 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-352 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-353 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-354 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-355 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-356 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-357 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-358 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-359 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-360 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-361 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-362 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-363 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-364 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-365 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-366 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-367 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-368 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-369 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-370 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-371 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-372 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-373 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-374 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-375 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-376 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-377 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-378 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-379 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-380 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-381 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-382 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-383 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-384 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-385 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-386 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-387 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-388 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-389 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-390 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-391 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-392 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-393 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-394 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-395 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-396 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-397 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-398 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-399 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-400 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-401 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-402 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-403 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-404 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-405 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-406 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-407 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-408 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-409 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-410 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-411 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-412 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-413 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-414 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-415 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-416 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-417 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-418 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-419 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-420 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-421 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-422 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-423 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-424 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-425 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-426 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-427 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-428 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-429 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-430 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-431 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-432 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-433 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-434 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-435 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-436 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-437 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-438 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-439 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-440 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-441 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-442 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-443 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-444 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-445 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-446 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-447 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-448 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-449 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-450 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-451 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-452 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-453 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-454 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-455 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-456 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-457 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-458 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-459 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-460 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-461 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-462 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-463 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-464 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-465 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-466 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-467 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-468 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-469 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-470 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-471 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-472 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-473 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-474 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-475 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-476 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-477 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-478 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-479 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-480 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-481 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-482 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-483 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-484 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-485 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-486 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-487 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-488 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-489 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-490 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-491 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-492 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-493 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-494 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-495 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-496 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-497 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-498 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-499 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-500 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-501 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-502 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-503 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-504 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-505 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-506 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-507 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-508 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-509 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-510 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_2.3-511 = { defence = 2 attack = 3 reliability = 1 }
+
+defence_3.3-0 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-1 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-2 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-3 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-4 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-5 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-6 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-7 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-8 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-9 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-10 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-11 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-12 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-13 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-14 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-15 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-16 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-17 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-18 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-19 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-20 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-21 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-22 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-23 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-24 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-25 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-26 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-27 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-28 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-29 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-30 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-31 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-32 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-33 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-34 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-35 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-36 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-37 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-38 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-39 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-40 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-41 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-42 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-43 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-44 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-45 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-46 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-47 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-48 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-49 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-50 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-51 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-52 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-53 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-54 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-55 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-56 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-57 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-58 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-59 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-60 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-61 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-62 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-63 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-64 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-65 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-66 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-67 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-68 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-69 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-70 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-71 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-72 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-73 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-74 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-75 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-76 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-77 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-78 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-79 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-80 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-81 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-82 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-83 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-84 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-85 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-86 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-87 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-88 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-89 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-90 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-91 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-92 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-93 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-94 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-95 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-96 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-97 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-98 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-99 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-100 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-101 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-102 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-103 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-104 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-105 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-106 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-107 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-108 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-109 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-110 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-111 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-112 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-113 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-114 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-115 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-116 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-117 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-118 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-119 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-120 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-121 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-122 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-123 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-124 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-125 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-126 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-127 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-128 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-129 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-130 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-131 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-132 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-133 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-134 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-135 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-136 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-137 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-138 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-139 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-140 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-141 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-142 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-143 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-144 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-145 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-146 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-147 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-148 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-149 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-150 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-151 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-152 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-153 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-154 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-155 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-156 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-157 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-158 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-159 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-160 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-161 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-162 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-163 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-164 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-165 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-166 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-167 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-168 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-169 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-170 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-171 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-172 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-173 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-174 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-175 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-176 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-177 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-178 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-179 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-180 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-181 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-182 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-183 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-184 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-185 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-186 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-187 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-188 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-189 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-190 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-191 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-192 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-193 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-194 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-195 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-196 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-197 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-198 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-199 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-200 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-201 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-202 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-203 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-204 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-205 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-206 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-207 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-208 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-209 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-210 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-211 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-212 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-213 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-214 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-215 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-216 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-217 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-218 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-219 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-220 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-221 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-222 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-223 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-224 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-225 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-226 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-227 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-228 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-229 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-230 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-231 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-232 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-233 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-234 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-235 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-236 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-237 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-238 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-239 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-240 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-241 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-242 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-243 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-244 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-245 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-246 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-247 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-248 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-249 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-250 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-251 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-252 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-253 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-254 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-255 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-256 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-257 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-258 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-259 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-260 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-261 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-262 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-263 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-264 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-265 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-266 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-267 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-268 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-269 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-270 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-271 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-272 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-273 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-274 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-275 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-276 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-277 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-278 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-279 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-280 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-281 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-282 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-283 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-284 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-285 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-286 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-287 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-288 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-289 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-290 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-291 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-292 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-293 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-294 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-295 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-296 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-297 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-298 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-299 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-300 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-301 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-302 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-303 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-304 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-305 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-306 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-307 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-308 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-309 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-310 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-311 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-312 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-313 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-314 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-315 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-316 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-317 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-318 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-319 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-320 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-321 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-322 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-323 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-324 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-325 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-326 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-327 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-328 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-329 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-330 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-331 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-332 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-333 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-334 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-335 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-336 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-337 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-338 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-339 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-340 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-341 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-342 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-343 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-344 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-345 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-346 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-347 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-348 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-349 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-350 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-351 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-352 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-353 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-354 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-355 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-356 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-357 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-358 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-359 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-360 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-361 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-362 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-363 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-364 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-365 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-366 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-367 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-368 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-369 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-370 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-371 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-372 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-373 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-374 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-375 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-376 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-377 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-378 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-379 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-380 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-381 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-382 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-383 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-384 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-385 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-386 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-387 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-388 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-389 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-390 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-391 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-392 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-393 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-394 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-395 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-396 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-397 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-398 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-399 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-400 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-401 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-402 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-403 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-404 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-405 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-406 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-407 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-408 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-409 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-410 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-411 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-412 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-413 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-414 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-415 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-416 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-417 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-418 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-419 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-420 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-421 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-422 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-423 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-424 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-425 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-426 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-427 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-428 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-429 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-430 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-431 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-432 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-433 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-434 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-435 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-436 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-437 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-438 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-439 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-440 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-441 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-442 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-443 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-444 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-445 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-446 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-447 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-448 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-449 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-450 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-451 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-452 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-453 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-454 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-455 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-456 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-457 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-458 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-459 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-460 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-461 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-462 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-463 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-464 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-465 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-466 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-467 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-468 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-469 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-470 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-471 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-472 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-473 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-474 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-475 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-476 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-477 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-478 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-479 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-480 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-481 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-482 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-483 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-484 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-485 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-486 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-487 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-488 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-489 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-490 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-491 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-492 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-493 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-494 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-495 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-496 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-497 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-498 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-499 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-500 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-501 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-502 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-503 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-504 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-505 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-506 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-507 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-508 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-509 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-510 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_3.3-511 = { defence = 3 attack = 3 reliability = 1 }
+
+defence_4.2-0 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-1 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-2 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-3 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-4 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-5 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-6 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-7 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-8 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-9 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-10 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-11 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-12 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-13 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-14 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-15 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-16 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-17 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-18 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-19 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-20 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-21 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-22 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-23 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-24 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-25 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-26 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-27 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-28 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-29 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-30 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.2-31 = { defence = 4 attack = 2 reliability = 1 }
+
+defence_4.3-0 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-1 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-2 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-3 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-4 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-5 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-6 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-7 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-8 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-9 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-10 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-11 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-12 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-13 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-14 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-15 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-16 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-17 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-18 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-19 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-20 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-21 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-22 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-23 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-24 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-25 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-26 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-27 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-28 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-29 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-30 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_4.3-31 = { defence = 4 attack = 3 reliability = 1 }
+
+defence_2.4-0 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-1 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-2 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-3 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-4 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-5 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-6 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-7 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-8 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-9 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-10 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-11 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-12 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-13 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-14 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-15 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-16 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-17 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-18 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-19 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-20 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-21 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-22 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-23 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-24 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-25 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-26 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-27 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-28 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-29 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-30 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_2.4-31 = { defence = 2 attack = 4 reliability = 1 }
+
+defence_3.4-0 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-1 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-2 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-3 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-4 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-5 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-6 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-7 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-8 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-9 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-10 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-11 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-12 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-13 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-14 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-15 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-16 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-17 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-18 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-19 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-20 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-21 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-22 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-23 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-24 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-25 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-26 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-27 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-28 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-29 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-30 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_3.4-31 = { defence = 3 attack = 4 reliability = 1 }
+
+defence_4.4-0 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-1 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-2 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-3 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-4 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-5 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-6 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-7 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-8 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-9 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-10 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-11 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-12 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-13 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-14 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-15 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-16 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-17 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-18 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-19 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-20 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-21 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-22 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-23 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-24 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-25 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-26 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-27 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-28 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-29 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-30 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_4.4-31 = { defence = 4 attack = 4 reliability = 1 }
+
+defence_5.2-0 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-1 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-2 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-3 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-4 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-5 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-6 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.2-7 = { defence = 5 attack = 2 reliability = 1 }
+
+defence_5.3-0 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-1 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-2 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-3 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-4 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-5 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-6 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.3-7 = { defence = 5 attack = 3 reliability = 1 }
+
+defence_5.4-0 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-1 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-2 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-3 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-4 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-5 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-6 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_5.4-7 = { defence = 5 attack = 4 reliability = 1 }
+
+defence_2.5-0 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-1 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-2 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-3 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-4 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-5 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-6 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_2.5-7 = { defence = 2 attack = 5 reliability = 1 }
+
+defence_3.5-0 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-1 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-2 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-3 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-4 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-5 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-6 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_3.5-7 = { defence = 3 attack = 5 reliability = 1 }
+
+defence_4.5-0 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-1 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-2 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-3 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-4 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-5 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-6 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_4.5-7 = { defence = 4 attack = 5 reliability = 1 }
+
+defence_5.5-0 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-1 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-2 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-3 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-4 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-5 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-6 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_5.5-7 = { defence = 5 attack = 5 reliability = 1 }
+
+defence_6.2-0 = { defence = 6 attack = 2 reliability = 1 }
+
+defence_6.3-0 = { defence = 6 attack = 3 reliability = 1 }
+
+defence_6.4-0 = { defence = 6 attack = 4 reliability = 1 }
+
+defence_6.5-0 = { defence = 6 attack = 5 reliability = 1 }
+
+defence_2.6-0 = { defence = 2 attack = 6 reliability = 1 }
+
+defence_3.6-0 = { defence = 3 attack = 6 reliability = 1 }
+
+defence_4.6-0 = { defence = 4 attack = 6 reliability = 1 }
+
+defence_5.6-0 = { defence = 5 attack = 6 reliability = 1 }
+
+defence_6.6-0 = { defence = 6 attack = 6 reliability = 1 }
+}

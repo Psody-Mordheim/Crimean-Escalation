@@ -1,0 +1,9 @@
+RUS = {
+	value = 125
+}
+QNG = {	
+	military_access = yes
+}
+TIB = {
+    military_access = yes
+}

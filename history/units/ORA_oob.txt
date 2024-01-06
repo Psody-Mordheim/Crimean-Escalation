@@ -1,0 +1,18 @@
+TRN = {
+	value = 200
+}
+army = {
+	name = "Army of Oranje Vrij Staat"
+	location = 2101
+	regiment = {
+		name= "1.Oranje Commando"
+		type = infantry
+		home = 2102
+	}
+    regiment = {
+		name= "2.Oranje Commando"
+		type = artillery
+		home = 2102
+	}
+}
+

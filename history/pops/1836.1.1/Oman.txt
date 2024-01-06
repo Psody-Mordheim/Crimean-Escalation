@@ -1,0 +1,360 @@
+#Uman Region (116000) #see Trucial States.txt for balance of region  
+#under the rule of Oman in 1836  
+#Muscat (32000/8000 POPS)   
+1166 = {
+	aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 150
+	}
+
+	bureaucrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 500
+	}
+
+	officers = {
+		culture = mashriqi
+		religion = shiite
+		size = 75
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 700
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 10000
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = shiite
+		size = 4125
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 4625
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 300
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 10000
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 8950
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 1500
+	}
+
+
+	artisans = {
+		culture = persian
+		religion = shiite
+		size = 1500
+	}
+
+	slaves = {
+		culture = african_minor
+		religion = animist
+		size = 2000
+	}
+}
+#Suhar (16000/4000 POPS)   
+1169 = {
+	aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 50
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 125
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 1500
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = shiite
+		size = 50
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 4625
+	}
+}
+#Nizwa (24000/6000 POPS)   
+1170 = {
+	aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 75
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 150
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 1600
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = shiite
+		size = 1200
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 7075
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 50
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 50
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 925
+	}
+}
+#Sur (24000/6000 POPS)   
+1171 = {
+	aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 25
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 150
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 1400
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = shiite
+		size = 25
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 5000
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 150
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = sunni
+		size = 25
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 1850
+	}
+
+	artisans = {
+		culture = persian
+		religion = sunni
+		size = 50
+	}
+
+	soldiers = {
+		culture = persian
+		religion = sunni
+		size = 25
+	}
+
+	farmers = {
+		culture = persian
+		religion = sunni
+		size = 925
+	}
+
+	slaves = {
+		culture = african_minor
+		religion = animist
+		size = 1100
+	}
+}
+#Duqm (20000/5000 POPS)   
+1172 = {
+	aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 75
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 75
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 1200
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = shiite
+		size = 50
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 6600
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 125
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 50
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 925
+	}
+}
+#Hadramaut Region (36000) #see Yemen.txt for balance of region  
+#under the rule of Oman in 1836  
+#Salalah (20000/5000 POPS)   
+1174 = {
+	aristocrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 65
+	}
+
+	bureaucrats = {
+		culture = mashriqi
+		religion = shiite
+		size = 5
+	}
+
+	officers = {
+		culture = mashriqi
+		religion = shiite
+		size = 5
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = shiite
+		size = 175
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = shiite
+		size = 1250
+	}
+
+	soldiers = {
+		culture = mashriqi
+		religion = shiite
+		size = 1100
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = shiite
+		size = 5600
+	}
+
+	clergymen = {
+		culture = mashriqi
+		religion = sunni
+		size = 25
+	}
+
+	artisans = {
+		culture = mashriqi
+		religion = sunni
+		size = 50
+	}
+
+	farmers = {
+		culture = mashriqi
+		religion = sunni
+		size = 925
+	}
+
+}

@@ -1,0 +1,27 @@
+NET = {
+	value = 40
+}
+
+POR = {
+	value = 100
+}
+
+
+army = {
+	name = "Army of the Gabu Empire"
+	location = 1878	
+regiment = {
+		name= "Mansaba's Guards"
+		type = irregular
+	
+home = 1878	}
+
+
+regiment = {
+		name= "Gabu Warriors"	
+		type = irregular
+	home = 1792
+	}
+}
+
+
