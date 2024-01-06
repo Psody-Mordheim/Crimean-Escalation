@@ -901,6 +901,7 @@ political_decisions = {
 		picture = sikh_empire
 		potential = {
 			tag = PNJ
+			tag = EIC
 			NOT = { has_country_flag = embraced_pashtun }
 			any_owned_province = { culture = pashtun }
 		}
@@ -927,6 +928,7 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			tag = SHI
+			tag = EIC
 			exists = NEP
 			NOT = { has_country_flag = unite_with_nepal }
 		}
