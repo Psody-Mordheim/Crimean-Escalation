@@ -246,5 +246,86 @@ political_decisions = {
 			}
 		}
 	}
+mex_claim_cuba  = {
+		picture = golden_cuba
+		potential = {
+			tag = MEX
+			NOT = {
+				has_country_flag = mex_claimed_cuba
+			}
+		}
+		allow = {
+			state_n_government = 1
+			war = no
+		}
+		effect = {
+			2212 = { add_core = MEX } #Santiaga De Cuba
+			2211 = { add_core = MEX } #Camaguey
+			2210 = { add_core = MEX } #Jagua
+			2209 = { add_core = MEX } #Havana
+			2222 = { add_core = MEX } #Puerto Rico
+			badboy = 7
+			random_country = {
+				limit = {
+					tag = SPA
+					exists = yes
+				}
+				relation = { who = THIS value = -100 }
+			}
+			set_country_flag = mex_claimed_cuba
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.3
+			}
+		}
+	}
+mex_accept_cuba  = {
+		picture = embrace_minority
+		potential = {
+			tag = MEX
+			has_country_flag = mex_claimed_cuba
+			NOT = {
+				has_country_flag = mex_embraced_caribeno
+			}
+		}
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			any_owned_province = {
+				is_core = CUB
+			}
+		}
+		effect = {
+			set_country_flag = mex_embraced_caribeno
+			add_accepted_culture = caribeno
+			badboy = 4
+			any_pop = {
+				limit = { has_pop_culture = caribeno }
+				consciousness = 4
+				militancy = 4
+			}
+			
+			any_owned = {
+				limit = {
+					culture = caribeno
+				}
+				add_province_modifier = {
+					name = core_integration
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				badboy = 0.3
+			}
+		}
+	}
 }
-#madebyFinnBro
+#madebyFinnBro and Psody
