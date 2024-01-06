@@ -177,11 +177,6 @@ political_decisions = {
 		potential = {
 			tag = MEX
 			has_country_flag = we_have_tried_this_once
-			OR = {
-				government = hms_government
-				government = prussian_constitutionalism
-				government = absolute_monarchy
-			}
 			NOT = {
 				has_country_flag = mex_central_america
 			}
