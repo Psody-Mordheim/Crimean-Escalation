@@ -2739,3 +2739,12 @@ tribes_modifier = {
 	supply_consumption = -0.33
 	mobilisation_size = 0.02
 }
+
+
+#############ROMANIA################
+cuza_reforms = {
+	tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.05
+	education_efficiency_modifier = 0.05
+	icon = 1
+}
